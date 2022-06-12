@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+    <title>EXODUS, Goodbye World</title>
+
+        <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <!-- Fonts -->
+     <!-- Fonts -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- Main style -->
+       <link rel="stylesheet" href="css/main.css" />
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+
+<style type="text/css">
+   
+  .bgimagespot{
+ position: relative;  
+
+ background-image: url("img/decentraland-fashion-street.jpg");
+
+background-repeat: no-repeat;
+background-size:100% 100%; 
+height:100px;
+
+max-width: 100%;
+
+
+
+
+}
+
+.bg2footergame
+{
+ background-color: #eaeaea;
+ 
+}
+.bgfootergame
+{
+   background-image: url("img/papermed.png");
+   background-repeat: no-repeat;
+   background-size:100%  100% ; 
+   width: 100%;
+   height:450px;
+}
+
+
+.bgtexturegame
+{
+   background-image: url("img/bgtexturexodus.png");
+   background-repeat: no-repeat;
+   background-size:100%  100% ; 
+   width: 100%;
+   height:800px;
+    
+}
+
+
+  
+  .bgimagespot{
+ position: relative;  
+
+ background-image: url("img/decentraland-fashion-street.jpg");
+
+background-repeat: no-repeat;
+background-size:100% 100%; 
+height:100px;
+
+max-width: 100%;
+
+
+
+
+}
+
+.bg2footergame
+{
+ background-color: #eaeaea;
+ 
+}
+.bgfootergame
+{
+   background-image: url("img/papermed.png");
+   background-repeat: no-repeat;
+   background-size:100%  100% ; 
+   width: 100%;
+   height:450px;
+}
+
+
+.bgtexturegame
+{
+   background-image: url("img/bgtexturexodus.png");
+   background-repeat: no-repeat;
+   background-size:100%  100% ; 
+   width: 100%;
+   height:800px;
+    
+}
+
+/* video background */
+#background-video {
+  height: 100vh;
+  width: 99.1vw;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.form-style-10{
+  max-width:650px;
+  padding:30px;
+  margin:40px auto;
+  background: #FFF;
+  border-radius: 10px;
+  -webkit-border-radius:10px;
+  -moz-border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+  -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+}
+.form-style-10 .inner-wrap{
+  padding: 30px;
+  background: #F8F8F8;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+.form-style-10 h1{
+  background: #665CFF;
+  padding: 20px 30px 15px 30px;
+  margin: -30px -30px 30px -30px;
+  border-radius: 10px 10px 0 0;
+  -webkit-border-radius: 10px 10px 0 0;
+  -moz-border-radius: 10px 10px 0 0;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+  font: normal 30px 'Bitter', serif;
+  -moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+  -webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+  box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+  border: 1px solid #257C9E;
+}
+.form-style-10 h1 > span{
+  display: block;
+  margin-top: 2px;
+
+  font: 18px Arial, Helvetica, sans-serif;
+  line-height:28px;
+}
+.form-style-10 label{
+  display: block;
+  font: 16px Arial, Helvetica, sans-serif;
+  color: #888;
+  margin-bottom: 15px;
+}
+.form-style-10 input[type="text"],
+.form-style-10 input[type="date"],
+.form-style-10 input[type="datetime"],
+.form-style-10 input[type="email"],
+.form-style-10 input[type="number"],
+.form-style-10 input[type="search"],
+.form-style-10 input[type="time"],
+.form-style-10 input[type="url"],
+.form-style-10 input[type="password"],
+.form-style-10 textarea,
+.form-style-10 select {
+  display: block;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  -webkit-border-radius:6px;
+  -moz-border-radius:6px;
+  border: 2px solid #fff;
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+  -moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+  -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+}
+
+.form-style-10 .section{
+  font: normal 20px 'Bitter', serif;
+  color: #2A88AD;
+  margin-bottom: 5px;
+}
+.form-style-10 .section span {
+  background: #2A88AD;
+  padding: 5px 10px 5px 10px;
+  position: absolute;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border: 4px solid #fff;
+  font-size: 16px;
+  margin-left: -45px;
+  color: #fff;
+  margin-top: -3px;
+}
+.form-style-10 input[type="button"], 
+.form-style-10 input[type="submit"]{
+  background: #2A88AD;
+  padding: 8px 20px 8px 20px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+  font: normal 30px 'Bitter', serif;
+  -moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+  -webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+  box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+  border: 1px solid #257C9E;
+  font-size: 16px;
+}
+.form-style-10 input[type="button"]:hover, 
+.form-style-10 input[type="submit"]:hover{
+  background: #2A6881;
+  -moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+  -webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+  box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+}
+.form-style-10 .privacy-policy{
+  float: right;
+  width: 250px;
+  font: 16px Arial, Helvetica, sans-serif;
+  color: #4D4D4D;
+  margin-top: 10px;
+  text-align: right;
+}
+
+
+.textoverlaysigup { 
+   position: absolute; 
+   top:  100px; 
+   left: 0; 
+   width: 100%; 
+}
+
+</style>
+
+  </head>
+  <body>
+  <header> 
+  <video id="background-video" autoplay loop muted poster="">
+                              <source src="video/hero-video.mp4" type="video/mp4">
+                            </video>
+    <div class="container-fluid  ">
+ 
+      <nav class="navbar navbar-expand-lg navbar-light fill   padnavs navtxcolor navbar2">
+     
+          <a class="navbar-brand" href="#"> <img class="img-fluid" src="img/White-Logo.png" alt="logo" width="360" height="89"> </a>                       
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>       
+          </button>
+
+
+           <div class="collapse navbar-collapse" id="navbarNav">
+              
+              <ul class="navbar-nav ms-auto flex-nowrap menu2">
+                  <li class="nav-item">
+                      <a href="#" class="nav-link txtnav m-2 nav-active navtxt hvr-grow ">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#nosotros" class="nav-link txtnav m-2 navtxt hvr-grow ">Marketplace</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#equipo" class="nav-link txtnav m-2 navtxt hvr-grow ">Membership</a>
+                  </li>
+                   
+
+                  <li class="nav-item">
+                      <a href="#contacto" class="nav-link txtnav m-2 navtxt hvr-grow ">Statistics</a>
+                  </li>
+
+                    <li class="nav-item">
+                      <a href="#contacto" class="nav-link txtnav m-2 navtxt hvr-grow ">Donate</a>
+                  </li>
+
+                    <li class="nav-item">
+                      <a href="#contacto" class="nav-link txtnav m-2 navtxt hvr-grow ">Contact Us</a>
+                  </li>
+
+
+ 
+
+                    <li class="text-center"> <a href="# " target="blank" class="btn btnws1color btn-outline-warning btn-lg "  > 
+           Connect Wallet</a>  </li>
+      
+              </ul>
+            </div>
+       </nav>
+
+
+
+             
+ 
+
+
+          <div class="text-center textoverlaysigup">
+
+                   <div class="form-style-10">
+          <h1>Pre-alpha Sign up<span class="">for the Exodus Metaverse Role-Playing Game! Receive information and updates about the launch of the MRPG.</span></h1>
+          <form>
+              <div class="section"> First Name &amp; Last Name</div>
+              <div class="inner-wrap">
+                  <label>Your First Name <input type="text" name="firstname" /></label>
+                  <label>Your Last Name  <input type="text" name="lastname" /></label>
+              </div>
+
+              <div class="section">Email &amp; Comment</div>
+              <div class="inner-wrap">
+                  <label>Email Address <input type="email" name="email" /></label>
+                  <label>Comment with game suggestions or fun ideas! The game will be based in a Medieval era.<textarea class="form-control" id="exampleFormControlTextarea1"  name="comment" rows="3"></textarea></label>
+
+                  <input type="checkbox" name="contact_me_by_fax_only" value="1" style="display:none !important" tabindex="-1" autocomplete="off">
+              </div>
+
+             
+              <div class="button-section">
+              
+              
+              <button type="submit" name="Sign up" class="btn btnws1color btn-success btn-lg  " role="button" aria-disabled="true" >Sign up </button>  
+         
+              </div>
+          </form>
+          </div>
+      </div>
+
+
+          </div>
+        
+</div>
+
+</header> 
+
+
+
+
+<!--
+
+
+<div class="container-fluid marginforxe bgtexturegame">
+
+  <div class="container">
+
+
+
+
+ 
+  </div>
+  
+</div>
+
+
+ 
+
+
+
+
+
+
+
+
+<div class="showcase ">
+  <img class="imagi" src="img/Exodus-Dome.png"  alt="Picture">
+  <div class="container-fluid overlay">
+
+  <div class="row">
+    <div class="col-lg-6  col-sm-12  ">
+          <div class="padleft150">
+          
+            <h2>PLAY & CREATE </h2>
+                <p>
+                 Exodus is a medieval era metaverse role-playing game built by childhood friends who met online playing a Massively Multiplayer Online Role-Playing Game, or MMORPG. MMORPGs bring together millions of people who form strong bonds, communities, and entire economies. Out of a shared passion for cryptocurrencies and MMORPGs, Exodus was born with the goal of making these communities and economies into real, consensus driven assets. The name Exodus symbolizes a journey away from the online games we played and cherished as children towards a new era where crypto assets allow gamers to create a real value out of their playtime. We believe that time spent gaming is valuable, and it’s time to start treating it as such. It’s time to Exodus.
+                </p>
+
+                <p>
+                 
+                </p>
+ 
+                 
+ 
+<button type="button" class="btn btn-lg btn-outline-light">Learn More</button>
+          </div> 
+       
+    </div>
+    <div class="col-lg-6  col-sm-12 ">
+        <img class="img-fluid  marginr margintop" width="441" height="631" src="img/hunter-4.png">
+    </div>
+  
+  </div>
+</div>
+
+
+</div>
+
+
+
+
+<div class="container-fluid">
+
+    <div class="container">
+
+
+      <h3>Game Features</h3>
+
+     <p> Exodus is a fun and enjoyable  MMORPG, find out about the main features of the game below.</p>
+
+
+      <div class="row">
+
+        <div class="col-lg-8">
+
+             eep strategy and tactical role playing battles
+
+          
+        </div>
+
+        <div class="col-lg-4">
+          <img src="img/_images_web-game-features-three-3.png">
+          
+        </div>
+        
+        
+      </div>
+
+    </div>
+
+  
+
+</div>
+
+
+
+
+<div class="container-fluid bg2footergame">
+ 
+  
+
+ 
+<footer id="footer" class="bgfootergame text-white d-flex-column text-center ">
+<div class="container">
+
+
+  <hr class="mt-0">
+ 
+  <div class="text-center padtop50">
+    <h4 class="fotfont txtfotcolor">Join our community</h4>
+    <ul class="list-unstyled list-inline">
+
+       <li class="list-inline-item">
+        <a target="_blank" href="#" class="sbtn btn-large mx-1" title="Linkedin">
+          <i class="fab fa-discord fa-2x"></i>
+        </a>
+      </li>
+     
+      <li class="list-inline-item">
+        <a target="_blank" href="#" class="sbtn btn-large mx-1" title="Linkedin">
+          <i class="fab fa-twitch fa-2x"></i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a target="_blank" href="#" class="sbtn btn-large mx-1" title="Twitter">
+          <i class="fab fa-twitter-square fa-2x"></i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a target="_blank" href="#" class="sbtn btn-large mx-1" title="Youtube">
+          <i class="fab fa-youtube-square fa-2x"></i>
+        </a>
+      </li>
+    </ul>
+    </div>
+  </div>
+ 
+  
+  <div class="container text-left text-md-center padtop40">
+
+    <div class="row">
+   
+      <div class="col-md-3 mx-auto shfooter">
+        <h5 class="my-2 font-weight-bold d-none d-md-block fotfont txtfotcolor">Game</h5>
+        <div class="d-md-none title" data-target="#Product" data-toggle="collapse">
+          <div class="mt-3 font-weight-bold"> 
+            <div class="float-right navbar-toggler">
+              <i class="fas fa-angle-down"></i>
+              <i class="fas fa-angle-up"></i>
+            </div>
+          </div>
+        </div>
+        <ul class="list-unstyled collapse fotfont" id="Product">
+          <li><a target="_blank" href="#">Game Plays</a></li>
+          <li><a target="_blank" href="#">link</a></li>
+   
+        </ul>
+      </div>
+ 
+      <hr class="clearfix w-100 d-md-none mb-0">
+ 
+      <div class="col-md-3 mx-auto shfooter">
+        <h5 class="my-2 font-weight-bold d-none d-md-block fotfont txtfotcolor">Team</h5>
+        <div class="d-md-none title" data-target="#Company" data-toggle="collapse">
+          <div class="mt-3 font-weight-bold"> 
+            <div class="float-right navbar-toggler">
+              <i class="fas fa-angle-down"></i>
+              <i class="fas fa-angle-up"></i>
+            </div>
+          </div>
+        </div>
+        <ul class="list-unstyled collapse fotfont" id="Company">
+          <li><a target="_blank" href="#">link</a></li>
+          <li><a target="_blank" href="#">link</a></li>
+          
+        </ul>
+      </div>
+   
+      <hr class="clearfix w-100 d-md-none mb-0">
+      
+      <div class="col-md-3 mx-auto shfooter">
+        <h5 class="my-2 font-weight-bold d-none d-md-block fotfont txtfotcolor">Resources</h5>
+        <div class="d-md-none title" data-target="#Resources" data-toggle="collapse">
+          <div class="mt-3 font-weight-bold"> 
+            <div class="float-right navbar-toggler">
+              <i class="fas fa-angle-down"></i>
+              <i class="fas fa-angle-up"></i>
+            </div>
+          </div>
+        </div>
+        <ul class="list-unstyled collapse fotfont" id="Resources">
+          <li><a target="_blank" href="#">link</a></li>
+          <li><a target="_blank" href="#">link</a></li>
+           
+        </ul>
+      </div>
+       
+      <hr class="clearfix w-100 d-md-none mb-0">
+ 
+      <div class="col-md-3 mx-auto shfooter">
+        <h5 class="my-2 font-weight-bold d-none d-md-block fotfont txtfotcolor">Get Help</h5>
+        <div class="d-md-none title" data-target="#Get-Help" data-toggle="collapse">
+          <div class="mt-3 font-weight-bold"> 
+            <div class="float-right navbar-toggler">
+              <i class="fas fa-angle-down"></i>
+              <i class="fas fa-angle-up"></i>
+            </div>
+          </div>
+        </div>
+        <ul class="list-unstyled collapse fotfont " id="Get-Help">
+          <li><a target="_blank" href="#" target="_blank">Help Center</a></li>
+          <li><a target="_blank" href="#">link</a></li>
+          <li><a target="_blank" href="#">link</a></li>
+           
+        </ul>
+      </div>
+     
+    </div>
+    <hr class="mb-0">
+  </div>
+ 
+ 
+ 
+  <div class="py-3 text-center txtfotcolor">
+    Copyright 2022 -
+    EXODUS</a> | Say goodbye world
+  </div>
+   
+</footer>
+ 
+</div>
+ 
+
+ -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+ 
+ <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  </body>
+</html>
