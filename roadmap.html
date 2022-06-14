@@ -20,7 +20,8 @@
         <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
      <!-- Fonts -->
-<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.2.0/css/all.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- Main style -->
 
        <link rel="stylesheet" href="css/main.css"  media="all"   />
@@ -29,7 +30,58 @@
 
 
 <style>
-  
+
+
+.maroadtop
+{
+  margin-top: 40px;
+ 
+}
+.maroadbot
+{
+   margin-bottom: 40px;
+}
+
+  .glowbox
+  {
+        box-shadow: 1px 10px 80px 10px #0ff;
+
+
+
+  }
+
+  #myDIV {
+ 
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  70% {box-shadow: 10px 20px 20px #6B8EBA;}
+}
+
+.rdaterm
+
+{
+    font-size: 1.2em;   
+  color:#1A3ACB;
+  font-weight: 700;
+   
+}
+
+
+  .txtraodp
+  {
+  font-size: 1.6em;   
+  color:#fff;
+    line-height: 20px;
+  }
+
+   .fa-hourglass-half
+
+          {
+               color: #1A3ACB; 
+            }
+
   .cartextaling
   {
     padding-right: 0px;
@@ -72,7 +124,7 @@ max-width: 100%;
  
  
 
- background-image: url("img/jtv-header.jpeg");
+ background-image: url("img/exodus-bg-rm.jpg");
  position: relative; 
 background-repeat: no-repeat;
 background-size:100% 100%; 
@@ -214,16 +266,7 @@ section.pricing {
   padding-left:150px;
   padding-right: 150px;
 }
-
-.pricing .btn {
-  font-size: 1em;
-  border-radius: 1rem;
-  letter-spacing: .1rem;
-  font-weight: bold;
-  padding: 1rem;
-  opacity: 0.7;
-  transition: all 0.2s;
-}
+ 
 
 
 .custom-btn {
@@ -411,7 +454,14 @@ font-size: 1.4em;
 
 .divtimeline
 {
-  background: #3ea0e2;
+   background: linear-gradient(-45deg, #313131, #0A0A0A, #0075D6, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+  
+height:1800px;
+
+max-width: 100%;
+
 }
 ::selection{
   color: #fff;
@@ -426,12 +476,28 @@ font-size: 1.4em;
 .wrapper .center-line{
   position: absolute;
   height: 100%;
-  width: 4px;
+  width: 10px;
   background: #fff;
   left: 50%;
   top: 20px;
   transform: translateX(-50%);
+    border-radius: 7px;
+      border: 2px solid #dadada;
 }
+
+  
+  
+ 
+
+
+ .center-line: focus { 
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #26bf47;
+}
+
+
+
 .wrapper .row{
   display: flex;
 }
@@ -1682,6 +1748,13 @@ max-width: 100%;
             .fa-check
             {
                color: #00B613; 
+            }
+ 
+
+         .fa-hourglass-half
+
+          {
+               color: #1A3ACB; 
             }
 
             .listfont
@@ -3656,8 +3729,7 @@ max-width: 100%;
 
              
 
-              <h1 class="    textoverlay text-center     text-focus-in ">THE FUN IS JUST BEGINNING
-</h1>
+              <h1 class="    textoverlay text-center     text-focus-in ">THE FUN IS JUST BEGINNING</h1>
 
             <p class="   textoverlay2  text-center txh1sl2 text-focus-in">EXODUS, Goodbye World Roadmap</p> 
 
@@ -3676,10 +3748,6 @@ max-width: 100%;
 
 
 
- 
- 
-
-
 
 
 
@@ -3691,12 +3759,13 @@ max-width: 100%;
 
   
 
-<div class="container-fluid martop40 divtimeline">
-  <div class="container">
+<div class="container-fluid   divtimeline">
+  <div class="container padtop60 ">
 
-    <h3></h3>
+    <p  class="text-center txtraodp">Take a look at our roadmap</p>
+    <p  class="text-center txtraodp padbott240"> and see what exciting developments we have in store for the future.</p>
 
-Take a look at our roadmap and see what exciting developments we have in store for the future.
+
 
 
       <div class="wrapper">
@@ -3704,94 +3773,122 @@ Take a look at our roadmap and see what exciting developments we have in store f
       <a href="#" class="scroll-icon"><i class="fas fa-caret-up"></i></a>
     </div>
     <div class="row row-1">
-      <section>
-        <i class="icon fas fa-home"></i>
-        <div class="details">
-          <span class="title">Release beta</span>
-          <span>1st Jan 2021</span>
-        </div>
-        <p>Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium maiores, sint eos vero sapiente voluptas debitis dicta dolore.</p>
-        <div class="bottom">
-          <a href="#">Read more</a>
-          <i>- Someone famous</i>
-        </div>
-      </section>
-    </div>
-    <div class="row row-2">
-      <section>
-        <i class="icon fas fa-star"></i>
-        <div class="details">
-          <span class="title">Title of Section 2</span>
-          <span>2nd Jan 2021</span>
-        </div>
-        <p>Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium maiores, sint eos vero sapiente voluptas debitis dicta dolore.</p>
-        <div class="bottom">
-          <a href="#">Read more</a>
-          <i>- Someone famous</i>
-        </div>
-      </section>
-    </div>
-    <div class="row row-1">
-      <section>
+      <section class="glowbox maroadbot  hvr-hang " id="myDIV">
         <i class="icon fas fa-rocket"></i>
-        <div class="details">
-          <span class="title">Title of Section 3</span>
-          <span>3rd Jan 2021</span>
-        </div>
-        <p>Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium maiores, sint eos vero sapiente voluptas debitis dicta dolore.</p>
-        <div class="bottom">
+        <div >
+              <div class="details">
+              <span class="title">Exodus Beta Launch</span>
+              <span class="rdaterm">20 Jan 2022</span>
+            </div>
+            <p><i class="fas fa-hourglass-half"></i> Launch Woodchopping Beta </p>
+            <p><i class="fas fa-hourglass-half"></i> Launch Daily tasks</p>
+       </div>
+        <!--<div class="bottom">
           <a href="#">Read more</a>
-          <i>- Someone famous</i>
-        </div>
+          <i>- Exodus team</i>
+        </div>-->
       </section>
     </div>
     <div class="row row-2">
-      <section>
-        <i class="icon fas fa-globe"></i>
+      <section class="maroadbot hvr-hang ">
+        <i class="icon fas fa-crosshairs"></i>
         <div class="details">
-          <span class="title">Title of Section 4</span>
-          <span>4th Jan 2021</span>
+          <span class="title">Scavenger Hunting</span>
+           <span class="rdaterm">27 Jan 2022</span>
         </div>
-        <p>Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium maiores, sint eos vero sapiente voluptas debitis dicta dolore.</p>
-        <div class="bottom">
+        <p><i class="fas fa-hourglass-half"></i> Launch Scavenger Hunting Beta</p>
+        <!--<div class="bottom">
           <a href="#">Read more</a>
-          <i>- Someone famous</i>
-        </div>
+          <i>- lorem</i>
+        </div>-->
       </section>
     </div>
     <div class="row row-1">
-      <section>
-        <i class="icon fas fa-paper-plane"></i>
+      <section class="maroadbot hvr-hang ">
+        <i class="icon fas fa-fish"></i>
         <div class="details">
-          <span class="title">Title of Section 5</span>
-          <span>5th Jan 2021</span>
+          <span class="title">Fishing Game</span>
+           <span class="rdaterm">31 Jul 2022</span>
         </div>
-        <p>Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium maiores, sint eos vero sapiente voluptas debitis dicta dolore.</p>
-        <div class="bottom">
+        <p><i class="fas fa-hourglass-half"></i> Launch Fishing Beta  </p>
+       <!-- <div class="bottom">
           <a href="#">Read more</a>
-          <i>- Someone famous</i>
-        </div>
+          <i>- lorem</i>
+        </div>-->
       </section>
     </div>
     <div class="row row-2">
-      <section>
-        <i class="icon fas fa-map-marker-alt"></i>
+      <section class="maroadbot hvr-hang ">
+        <i class="icon fas fa-hammer"></i>
         <div class="details">
-          <span class="title">Title of Section 6</span>
-          <span>6th Jan 2021</span>
+          <span class="title">Craftsmanship Game</span>
+           <span class="rdaterm">31 Aug 2022</span>
         </div>
-        <p>Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium maiores, sint eos vero sapiente voluptas debitis dicta dolore.</p>
-        <div class="bottom">
-          <a href="#">Read more</a>
-          <i>- Someone famous</i>
+        <p><i class="fas fa-hourglass-half"></i>  Launch Craftsmanship Beta  </p>
+        
+      </section>
+    </div>
+    <div class="row row-1">
+      <section class="maroadbot hvr-hang">
+        <i class="icon fas fa-person-digging"></i>
+        <div class="details">
+          <span class="title">Release Mining Beta</span>
+           <span class="rdaterm">30 Sept 2022</span>
         </div>
+        <p><i class="fas fa-hourglass-half"></i>  Launch Mining Beta </p>
+        
+      </section>
+    </div>
+    <div class="row row-2">
+      <section class="maroadbot hvr-hang">
+        <i class="icon fas fa-fire"></i>
+        <div class="details">
+          <span class="title">Release Forging Beta </span>
+         <span class="rdaterm">31 Oct 2022</span>
+        </div>
+        <p><i class="fas fa-hourglass-half"></i>  Launch Forging Beta  </p>
+       
+      </section>
+    </div>
+
+     <div class="row row-1">
+      <section class="maroadbot hvr-hang">
+        
+         <i class="icon  fa-solid fa-fire-burner"></i>
+        <div class="details">
+          <span class="title">Release Cooking Beta</span>
+           <span class="rdaterm">30 Nov 2022</span>
+        </div>
+        <p><i class="fas fa-hourglass-half"></i>  Launch Cooking Beta </p>
+      
+      </section>
+    </div>
+    <div class="row row-2">
+      <section class="maroadbot hvr-hang">
+        <i class="icon fas fa-paw"></i>
+        <div class="details">
+          <span class="title">Release Hunting Beta </span>
+         <span class="rdaterm">31 Dec 2022</span>
+        </div>
+        <p><i class="fas fa-hourglass-half"></i>  Launch Hunting Beta    </p>
+       
+      </section>
+    </div>
+
+    <div class="row row-1">
+      <section class="maroadbot hvr-hang">
+        
+         <i class="icon  fa-solid fa-star"></i>
+        <div class="details">
+          <span class="title">Full Game Released  </span>
+           <span class="rdaterm">8 Jan 2023</span>
+        </div>
+        <p><i class="fas fa-hourglass-half"></i>  Launch Full Game (Early January)</p>
+      
       </section>
     </div>
   </div>
 
-
-
-    
   </div>
 </div>
  
