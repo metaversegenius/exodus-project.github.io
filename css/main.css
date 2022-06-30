@@ -524,9 +524,9 @@ a{
 
 
  
+ /* NAVIGATION */
  
  
-
  
 .menu2 li 
   {
@@ -546,46 +546,112 @@ a{
  
 }
 
-
  
-.menu2 li:after,
-.menu2 li:before {
-  content: "";
-  position: absolute;
+
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
   display: block;
-  border: 0px solid transparent;
-  width: 0%;
-  height: 0%;
-  transition: all 0.5s ease;
+  padding: 15px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: #555;
 }
 
-.menu2 li:after {
-  width: 0%;
-  height: 0%;
+
+/* SHIFT */
+nav.shift ul li a {
+  position:relative;
+  z-index: 1;
+}
+nav.shift ul li a:hover {
+  color: #91640F;
+}
+nav.shift ul li a:after {
+  display: block;
+  position: absolute;
   top: 0;
   left: 0;
-  border-top: 2px solid transparent;
-  border-left: 2px solid transparent;
-}
-
-.menu2 li:before {
-  width: 0%;
-  height: 0%;
-  right: 0;
   bottom: 0;
-  border-bottom: 2px solid transparent;
-  border-right: 2px solid transparent;
-}
-
-.menu2 li:hover::before,
-.menu2 li:hover::after {
+  right: 0;
+  margin: auto;
   width: 100%;
+  height: 1px;
+  content: '.';
+  color: transparent;
+  background: #F1C40F;
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+}
+nav.shift ul li a:hover:after {
+  opacity: 1;
+  visibility: visible;
   height: 100%;
-  border-color: #fff;
 }
 
 
 
+/* Keyframes */
+@-webkit-keyframes fill {
+  0% {
+    width: 0%;
+    height: 1px;
+  }
+  50% {
+    width: 100%;
+    height: 1px;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    background: #5F96E6;
+  }
+}
+
+/* Keyframes */
+@-webkit-keyframes circle {
+  0% {
+    width: 1px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    height: 1px;
+    z-index: -1;
+    background: #5F96E6;
+    border-radius: 100%;
+  }
+  100% {
+    background: #5F96E6;
+    height: 5000%;
+    width: 5000%;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 0;
+  }
+}
  
 
 /*END FOOTER*/
