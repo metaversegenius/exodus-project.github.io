@@ -317,18 +317,7 @@ font-size: 2.5em;
   z-index: -1;
 }
 
-/* page content */
-h1  {
-  color: white;
-  font-family: Trebuchet MS;
-  font-weight: bold;
-  text-align: center;
-}
 
-h1 {
-  font-size: 6rem;
-  margin-top: 30vh; 
-}
 
 
 
@@ -425,9 +414,25 @@ h1 {
 /*END FEATURES*/
 
 /*FOOTER*/
+  .padfotterscr
+  {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top:  0px;
+    padding-bottom:10px;
+  }
+.fotfonttitles
+{
+font-size: 1.5em;
+font-weight: 700; 
+font-family: 'MedievalSharp', sans-serif;
+}
+
+
 .fotfont
 {
-
+font-size: 1.2em;
+ 
 font-family: 'MedievalSharp', sans-serif;
 }
 .fotfontc

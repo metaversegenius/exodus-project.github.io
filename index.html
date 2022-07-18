@@ -26,7 +26,203 @@
 
 <style type="text/css">
 
+.marginrpce
+{
+  margin-left: 100px;
 
+}
+
+
+.bgpce{
+  
+ background-image: url("img/bg-pce.png  ");
+ position: relative; 
+background-repeat: no-repeat;
+background-size:100% 100%; 
+height:  700px;
+max-width: 100%;
+
+}
+
+.txtpce
+{
+font-size: 1.3em;
+text-align: justify;
+  
+  color: #fff;
+   
+}
+.padtoppce
+{
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+
+
+.txpcett
+{
+font-size: 3em;
+  font-weight: 700;
+  color: #fff;
+   
+}
+
+.martoppce
+{
+  margin-top: 20px;
+}
+
+.padlfpce
+{
+  padding-left:50px;
+}
+
+  /*BACKGROUND FEAT*/
+
+.featbgm
+{
+   background: -moz-linear-gradient(45deg, #4780D3 0%, #4780D3 29%, #2132A0 66%, #2132A0 100%);
+    background: -webkit-linear-gradient(45deg, #2132A0 0%,#478FFF 29%,#d911f2 66%,#D14FFF 100%);
+    background: linear-gradient(45deg, #02e1ba 0%,#26c9f2 29%,#478FFF 66%,#D14FFF 100%);
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+  /*min-height: calc(100vh - 2rem);*/
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-evenly;
+  overflow: hidden;
+  position: relative; 
+}
+
+.featbgm::before, 
+.featbgm::after {
+  content: "";
+  width: 30vmax;
+  height: 30vmax;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.07);
+  left: -20vmin;
+  top: -20vmin;
+  animation: morph 20s linear infinite alternate, spin 20s linear infinite;
+  z-index: 1;
+  will-change: border-radius, transform;
+  transform-origin: 55% 55%;
+  pointer-events: none; 
+}
+
+
+  
+.featbgm::after {
+    width: 40vmin;
+    height: 40vmin;
+    left: auto;
+    right: -10vmin;
+    top: auto;
+    bottom: 0;
+    animation: morph 10s linear infinite alternate, spin 26s linear infinite reverse;
+    transform-origin: 50% 20%; 
+}
+
+ 
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0 50%
+  }
+}
+
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0 50%
+  }
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0 50%
+  }
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 40% 60% 60% 40% / 70% 30% 70% 30%; }
+  100% {
+    border-radius: 40% 60%; } 
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn); 
+  } 
+}
+  .st0{display:none;}
+  .st1{display:inline;}
+  .st2{opacity:0.29;}
+  .st3{fill:#FFFFFF;}
+  .st4{clip-path:url(#SVGID_2_);fill:#FFFFFF;}
+  .st5{clip-path:url(#SVGID_4_);}
+  .st6{clip-path:url(#SVGID_6_);}
+  .st7{clip-path:url(#SVGID_8_);}
+  .st8{clip-path:url(#SVGID_10_);}
+  .st9{fill:none;}
+  .st10{clip-path:url(#SVGID_12_);}
+  .st11{opacity:0.7;}
+  .st12{clip-path:url(#SVGID_14_);}
+  .st13{opacity:0.2;}
+  .st14{clip-path:url(#SVGID_16_);}
+  .st15{opacity:0.3;fill:#FFFFFF;enable-background:new    ;}
+
+/*BACKGROUND FEAT END*/
+
+
+
+
+/* page content */
+h1  {
+  color: white;
+  font-family: Trebuchet MS;
+  font-weight: bold;
+  text-align: center;
+}
+
+  .txth1 {
+  font-size: 5em;
+  margin-top: 30vh; 
+}
+
+
+  .txh1sl2
+{
+font-size: 2.5em;
+  font-weight: 700;
+  color: #fff;
+   
+}
+
+  .logobrand {
+    width: 360px;
+}
  
 .menu2 li 
   {
@@ -133,6 +329,20 @@ max-width: 100%;
 
 }
 
+
+  
+  .bgfeaturebody{
+ 
+
+
+background-repeat: no-repeat;
+background-size:100% 100%; 
+   width: 100%;
+   height:3200px;
+
+
+}
+
 .bg2footergame
 {
  background-color: #eaeaea;
@@ -175,7 +385,7 @@ max-width: 100%;
 {
 font-size: 3em;
   font-weight: 700;
-  color: #000;
+  color: #fff;
    
 }
 
@@ -199,11 +409,14 @@ font-size: 1.2em;
 
 .pfeat
 {
-font-size: 1.2em;
+font-size: 1.3em;
   
-  color: #000;
+  color: #fff;
    
 }
+
+
+
 
 .featwrapper
 {
@@ -248,6 +461,24 @@ max-width: 100%;
 
 }
 
+.bgfeatureditemcraft{
+ 
+
+ position: relative; 
+background-repeat: no-repeat;
+background-size:100% 100%; 
+height: 400px;
+
+
+max-width: 100%;
+        background-image: url(img/bg-craft.png);
+    background-repeat: no-repeat;
+     
+    border-radius: 50px;    
+
+
+}
+
 
 
 
@@ -284,6 +515,348 @@ max-width: 100%;
   margin-top: 20px;
 }
 
+
+/*MEDIA QUERIES*/
+  @media screen and (max-width: 375px) {
+ 
+  .logobrand {
+    width: 240px;
+}
+  
+  .bgimagespot{
+ position: relative;  
+
+ background-image: url("img/decentraland-fashion-street.jpg");
+
+background-repeat: no-repeat;
+background-size:100% 100%; 
+height:100px;
+
+max-width: 100%;
+
+
+
+}
+
+  div#navbarNav {
+              position: absolute;
+              width: 100%;
+              z-index: 1;
+              top: 56px;
+              left: 0;
+              background: #0062cc;
+              background-color: rgb(0, 80, 211   );
+
+ 
+              overflow: hidden;
+              overflow-y: auto;
+              max-height: calc(100vh - 56px);
+              padding-bottom: 20px;
+          }
+
+
+          .txh1sl2
+{
+font-size: 2em;
+  font-weight: 700;
+  color: #fff;
+   
+}
+
+  .txth1 {
+  font-size: 3em;
+  margin-top: 20vh; 
+}
+
+}
+
+@media screen and (max-width: 400px) {
+
+   .padfotterscr
+  {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom:10px;
+  }
+
+  .bgfootergame
+{
+   background-image: url("img/papermed-vert.png");
+   background-repeat: no-repeat;
+   background-size:100%  100% ; 
+   width: 100%;
+   height:900px;
+}
+
+
+    .bgfeaturebody{
+ position: relative;  
+
+
+background-repeat: no-repeat;
+background-size:100% 100%; 
+   width: 100%;
+   height:2500px;
+
+
+}
+
+.padleft150
+{
+  padding-left: 0px;
+}
+
+.showcase {
+  width: 100%;
+  height:  1300px;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+.imagi
+{
+
+}
+.showcase .imagi {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index:99
+}
+
+.showcase .overlay {
+  width: 100%;
+  height: 700px;
+  background: rgb(20,5,242,0.2);
+   position: absolute;
+  top: 0;
+  left: 0;
+  z-index:999
+}
+
+.showcase h2 {
+  margin-top: 100px;
+  font-size: 2em;
+}
+
+.showcase p {
+  margin-top: 8px;
+  font-size: 15em;
+  text-align: justify;
+}
+
+
+
+
+
+  .txh1sl2
+{
+font-size: 2em;
+  font-weight: 700;
+  color: #fff;
+   
+}
+
+ .txth1 {
+  font-size: 3em;
+  margin-top: 20vh; 
+}
+
+.textoverlay2  { 
+   position: absolute; 
+   top: 350px; 
+   left: 0; 
+   width: 100%; 
+}
+
+.btnoverlay{ 
+   position: absolute; 
+   top: 580px; 
+   left: 0; 
+   width: 100%; 
+}
+
+
+.textoverlay { 
+   position: absolute; 
+   top:  0; 
+   left: 0; 
+   width: 100%; 
+}
+
+
+
+  .logobrand {
+    width: 240px;
+}
+  
+  .bgimagespot{
+ position: relative;  
+
+ background-image: url("img/decentraland-fashion-street.jpg");
+
+background-repeat: no-repeat;
+background-size:100% 100%; 
+height:100px;
+
+max-width: 100%;
+
+
+}
+  div#navbarNav {
+              position: absolute;
+              width: 100%;
+              z-index: 1;
+              top: 56px;
+              left: 0;
+              background: #0062cc;
+              background-color: rgb(0, 80, 211   );
+
+ 
+              overflow: hidden;
+              overflow-y: auto;
+              max-height: calc(100vh - 56px);
+              padding-bottom: 20px;
+          }
+
+
+}
+
+@media screen and (max-width: 480px) {
+
+  .txh1sl2
+{
+font-size: 2em;
+  font-weight: 700;
+  color: #fff;
+   
+}
+ .txth1 {
+  font-size: 3em;
+  margin-top: 20vh; 
+}
+
+
+ 
+   .logobrand {
+     width: 240px;
+}
+  
+  .bgimagespot{
+ position: relative;  
+
+ background-image: url("img/decentraland-fashion-street.jpg");
+
+background-repeat: no-repeat;
+background-size:100% 100%; 
+height:100px;
+
+max-width: 100%;
+
+
+}             
+  div#navbarNav {
+              position: absolute;
+              width: 100%;
+              z-index: 1;
+              top: 56px;
+              left: 0;
+              background: #0062cc;
+              background-color: rgb(0, 80, 211   );
+
+ 
+              overflow: hidden;
+              overflow-y: auto;
+              max-height: calc(100vh - 56px);
+              padding-bottom: 20px;
+          }
+
+ 
+
+}
+
+@media screen and (max-width: 481px) {
+
+   .logobrand {
+   width: 240px;
+}
+  
+  .bgimagespot{
+ position: relative;  
+
+ background-image: url("img/decentraland-fashion-street.jpg");
+
+background-repeat: no-repeat;
+background-size:100% 100%; 
+height:100px;
+
+max-width: 100%;
+
+
+}             
+  div#navbarNav {
+              position: absolute;
+              width: 100%;
+              z-index: 1;
+              top: 56px;
+              left: 0;
+              background: #0062cc;
+              background-color: rgb(0, 80, 211   );
+
+ 
+              overflow: hidden;
+              overflow-y: auto;
+              max-height: calc(100vh - 56px);
+              padding-bottom: 20px;
+          }
+
+
+
+}
+
+@media screen and (max-width: 600px) {}
+
+@media screen and (max-width: 690px) {}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 915px) {}
+
+@media screen and (max-width: 1024px) {}
+
+@media screen and (max-width: 1100px) {}
+
+@media screen and (max-width: 1120px) {}
+
+@media screen and (max-width: 767px) {}
+
+@media screen and (max-width: 479px) {}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx) {}
+
+@media only screen and (max-width: 914px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 914px) and (min--moz-device-pixel-ratio: 1.5), only screen and (max-width: 914px) and (min-resolution: 1.5dppx) {}
+
+@media only screen and (max-width: 600px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 600px) and (min--moz-device-pixel-ratio: 1.5), only screen and (max-width: 600px) and (min-resolution: 1.5dppx) {}
+
+
+/*MEDIA QUERY MOTOG5G*/
+
+
+
+
+
+@media only screen and (max-width: 2340px) and  (max-width: 1080px)
+
+{
+
+ 
+
+
+}
 </style>
 
   </head>
@@ -294,9 +867,9 @@ max-width: 100%;
                             </video>
     <div class="container-fluid  ">
  
-      <nav class="navbar navbar-expand-lg navbar-light    padnavs navtxcolor navbar2 stroke ">
+       <nav class="navbar navbar-expand-lg navbar-light     padnavs navtxcolor navbar2 stroke ">
      
-          <a class="navbar-brand" href="#"> <img class="img-fluid logobrand" src="img/White-Logo.png" alt="logo" width="360" height="89"> </a>                       
+          <a class="navbar-brand" href="#"> <img class="img-fluid logobrand" src="img/white-logo.png" alt="logo" width="360" height="89"> </a>                       
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>       
           </button>
@@ -308,12 +881,17 @@ max-width: 100%;
                       <li class="nav-item">
                       <a href="index.html" class="nav-link txtnav m-2 nav-active navtxt hvr-grow ">Home</a>
                   </li>
+
+                      <li class="nav-item">
+                      <a href="about-us.html" class="nav-link txtnav m-2 navtxt hvr-grow ">About us</a>
+                  </li>
+ 
                    <li class="nav-item">
                       <a href="#" class="nav-link txtnav m-2 navtxt  hvr-grow">News</a>
                   </li>
                  
                   <li class="nav-item">
-                      <a href="membership.html" class="nav-link txtnav m-2 navtxt  hvr-grow ">Exodus Membership</a>
+                      <a href="membership.html" class="nav-link txtnav m-2 navtxt   ">Exodus Membership</a>
                   </li>
                    
 
@@ -322,10 +900,7 @@ max-width: 100%;
                   </li>
 
                   
-                  <li class="nav-item">
-                      <a href="about-us.html" class="nav-link txtnav m-2 navtxt hvr-grow ">About</a>
-                  </li>
- 
+              
 
                     <span class="text-center"> <a href="# " target="blank" class="btn btnws1color btn-outline-warning btn-lg "  > 
            Connect Wallet</a>  </span>
@@ -336,7 +911,7 @@ max-width: 100%;
 
              
 
-              <h1 class="    textoverlay text-center txh1 fontfambold text-focus-in "> EXODUS, Goodbye World</h1>
+              <h1 class="    textoverlay text-center txth1   text-focus-in "> EXODUS, Goodbye World</h1>
 
                <p class="   textoverlay2  text-center txh1sl2 text-focus-in">Decentraland First MMORPG GAME</p>
 
@@ -411,32 +986,31 @@ max-width: 100%;
 
 
 
-<div class="showcase ">
-  <img class="imagi" src="img/Exodus-Dome.png"  alt="Picture">
-  <div class="container-fluid overlay">
+ 
+
+  <div class="container-fluid bgpce overlay">
 
   <div class="row">
-    <div class="col-lg-6  col-sm-12  ">
+    <div class="col-lg-6 col-md-6  col-sm-12 col-xs-12 ">
           <div class="padleft150">
           
-            <h2>PLAY & CREATE </h2>
-                <p>
-                Exodus is a Metaverse Role-Playing Game (MRPG) set in the medieval era. The founder of the project played many MMORPG genre games growing up, and along the way made a few lifelong friends. In (insert month & year that the idea for a rpg was first pitched) they decided to work together to create Exodus: Goodbye World, within the Decentraland metaverse that they all began exploring in late 2021.
+            <h2 class="padtoppce txpcett">PLAY,  CREATE & EARN </h2>
+                <p class="txtpce  ">
+                Exodus is a play and earn game developed to give back to the players. We want to make a fun game with a great experience where players make their own choices and have the opportunity to benefit from them. For decades players have been taken advantage of by large gaming corporations. They continue to sell players items and game play that they can't be truly owned by the users.   The players have not been able to truly own their assets until now. Here at Exodus we are dedicated toward giving back to the gaming community what they have always deserved. Owning your assets for the first time. Hard earned assets are owned by the players to do with what they please. We are about giving choices and we believe the players should have the choice.
                 </p>
 
-                <p>
-                 Out of a shared passion for cryptocurrencies and MMORPGs, Exodus was born with the goal of making these communities and economies into real, consensus driven assets. The name Exodus symbolizes a journey away from the online games we played and cherished as children towards a new era where crypto assets allow gamers to create a real value out of their playtime. We believe that time spent gaming is valuable, and it’s time to start treating it as such. It’s time to Exodus.
-                </p>
- 
+
+
+               
                  
  
  <!--<button type="button" class="btn  btn-lg btn-danger">Sign UP</button>-->
-<button type="button" class="btn btn-lg btn-outline-light">Learn More</button>
+<a href="https://play.decentraland.org/?position=126%2C44" target="blank"  class="btn btn-lg btn-outline-light martoppce">Play with Us </a>
           </div> 
        
     </div>
-    <div class="col-lg-6  col-sm-12 ">
-        <img class="img-fluid  marginr margintop" width="441" height="631" src="img/hunter-4.png">
+    <div class="col-lg-6 col-md-6 col-sm-12  col-xs-12  ">
+        <img class="img-fluid  marginrpce margintop" width="441" height="631" src="img/hunter-4.png">
     </div>
   
   </div>
@@ -448,7 +1022,7 @@ max-width: 100%;
 
 
 
-<div class="container-fluid">
+<div class="container-fluid bgfeaturebody featbgm  ">
 
     <div class="container padbott260">
 
@@ -465,7 +1039,7 @@ max-width: 100%;
           <p class="txtfeat2em" style="padding-top: 80px; padding-left: 40px; padding-right:100px;">Immerse yourself in a MRPG role playing Game</p>
           <p class="featem" style=" padding-left: 40px; padding-right:100px;">Exodus brings new experiences to the decentraland world. Our first skill is wood chopping in which you will have to improve your tools to advance in your adventure and get better prizes.</p>
 
-          
+            <a href="#" class="btn btn-lg btn-outline-primary"  role="button" aria-pressed="true">Check the skill <i class="fas fa-arrow-down"></i></a>
         </div>
 
         <div class="col-lg-4">
@@ -501,6 +1075,27 @@ max-width: 100%;
 
 
        <div class="featwrapper featseptop" >
+      <div class="row bgfeatureditemcraft">
+
+        <div class="col-lg-8">
+
+          <p class="txtfeat2em" style="padding-top: 80px; padding-left: 40px; padding-right:100px;">immerse yourself in a MRPG role playing Game</p>
+          <p class="featem" style=" padding-left: 40px; padding-right:100px;">Turn based medieval game that will brings new experiences to the decentraland world. Easy to get into, and fun to master.</p>
+
+          
+        </div>
+
+        <div class="col-lg-4">
+         <img src="img/craftsman.gif" width="400">
+          
+        </div>
+        
+        
+      </div>
+
+    </div>
+
+         <div class="featwrapper featseptop" >
       <div class="row bgfeatureditem1">
 
         <div class="col-lg-8">
@@ -512,7 +1107,7 @@ max-width: 100%;
         </div>
 
         <div class="col-lg-4">
-          <img src="img/_images_web-game-features-three-3.png">
+         <img src="img/miner.gif" width="400">
           
         </div>
         
@@ -522,6 +1117,74 @@ max-width: 100%;
     </div>
 
 
+
+            <div class="featwrapper featseptop" >
+      <div class="row bgfeatureditem1">
+
+        <div class="col-lg-8">
+
+          <p class="txtfeat2em" style="padding-top: 80px; padding-left: 40px; padding-right:100px;">immerse yourself in a MRPG role playing Game</p>
+          <p class="featem" style=" padding-left: 40px; padding-right:100px;">Turn based medieval game that will brings new experiences to the decentraland world. Easy to get into, and fun to master.</p>
+
+          
+        </div>
+
+        <div class="col-lg-4">
+         <img src="img/forger.gif" width="400">
+          
+        </div>
+        
+        
+      </div>
+
+    </div>
+
+
+    <div class="featwrapper featseptop" >
+      <div class="row bgfeatureditem1">
+
+        <div class="col-lg-8">
+
+          <p class="txtfeat2em" style="padding-top: 80px; padding-left: 40px; padding-right:100px;">immerse yourself in a MRPG role playing Game</p>
+          <p class="featem" style=" padding-left: 40px; padding-right:100px;">Turn based medieval game that will brings new experiences to the decentraland world. Easy to get into, and fun to master.</p>
+
+          
+        </div>
+
+        <div class="col-lg-4">
+         <img src="img/chef.gif" width="400">
+          
+        </div>
+        
+        
+      </div>
+
+    </div>
+
+
+    <div class="featwrapper featseptop" >
+      <div class="row bgfeatureditem1">
+
+        <div class="col-lg-8">
+
+          <p class="txtfeat2em" style="padding-top: 80px; padding-left: 40px; padding-right:100px;">immerse yourself in a MRPG role playing Game</p>
+          <p class="featem" style=" padding-left: 40px; padding-right:100px;">Turn based medieval game that will brings new experiences to the decentraland world. Easy to get into, and fun to master.</p>
+
+          
+        </div>
+
+        <div class="col-lg-4">
+         <img src="img/hunter.gif" width="400">
+          
+        </div>
+        
+        
+      </div>
+
+    </div>
+
+
+<!--
 
        <div class="featwrapper featseptop" >
       <div class="row bgfeatureditem1">
@@ -568,7 +1231,7 @@ max-width: 100%;
 
     </div>
 
-
+-->
   </div>
 
 </div>
@@ -588,7 +1251,7 @@ max-width: 100%;
   <hr class="mt-0">
   <!--Social buttons-->
   <div class="text-center padtop50">
-    <h4 class="fotfont txtfotcolor">Join our community</h4>
+    <h4 class="fotfonttitles txtfotcolor padtop20">Join our community</h4>
     <ul class="list-unstyled list-inline">
 
        <li class="list-inline-item">
@@ -623,16 +1286,15 @@ max-width: 100%;
     <div class="row">
       <!--First column-->
       <div class="col-md-3 mx-auto shfooter">
-        <h5 class="my-2 font-weight-bold d-none d-md-block fotfont txtfotcolor">Game</h5>
-        <div class="d-md-none title" data-target="#Product" data-toggle="collapse">
+        <h5 class="my-2   fotfonttitles txtfotcolor">Game</h5>
+        <div class="d-md-none  "  >
           <div class="mt-3 font-weight-bold"> 
-            <div class="float-right navbar-toggler">
-              <i class="fas fa-angle-down"></i>
-              <i class="fas fa-angle-up"></i>
+            <div class="float-right  ">
+              
             </div>
           </div>
         </div>
-        <ul class="list-unstyled collapse fotfont" id="Product">
+        <ul class="list-unstyled   fotfont"  >
           <li><a target="_blank" href="#">Game Plays</a></li>
           <li><a target="_blank" href="#">link</a></li>
    
@@ -642,16 +1304,15 @@ max-width: 100%;
       <hr class="clearfix w-100 d-md-none mb-0">
       <!--Second column-->
       <div class="col-md-3 mx-auto shfooter">
-        <h5 class="my-2 font-weight-bold d-none d-md-block fotfont txtfotcolor">Team</h5>
-        <div class="d-md-none title" data-target="#Company" data-toggle="collapse">
+        <h5 class="my-2 font-weight-bold  fotfonttitles txtfotcolor">Team</h5>
+        <div class="d-md-none title"  >
           <div class="mt-3 font-weight-bold"> 
-            <div class="float-right navbar-toggler">
-              <i class="fas fa-angle-down"></i>
-              <i class="fas fa-angle-up"></i>
+            <div class="float-right  ">
+               
             </div>
           </div>
         </div>
-        <ul class="list-unstyled collapse fotfont" id="Company">
+        <ul class="list-unstyled   fotfont" id="Company">
           <li><a target="_blank" href="#">link</a></li>
           <li><a target="_blank" href="#">link</a></li>
           
@@ -661,16 +1322,15 @@ max-width: 100%;
       <hr class="clearfix w-100 d-md-none mb-0">
       <!--Third column-->
       <div class="col-md-3 mx-auto shfooter">
-        <h5 class="my-2 font-weight-bold d-none d-md-block fotfont txtfotcolor">Resources</h5>
-        <div class="d-md-none title" data-target="#Resources" data-toggle="collapse">
+        <h5 class="my-2 font-weight-bold   fotfonttitles txtfotcolor">Resources</h5>
+        <div class="d-md-none title"  >
           <div class="mt-3 font-weight-bold"> 
-            <div class="float-right navbar-toggler">
-              <i class="fas fa-angle-down"></i>
-              <i class="fas fa-angle-up"></i>
+            <div class="float-right  ">
+         
             </div>
           </div>
         </div>
-        <ul class="list-unstyled collapse fotfont" id="Resources">
+        <ul class="list-unstyled   fotfont" id="Resources">
           <li><a target="_blank" href="#">link</a></li>
           <li><a target="_blank" href="#">link</a></li>
            
@@ -680,16 +1340,15 @@ max-width: 100%;
       <hr class="clearfix w-100 d-md-none mb-0">
       <!--Fourth column-->
       <div class="col-md-3 mx-auto shfooter">
-        <h5 class="my-2 font-weight-bold d-none d-md-block fotfont txtfotcolor">Get Help</h5>
-        <div class="d-md-none title" data-target="#Get-Help" data-toggle="collapse">
+        <h5 class="my-2 font-weight-bold   fotfonttitles txtfotcolor">Get Help</h5>
+        <div class="d-md-none title"  >
           <div class="mt-3 font-weight-bold"> 
-            <div class="float-right navbar-toggler">
-              <i class="fas fa-angle-down"></i>
-              <i class="fas fa-angle-up"></i>
+            <div class="float-right  ">
+             
             </div>
           </div>
         </div>
-        <ul class="list-unstyled collapse fotfont " id="Get-Help">
+        <ul class="list-unstyled   fotfont " id="Get-Help">
           <li><a target="_blank" href="#" target="_blank">Help Center</a></li>
           <li><a target="_blank" href="terms.hmtl">Terms</a></li>
           <li><a target="_blank" href="#">link</a></li>
@@ -698,14 +1357,14 @@ max-width: 100%;
       </div>
       <!--/.Fourth column-->
     </div>
-    <hr class="mb-0">
+  
   </div>
   <!--/.Footer Links-->
  
   <!--Copyright-->
-  <div class="py-3 text-center txtfotcolor">
+  <div class="padfotterscr text-center fotfont txtfotcolor">
     Copyright 2022 -
-    EXODUS</a> | Say goodbye world
+    EXODUS</a> | Goodbye World
   </div>
   <!--/.Copyright-->
 </footer>
