@@ -24,10 +24,107 @@
 <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="css/hover.min.css"  media="all"   />
 
+   <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+
+   <link rel="icon" href="img/favicon.ico">
+
 <style type="text/css">
 
 
+/*NEW UPDATE*/
 
+
+.siteButton {
+  box-shadow:inset 0px 1px 0px 0px #f7c5c0;
+  background-color:#ed1f22;
+  border-radius:6px;
+  border:1px solid #d83526;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:16px;
+  font-weight:bold;
+  padding:10px 24px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #b23e35;
+}
+.siteButton:hover {
+  background-color:#e4685d;
+}
+.siteButton:active {
+  position:relative;
+  top:1px;
+}
+ 
+ .modal-dialog {
+      max-width: 1000px;
+      margin: 30px auto;
+  }
+.modal-content {
+    position: relative;
+    display: flex;
+    /* flex-direction: column; */
+    /* width: 100%; */
+    /* pointer-events: auto; */
+    background-color: rgba(0,0,0,0.1) !important;
+    background-clip: padding-box;
+    /* border: 1px solid rgba(0,0,0,.2); */
+    /* border-radius: 0.3rem; */
+    /* outline: 0; */
+}
+ 
+
+.modal-body {
+  position:relative;
+  padding:0px;
+}
+.close {
+  position:absolute;
+  right:-30px;
+  top:0;
+  z-index:999;
+  font-size:1.5rem;
+  font-weight: 700;
+  color:#fff;
+  background-color: #4F4F4F;
+  opacity:1;
+}
+
+
+
+ 
+
+.navbgcolornew
+{
+  background-color: #2b2b2b;
+}
+
+body {
+  margin: 0;
+}     
+.hero {
+    display: flex;
+    flex-direction: column;
+    background-image: url("img/hero-bg.jpg");
+    height: 100vh;
+    align-self: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: center;
+}
+      
+.text {
+    font-size: 1.4rem;
+    text-align: center;
+    color: white;
+    
+}
+
+
+ 
 
 .txtalingpwu
 {
@@ -239,14 +336,14 @@ h1  {
 }
 
   .txth1 {
-  font-size: 5em;
-  margin-top: 30vh; 
+  font-size: 3.5em;
+  margin-top: 35vh; 
 }
 
 
   .txh1sl2
 {
-font-size: 2.5em;
+font-size: 2em;
   font-weight: 700;
   color: #fff;
    
@@ -956,11 +1053,7 @@ background-position:center;
 }
 
 
-  .marginforxe
-{
-  margin-top: 650px;
-}
-
+  
   .bgtexturegame
 {
    background-image: url("img/bgtexturexodus.png");
@@ -1265,13 +1358,8 @@ max-width: 100%;
 
   </head>
   <body>
-  <header> 
-  <video id="background-video" autoplay loop muted poster="">
-                              <source src="video/hero-video.mp4" type="video/mp4">
-                            </video>
-    <div class="container-fluid  ">
- 
-       <nav class="navbar navbar-expand-lg navbar-light     padnavs navtxcolor navbar2 stroke ">
+
+    <nav class="navbar navbar-expand-lg navbar-light     padnavs navtxcolor navbar2 stroke  navbgcolornew">
      
           <a class="navbar-brand" href="#"> <img class="img-fluid logobrand" src="img/white-logo.png" alt="logo" width="360" height="89"> </a>                       
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -1289,9 +1377,13 @@ max-width: 100%;
                       <li class="nav-item">
                       <a href="about-us.html" class="nav-link txtnav m-2 navtxt hvr-grow ">About us</a>
                   </li>
+
+                  <li class="nav-item">
+                      <a href="https://blog.exodusgbw.io/" class="nav-link txtnav m-2 navtxt  hvr-grow">Store</a>
+                  </li>
  
                    <li class="nav-item">
-                      <a href="#" class="nav-link txtnav m-2 navtxt  hvr-grow">News</a>
+                      <a href="https://blog.exodusgbw.io/" class="nav-link txtnav m-2 navtxt  hvr-grow">News</a>
                   </li>
                  
                   <li class="nav-item">
@@ -1303,29 +1395,62 @@ max-width: 100%;
                       <a href="roadmap.html" class="nav-link txtnav m-2 navtxt hvr-grow ">Roadmap</a>
                   </li>
 
+
+                  <li class="nav-item">
+                      <a href="roadmap.html" class="nav-link txtnav m-2 navtxt hvr-grow ">Contact</a>
+                  </li>
+
+
                   
               
 
-                    <span class="text-center"> <a href="# " target="blank" class="btn btnws1color btn-outline-warning btn-lg "  > 
-           Connect Wallet</a>  </span>
+                  <!--  <span class="text-center"> <a href="# " target="blank" class="btn btnws1color btn-outline-warning btn-lg "  > 
+           Connect Wallet</a>  </span>-->
       
               </ul>
             </div>
        </nav>
+  <header> 
+     
 
-             
 
-              <h1 class="    textoverlay text-center txth1   text-focus-in "> EXODUS, Goodbye World</h1>
 
-               <p class="   textoverlay2  text-center txh1sl2 text-focus-in">Decentraland First MMORPG GAME</p>
+
+
+                          <!-- <video id="background-video" autoplay loop muted poster="">
+                              <source src="video/hero-video.mp4" type="video/mp4">
+                            </video>-->
+    <div class="container-fluid  hero">
+
+
+     <div class="text">
+      <h1 class="    textoverlay text-center txth1   text-focus-in "> EXODUS, Goodbye World</h1>
+      <p class="   textoverlay2  text-center txh1sl2 text-focus-in">Decentraland MORPG GAME</p>
+
 
           <div class="text-center btnoverlay">
 
-                     <a href="# "  data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btnws1color btn-danger btn-lg focus-in-expand" role="button" aria-disabled="true"> 
-          Sign up here!</a> 
+                     <a href="# "  data-toggle="modal" data-target="#exampleModalCenter" class="btn btnws1color btn-danger btn-lg focus-in-expand siteButton" role="button" aria-disabled="true"> 
+          PLAY TRAILER</a> 
                     
  
           </div>
+
+
+ 
+
+  </div>
+  </div>
+
+ 
+       
+
+             
+
+             
+
+               
+
         
 </div>
 
@@ -1337,7 +1462,7 @@ max-width: 100%;
 
 
 
-<div class="container-fluid marginforxe bgtexturegame">
+<div class="container-fluid   bgtexturegame">
 
   <div class="container">
 
@@ -1352,7 +1477,7 @@ max-width: 100%;
               </p>
                <p class="txtphight"> Exodus was born with the goal of making these communities and economies into real, consensus driven assets.
               </p>
-              <p class="txtphight"> Play, Collect,Create & earn.  </p>        
+              <p class="txtphight"> Play, Collect, Create & Earn.  </p>        
               <a href="#gamefeactures" class="btn btn-lg btn-outline-primary"  role="button" aria-pressed="true">Game Features <i class="fas fa-arrow-down"></i></a>
         </div>
         <div class="col-lg-6 col-md-6  col-sm-12 col-xs-12">
@@ -1800,10 +1925,81 @@ max-width: 100%;
  
 </div>
  
-<!-- Button trigger modal -->
+<!-- Modal -->
+
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+
+      
+      <div class="modal-body">
+
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>        
+        <!-- 16:9 aspect ratio -->
+<div class="embed-responsive embed-responsive-16by9">
+   <iframe width="1000" height="600" src="https://www.youtube.com/embed/zY0RS72DaVE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+        
+        
+      </div>
+
+    </div>
+  </div>
+</div> 
+  
+
 
 
  
+
+ <script>
+   $(document).ready(function() {
+
+// Gets the video src from the data-src on each button
+
+var $videoSrc;  
+$('.video-btn').click(function() {
+    $videoSrc = $(this).data( "src" );
+});
+console.log($videoSrc);
+
+  
+  
+// when the modal is opened autoplay it  
+$('#myModal').on('shown.bs.modal', function (e) {
+    
+// set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
+$("#video").attr('src',$videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
+
+})
+  
+
+
+// stop playing the youtube video when I close the modal
+$('#myModal').on('hide.bs.modal', function (e) {
+    // a poor man's stop video
+    $("#video").attr('src',$videoSrc); 
+}) 
+    
+    
+
+
+  
+  
+// document ready  
+});
+
+
+
+ </script>
  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 

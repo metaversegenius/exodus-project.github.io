@@ -1,0 +1,7 @@
+The username is ec2-user
+---------------------------------
+To update SSL cert ( 89 days from now )
+1. use that .ppk file and putty to connect to the server with username ec2-user (no password) 
+2. Once in the server command line, run the command sudo certbot
+3. Follow the prompt to choose the domain name
+4. Done
