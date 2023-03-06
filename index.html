@@ -32,11 +32,241 @@
 
 <style type="text/css">
 
+  /*shrinkin*/
+
+
+.primary-nav {
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+ }
+
+   .shrink {
+        padding-top: 20 !important;
+        padding-bottom: 20 !important;
+        min-height: 55px !important;
+        transition:width 0.4s ease-in-out;
+    } 
+
+     .shrink .navbar-brand {
+        height: 0 !important;
+        line-height: 0 !important;
+    }
+
+           
+    }
+
+       .shrink a {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;       
+    }
+
+    .shrink .menu2 li
+    {
+      font-size: 1em;
+    }
+
+
+
+   .shrink .btnpn
+    {
+       width: 240px;
+  height: 50px;
+    font-size: 18px;
+    line-height: 20px;
+
+    border-top-left-radius:  0px;
+    border-top-right-radius:  20px;
+border-bottom-right-radius: 0px;
+border-bottom-left-radius: 20px;
+    }
+
+      .shrink img {
+        position: relative;
+        width: 60%;
+
+        bottom: 30px;
+         
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;     
+    }
+
+
+
+  /**/
+
 /*play now buttom*/
 
 
+.btnpn
+{
+border-top-left-radius: 20px;
+border-bottom-right-radius: 10px;
+
+}
+
+.btnpn, .btnpn::after {
+  width: 240px;
+  height: 60px;
+  font-size: 24px;
+  background-color: #fc040b;
+
+  border: 0;
+  color: #fff;
+  letter-spacing: 3px;
+  line-height: 30px;
+  box-shadow: 8px 0px 0px #0454ac;
+  outline: transparent;
+  position: relative;
+}
+
+.btnpn::after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+  
+  content: 'PLAY NOW';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+  clip-path: var(--slice-0);
+}
+
+.btnpn:hover::after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
+}
 /*END play now buttom*/
+
+
+/*play trailer*/
+
+.play-btn {
+  width: 80px;
+  height: 80px;
+  background: radial-gradient( rgba(252, 4, 12, 0.8) 60%, rgba(255, 255, 255, 1) 62%);
+  border-radius: 50%;    
+  position: relative;
+  display: block;
+  margin: 20px auto;
+  box-shadow: 0px 0px 20px 3px rgba(125, 38, 113, 0.6);
+}
+ 
+/* triangle */
+.play-btn::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-40%) translateY(-50%);
+  transform: translateX(-40%) translateY(-50%);
+  transform-origin: center center;
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 25px solid #fff;
+  z-index: 100;
+  -webkit-transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+
+
+
+.play-btn-pulse {
+  
+ 
+ 
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   
+ 
+  text-decoration: none !important;
+  border-radius: 50%;
+  animation-name: pulse;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(24, 24, 154, 0.65);
+
+  }
+  80% {
+    box-shadow: 0 0 0 14px rgba(24, 24, 154, 0 );
+  }
+}
+
+ 
+ 
+
+ 
+ 
+/*end of play trailer*/
+
+
 /*NEW UPDATE*/
+
 
 .paddinton
 {
@@ -115,7 +345,10 @@ body {
 .hero {
     display: flex;
     flex-direction: column;
-    background-image: url("img/hero-bg.jpg");
+    /*background-image: url("img/hero-bg.jpg");*/
+     background-image: url("img/bg-pce.png");
+
+    
     height: 100vh;
     align-self: center;
     background-repeat: no-repeat;
@@ -1369,7 +1602,7 @@ max-width: 100%;
   <body>
 
 <!--stroke for underline style-->
-    <nav class="navbar navbar-expand-lg navbar-light     padnavs navtxcolor navbar2   navbgcolornew">
+    <nav  id="primary-nav" class="navbar navbar-expand-lg navbar-light fixed-top  primary-nav    padnavs navtxcolor navbar2   navbgcolornew">
      
           <a class="navbar-brand" href="#"> <img class="img-fluid logobrand" src="img/white-logo.png" alt="logo" width="360" height="89"> </a>                       
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -1381,15 +1614,20 @@ max-width: 100%;
               
               <ul class="navbar-nav ms-auto flex-nowrap  menu2  ">
                       <li class="nav-item">
-                      <!--<a href="index.html" class="nav-link txtnav m-2 nav-active navtxt hvr-grow ">Home</a>-->
-                      <a href="https://play.decentraland.org/?position=128%2C44&realm=dg" class="siteButton">Play Now</a>
+                      <!--<a href="index.html" class="nav-link txtnav m-2 nav-active navtxt hvr-grow ">Home</a>
+                      <a href="https://play.decentraland.org/?position=128%2C44&realm=dg" class="siteButton">Play Now</a>-->
+
+
+                      <a href="https://play.decentraland.org/?position=128%2C44&realm=dg" class="btnpn ">   PLAY NOW</button></a>
+
+                      
                   </li>
 
 
                       <li class="nav-item">
-                     <!-- <a href="about-us.html" <center></center>lass="nav-link txtnav m-2 navtxt hvr-grow ">About us</a>-->
+                     <!-- <a href="about-us.html" <center></center>lass="nav-link txtnav m-2 navtxt hvr-grow ">About us</a>
                     
-                      <a href="#" class="nav-link txtnav m-2 navtxt  hvr-grow">Get Updates</a>
+                      <a href="#" class="nav-link txtnav m-2 navtxt  hvr-grow">Get Updates</a>-->
                   </li>
 
                   <li class="nav-item">
@@ -1444,8 +1682,11 @@ max-width: 100%;
 
           <div class="text-center btnoverlay">
 
-                     <a href="# "  data-toggle="modal" data-target="#exampleModalCenter" class="btn btnws1color btn-danger btn-lg focus-in-expand siteButton" role="button" aria-disabled="true"> 
-          PLAY TRAILER</a> 
+            <!--<a href="# " data-toggle="modal" data-target="#exampleModalCenter" class="btn btnws1color btn-danger btn-lg focus-in-expand siteButton" role="button" aria-disabled="true"> 
+          PLAY TRAILER</a>-->
+
+                     <a href="# "  data-toggle="modal" data-target="#exampleModalCenter" class="   play-btn-pulse   hvr-grow     play-btn" role="button" aria-disabled="true"> 
+          </a> 
                     
  
           </div>
@@ -2004,6 +2245,20 @@ $('#myModal').on('hide.bs.modal', function (e) {
  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script>
+ 
+   $(document).on("scroll", function(){
+
+            if ($(document).scrollTop() > 80){
+                $(".primary-nav").addClass("shrink");
+            } else {
+                $(".primary-nav").removeClass("shrink");
+            }
+
+      });
+</script>
+
 
 
   </body>
