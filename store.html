@@ -1,0 +1,4915 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+    <title>EXODUS: Goodbye World - Decentraland First MRPG GAME</title>
+
+        <!-- Bootstrap CSS -->
+    
+
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+     <!-- Fonts -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- Main style -->
+       <link rel="stylesheet" href="css/main.css" />
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/hover.min.css"  media="all"   />
+
+   <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+
+   <link rel="icon" href="img/favicon.ico">
+   
+   
+
+    <link rel="stylesheet" href="css/exodustore.css">
+
+    <!-- Owl Stylesheets -->
+   
+
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+
+<style type="text/css">
+ 
+
+
+/*MARKETPLACE*/
+@media all and (min-width: 992px) {
+  .dropdown-menu li{ position: relative;  }
+  .nav-item .submenu{ 
+    display: none;
+    position: absolute;
+    left:100%; top:-7px;
+  }
+  .nav-item .submenu-left{ 
+    right:100%; left:auto;
+  }
+  .dropdown-menu > li:hover{ background-color: #f1f1f1 }
+  .dropdown-menu > li:hover > .submenu{ display: block; }
+} 
+/* ============ desktop view .end// ============ */
+
+/* ============ small devices ============ */
+@media (max-width: 991px) {
+  .dropdown-menu .dropdown-menu{
+      margin-left:0.7rem; margin-right:0.7rem; margin-bottom: .5rem;
+  }
+} 
+
+
+
+/*MODAL ADD TO CART*/
+.modalcartcolor
+
+{
+  background-color: #fff;
+}
+
+
+.table-image thead td, .table-image thead th {
+  border: 0;
+  color: #666;
+  font-size: 0.8rem;
+}
+.table-image td, .table-image th {
+  vertical-align: middle;
+  text-align: center;
+}
+.table-image td.qty, .table-image th.qty {
+  max-width: 2rem;
+}
+
+.price {
+  margin-left: 1rem;
+  margin-right: 40px;
+}
+
+.modal-footer {
+  padding-top: 0rem;
+}
+/*END ADD TO CART*/
+
+
+.dropdown-toggle:btnbuy
+{
+  overflow: hidden;
+}
+
+.margtopheaderstore
+{
+  margin-top: 50px;
+}
+
+.fontside
+{
+font-size: 1.5em;
+}
+
+
+.sidebarpadintop
+{
+  padding-top: 50px;
+}
+
+.btnbuy {
+   
+
+   
+ 
+ 
+
+      background-image: url('img/button-buy-sm.png'); 
+     width: 150px;
+     height: 64px;
+ background-repeat: no-repeat;
+  background-position: center; 
+
+  color: #0A0702;
+  font-weight: 700;
+  font-size: 1em;
+
+}
+
+.btnbuy:hover
+
+{
+ background-image: url('img/button-buy-sm-hover.png'); 
+    width: 150px;
+     height: 64px;
+ background-repeat: no-repeat;
+  background-position: center; 
+
+  color: #fff;
+  font-weight: 700;
+  font-size: 1em;
+
+}
+
+
+.midsep
+{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+.cardseparatorsright
+{
+ 
+  margin-bottom: 0px;
+}
+
+
+
+.cardseparatortop
+{
+  margin-top: 20px;
+}
+
+.producth
+{
+      color: #b2dbee;
+     
+    font-weight: normal;
+    text-shadow: 1px 1px 2px rgba(50,50,50,1);
+    border-bottom: solid 1px #000;
+    padding-bottom: 10px;
+    margin-top: 3px;
+    min-height: 20px;
+    line-height: 120%;
+}
+
+
+
+.producth:hover
+{
+      color: #ffcb05;
+     
+    font-weight: normal;
+    text-shadow: 1px 1px 2px rgba(50,50,50,1);
+    border-bottom: solid 1px #000;
+    padding-bottom: 10px;
+    margin-top: 3px;
+    min-height: 20px;
+    line-height: 120%;
+}
+
+
+.producdescr
+{
+      color: #b2dbee;
+     
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgba(50,50,50,1);
+   
+    
+    
+    line-height: 120%;
+}
+
+
+
+.stylecarbon
+{
+  background-image: radial-gradient(circle at center center, transparent,rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 2px,transparent 2px, transparent 10px,rgb(33,33,33) 10px, rgb(33,33,33) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, rgb(47,47,47) 0px, rgb(47,47,47) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33));
+}
+
+.divheader
+
+{
+  height: 200px;
+    overflow-y: hidden;
+}
+
+  /*main content*/
+
+    .contentaling
+    {
+      margin-top: 20px;
+      padding-left: 200px;
+      padding-right: 200px;
+    }
+
+
+
+    .boxbordeimg
+     {
+  
+    display: inline-block;
+    box-shadow: 0 0px 5px 3px #000;
+    -webkit-box-shadow: 0 0px 5px 3px #000;
+    -moz-box-shadow: 0 0px 5px 3px #000;
+    border-image: url(img/backdrop-border-1.png) 4 repeat;
+    -webkit-border-image: url(img/backdrop-border-1.png) 4 repeat;
+    -o-border-image: url(img/backdrop-border-1.png) 4 repeat;
+    -moz-border-image: url(img/backdrop-border-1.png) 4 repeat;
+    border-style: solid;
+    border-width: 4px;
+    }
+
+.boxbordiv
+     {
+      border: 5px outset #6b6b6b;
+
+    }
+
+    .bgtophead
+    {
+       background-image:url("img/content-header.webp")o-repeat center center fixed;
+        width: 100%;
+     
+
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    }
+
+    .internalhead
+     {
+      padding-top: 50px;
+      padding-bottom: 50px;
+     }
+
+  /*end maincontent*/
+
+  /* SIDEBAR */
+    .sidebarex {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 200px;
+      background-color: #f8f9fa;
+    }
+
+
+  .mgtopbody
+  {
+    margin-top: 90px;
+  }
+  /* SIDEBAR */
+
+  .txth2store
+{
+font-size: 3em;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+   
+}
+
+  .txth2nft
+{
+font-size: 3em;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+   
+}
+
+
+
+
+.paddingboths
+{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+
+.tittlepads
+{
+  padding-bottom: 40px;
+}
+.markethero {
+    display: flex;
+    flex-direction: column;
+    /*background-image: url("img/hero-bg.jpg");*/
+     background-image: url("img/exodus-plaza.webp");
+
+    
+    height: 80vh;
+    align-self: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.btnmarket
+{
+      background: #E8AB1E;
+    color: #fff;
+    font-size: 1em;
+    font-weight:700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 100%;
+    padding: 10px 26px;
+    position: relative;
+    left: 40%;
+    bottom:0px;
+    transition: all 0.3s ease 0s;
+}
+ 
+
+
+.store {
+    background-color: #000;
+    background-image: url(https://images.ctfassets.net/7lhcm73ukv5p/1mv6Tg8PUsMWyGauWckSOo/5be5f00…/star-bg.jpg?w=1500&q=75);
+   
+}
+
+
+.product-grid{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+.product-grid .product-image{
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+.product-grid .product-image a.image{display: block; }
+.product-grid .product-image img{
+    width: 100%;
+    height: auto;
+}
+.product-grid .product-discount-label{
+    color: #fff;
+    background: #FF7614;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 25px;
+    padding: 0 20px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+.product-grid .product-links{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: absolute;
+    top: 10px;
+    right: -50px;
+    transition: all .5s ease 0s;
+}
+.product-grid:hover .product-links{ right: 10px; }
+.product-grid .product-links li a{
+    color: #333;
+    background: transparent;
+    font-size: 17px;
+    line-height: 38px;
+    width: 38px;
+    height: 38px;
+    /*border: 1px solid #333;*/
+    border-bottom: none;
+    display: block;
+    transition: all 0.3s;
+}
+.product-grid .product-links li:last-child a{ border-bottom: 1px solid #333; }
+.product-grid .product-links li a:hover{
+    color: #fff;
+    background: #333;
+}
+.product-grid .add-to-cart{
+    background: #E8AB1E;
+    color: #fff;
+    font-size: 1em;
+    font-weight:700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 100%;
+    padding: 10px 26px;
+    position: absolute;
+    left: 0;
+    bottom: -60px;
+    transition: all 0.3s ease 0s;
+}
+.product-grid:hover .add-to-cart{ bottom: 0; }
+.product-grid .add-to-cart:hover{ text-shadow: 1px 1px rgba(232,203,30,0.2); }
+.product-grid .product-content{
+    background: #212121;
+    padding: 15px;
+    box-shadow: 0 0 0 5px rgba(0,0,0,0.1) inset;
+}
+.product-grid .title{
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 0 0 7px;
+}
+.product-grid .title a{
+    color: #777;
+    transition: all 0.3s ease 0s;
+}
+.product-grid .title a:hover{ color: #a5ba8d; }
+.product-grid .price{
+    color: #0d0d0d;
+    font-size: 14px;
+    font-weight: 600;
+}
+.product-grid .price span{
+    color: #888;
+    font-size: 13px;
+    font-weight: 400;
+    text-decoration: line-through;
+}
+@media screen and (max-width: 990px){
+    .product-grid{ margin-bottom: 30px; }
+}
+/*END MARKETPLACE*/
+
+  /*decoration txt penelope*/
+
+.large {
+  font-size: 6rem;
+}
+
+ 
+.rise {
+  text-shadow: -0.03em -0.03em 0.03em #fff;
+  animation: rise 2s ease-in-out 0.5s forwards;
+}
+
+@keyframes rise {
+  to {
+    text-shadow: 0em 0.01em #ff5, 0em 0.02em #ff5, 0em 0.02em 0.03em #ff5,
+      -0.01em 0.01em #0040D2, -0.02em 0.02em #0040D2, -0.03em 0.03em #0040D2,
+      -0.04em 0.04em #0040D2, -0.01em -0.01em 0.03em #000, -0.02em -0.02em 0.03em #000,
+      -0.03em -0.03em 0.03em #000;
+    transform: translateY(-0.025em) translateX(0.04em);
+  }
+}
+
+ 
+ 
+
+  /*end deco penelope*/
+
+.padpenelope
+{
+  padding-top: 40px;
+}
+
+
+.penelopeimg
+{
+
+  position: relative;  
+
+ background-image: url("img/penelope.gif");
+
+background-repeat: no-repeat;
+background-size:100% 100%; 
+height:631px;
+
+max-width: 100%;
+}
+
+.textdisabled
+{
+  color: #B9B9B9 !important;
+}
+
+  /*shrinkin*/
+
+
+.primary-nav {
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+ }
+
+   .shrink {
+        padding-top: 20 !important;
+        padding-bottom: 20 !important;
+        min-height: 55px !important;
+        transition:width 0.4s ease-in-out;
+    } 
+
+     .shrink .navbar-brand {
+        height: 0 !important;
+        line-height: 0 !important;
+    }
+
+           
+    }
+
+       .shrink a {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;       
+    }
+
+    .shrink .menu2 li
+    {
+      font-size: 1em;
+    }
+
+
+
+   .shrink .btnpn
+    {
+       width: 240px;
+  height: 50px;
+    font-size: 18px;
+    line-height: 20px;
+
+    border-top-left-radius:  0px;
+    border-top-right-radius:  20px;
+border-bottom-right-radius: 0px;
+border-bottom-left-radius: 20px;
+    }
+
+      .shrink img {
+        position: relative;
+        width: 60%;
+
+        bottom: 30px;
+         
+        padding-top: 0  ;
+        padding-bottom: 0  ;     
+    }
+
+
+
+  /**/
+
+/*play now buttom*/
+
+
+.btnpn
+{
+border-top-left-radius: 20px;
+border-bottom-right-radius: 10px;
+
+}
+
+.btnpn, .btnpn::after {
+  width: 240px;
+  height: 60px;
+  font-size: 24px;
+  background-color: #fc040b;
+
+  border: 0;
+  color: #fff;
+  letter-spacing: 3px;
+  line-height: 30px;
+  box-shadow: 8px 0px 0px #0454ac;
+  outline: transparent;
+  position: relative;
+}
+
+.btnpn::after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+  
+  content: 'PLAY NOW';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+  clip-path: var(--slice-0);
+}
+
+.btnpn:hover::after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
+}
+/*END play now buttom*/
+
+
+/*play trailer*/
+
+.play-btn {
+  width: 80px;
+  height: 80px;
+  background: radial-gradient( rgba(252, 4, 12, 0.8) 60%, rgba(255, 255, 255, 1) 62%);
+  border-radius: 50%;    
+  position: relative;
+  display: block;
+  margin: 20px auto;
+  box-shadow: 0px 0px 20px 3px rgba(125, 38, 113, 0.6);
+}
+ 
+/* triangle */
+.play-btn::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-40%) translateY(-50%);
+  transform: translateX(-40%) translateY(-50%);
+  transform-origin: center center;
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 25px solid #fff;
+  z-index: 100;
+  -webkit-transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+
+
+
+.play-btn-pulse {
+  
+ 
+ 
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   
+ 
+  text-decoration: none !important;
+  border-radius: 50%;
+  animation-name: pulse;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(24, 24, 154, 0.65);
+
+  }
+  80% {
+    box-shadow: 0 0 0 14px rgba(24, 24, 154, 0 );
+  }
+}
+
+ 
+ 
+
+ 
+ 
+/*end of play trailer*/
+
+
+/*NEW UPDATE*/
+
+
+.paddinton
+{
+  padding-top: 20px;
+}
+
+.siteButton {
+  box-shadow:inset 0px 1px 0px 0px #f7c5c0;
+  background-color:#ed1f22;
+  border-radius:6px;
+  border:1px solid #d83526;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:16px;
+  font-weight:bold;
+  padding:10px 24px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #b23e35;
+}
+.siteButton:hover {
+  background-color:#e4685d;
+}
+.siteButton:active {
+  position:relative;
+  top:1px;
+}
+ 
+ .modal-dialog {
+      max-width: 1000px;
+      margin: 30px auto;
+  }
+.modal-content {
+    position: relative;
+    display: flex;
+    /* flex-direction: column; */
+    /* width: 100%; */
+    pointer-events: auto; */
+     /*background-color: rgba(0,0,0,0.1) !important;*/
+    background-clip: padding-box;
+    /* border: 1px solid rgba(0,0,0,.2); 
+    /* border-radius: 0.3rem; */
+    /* outline: 0; */
+}
+ 
+
+.modal-body {
+  position:relative;
+  padding:0px;
+}
+.close {
+  position:absolute;
+  right:-30px;
+  top:0;
+  z-index:999;
+  font-size:1.5rem;
+  font-weight: 700;
+  color:#fff;
+  background-color: #4F4F4F;
+  opacity:1;
+}
+
+
+
+ 
+
+.navbgcolornew
+{
+  background-color: #2b2b2b;
+}
+
+body {
+  margin: 0;
+}     
+.hero {
+    display: flex;
+    flex-direction: column;
+    /*background-image: url("img/hero-bg.jpg");*/
+     background-image: url("img/exodus-plaza.webp");
+
+    
+    height: 80vh;
+    align-self: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: center;
+}
+      
+.text {
+    font-size: 1.4rem;
+    text-align: center;
+    color: white;
+    
+}
+
+
+ 
+
+.txtalingpwu
+{
+  text-align: left;
+}
+
+.txtalingfeat
+{
+  text-align: left;
+  padding-right: 0px;
+  padding-left: 40px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+
+.stylfeathead
+{
+  padding-top: 80px; padding-left: 40px; padding-right:100px;
+}
+
+.stylfeatbody
+{
+padding-left: 40px; padding-right:100px;
+}
+
+
+
+
+
+.marginrpce
+{
+  margin-left: 100px;
+
+}
+
+
+.bgpce{
+  
+ background-image: url("img/mine.webp  ");
+ position: relative; 
+background-repeat: no-repeat;
+background-size:100% 100%; 
+height:  800px;
+max-width: 100%;
+
+}
+
+.txtpce
+{
+font-size: 1.5em;
+text-align: justify;
+  
+  color: #fff;
+   
+}
+.padtoppce
+{
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+
+
+.txpcett
+{
+font-size: 3em;
+  font-weight: 700;
+  color: #fff;
+   
+}
+
+.martoppce
+{
+  margin-top: 20px;
+}
+
+.padlfpce
+{
+  padding-left:50px;
+}
+
+  /*BACKGROUND FEAT*/
+
+.featbgm
+{
+   background: -moz-linear-gradient(45deg, #4780D3 0%, #4780D3 29%, #2132A0 66%, #2132A0 100%);
+    background: -webkit-linear-gradient(45deg, #2132A0 0%,#478FFF 29%,#d911f2 66%,#D14FFF 100%);
+    background: linear-gradient(45deg, #02e1ba 0%,#26c9f2 29%,#478FFF 66%,#D14FFF 100%);
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+  /*min-height: calc(100vh - 2rem);*/
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-evenly;
+  overflow: hidden;
+  position: relative; 
+}
+
+.featbgm::before, 
+.featbgm::after {
+  content: "";
+  width: 30vmax;
+  height: 30vmax;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.07);
+  left: -20vmin;
+  top: -20vmin;
+  animation: morph 20s linear infinite alternate, spin 20s linear infinite;
+  z-index: 1;
+  will-change: border-radius, transform;
+  transform-origin: 55% 55%;
+  pointer-events: none; 
+}
+
+
+  
+.featbgm::after {
+    width: 40vmin;
+    height: 40vmin;
+    left: auto;
+    right: -10vmin;
+    top: auto;
+    bottom: 0;
+    animation: morph 10s linear infinite alternate, spin 26s linear infinite reverse;
+    transform-origin: 50% 20%; 
+}
+
+ 
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0 50%
+  }
+}
+
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0 50%
+  }
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0 50%
+  }
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 40% 60% 60% 40% / 70% 30% 70% 30%; }
+  100% {
+    border-radius: 40% 60%; } 
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn); 
+  } 
+}
+  .st0{display:none;}
+  .st1{display:inline;}
+  .st2{opacity:0.29;}
+  .st3{fill:#FFFFFF;}
+  .st4{clip-path:url(#SVGID_2_);fill:#FFFFFF;}
+  .st5{clip-path:url(#SVGID_4_);}
+  .st6{clip-path:url(#SVGID_6_);}
+  .st7{clip-path:url(#SVGID_8_);}
+  .st8{clip-path:url(#SVGID_10_);}
+  .st9{fill:none;}
+  .st10{clip-path:url(#SVGID_12_);}
+  .st11{opacity:0.7;}
+  .st12{clip-path:url(#SVGID_14_);}
+  .st13{opacity:0.2;}
+  .st14{clip-path:url(#SVGID_16_);}
+  .st15{opacity:0.3;fill:#FFFFFF;enable-background:new    ;}
+
+/*BACKGROUND FEAT END*/
+
+
+
+
+/* page content */
+h1  {
+  color: white;
+  font-family: Trebuchet MS;
+  font-weight: bold;
+  text-align: center;
+}
+
+  .txth1 {
+  font-size: 3.5em;
+  margin-top: 35vh; 
+}
+
+
+  .txh1sl2
+{
+font-size: 2em;
+  font-weight: 700;
+  color: #fff;
+   
+}
+
+  .logobrand {
+    width: 360px;
+}
+ 
+.menu2 li 
+  {
+  display: block;
+  height: 100%;
+  font-size: 1.2em;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-transform: uppercase;
+ /* text-shadow: 0 0 15px #8e54e9;
+  transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);*/
+  text-align: center;
+  padding: 0 10px;
+ 
+}
+
+ 
+/* NAVIGATION */
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: #555;
+}
+
+
+/* stroke */
+nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #fff;
+  height: 1px;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+nav.fill ul li a {
+  transition: all 2s;
+}
+
+nav.fill ul li a:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+nav.fill ul li a:hover {
+  color: #fff;
+  z-index: 1;
+}
+nav.fill ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
+  
+  .bgimagespot{
+ position: relative;  
+
+ background-image: url("img/decentraland-fashion-street.jpg");
+
+background-repeat: no-repeat;
+background-size:100% 100%; 
+height:100px;
+
+max-width: 100%;
+
+
+}
+
+
+  
+  .bgfeaturebody{
+ 
+
+
+background-repeat: no-repeat;
+background-size:100% 100%; 
+   width: 100%;
+   height:3200px;
+
+
+}
+
+.bg2footergame
+{
+ background-color: #eaeaea;
+ 
+}
+.bgfootergame
+{
+   background-image: url("img/papermed.png");
+   background-repeat: no-repeat;
+   background-size:100%  100% ; 
+   width: 100%;
+   height:450px;
+}
+
+
+.bgtexturegame
+{
+   background-image: url("img/bgtexturexodus.webp");
+   background-repeat: no-repeat;
+   background-size:100%  100% ; 
+   width: 100%;
+   height:700px;
+    
+}
+
+
+
+.bgfeat
+{
+  background-color: #0E0099;
+   background-size:100%  100% ; 
+   width: 100%;
+   height:400px;
+  border-radius: 50px;    
+}
+
+
+
+.txfeat
+{
+font-size: 3em;
+  font-weight: 700;
+  color: #fff;
+   
+}
+
+
+.txtfeat2em
+{
+font-size: 2em;
+  font-weight: 700;
+  color: #fff;
+  text-align: left;
+   
+}
+
+.featem
+{
+font-size: 1.2em;
+  text-align: left;
+  color: #fff;
+   
+}
+
+
+.pfeat
+{
+font-size: 1.3em;
+  
+  color: #fff;
+   
+}
+
+
+
+
+.featwrapper
+{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+
+.bgfeatureditemchop{
+ 
+
+ position: relative; 
+background-repeat: no-repeat;
+background-size:100% 100%; 
+height: 400px;
+
+
+max-width: 100%;
+        background-image: url(img/chopping-feature.webp);
+    background-repeat: no-repeat;
+     
+    border-radius: 50px;    
+
+
+}
+
+.bgfeatureditemfish{
+ 
+
+ position: relative; 
+background-repeat: no-repeat;
+background-size:100% 100%; 
+height: 400px;
+
+
+max-width: 100%;
+        background-image: url(img/lake.webp);
+    background-repeat: no-repeat;
+     
+    border-radius: 50px;    
+
+
+}
+
+.bgfeatureditemcraft{
+ 
+
+ position: relative; 
+background-repeat: no-repeat;
+background-size:100% 100%; 
+height: 400px;
+
+
+max-width: 100%;
+        background-image: url(img/axel-bg.webp);
+    background-repeat: no-repeat;
+     
+    border-radius: 50px;    
+
+
+}
+
+.bgfeatureditemmining{
+ 
+
+ position: relative; 
+background-repeat: no-repeat;
+background-size:100% 100%; 
+height: 400px;
+
+
+max-width: 100%;
+        background-image: url(img/bg-mining.png);
+    background-repeat: no-repeat;
+     
+    border-radius: 50px;    
+
+
+}
+
+.bgfeatureditemforge{
+ 
+
+ position: relative; 
+background-repeat: no-repeat;
+background-size:100% 100%; 
+height: 400px;
+
+
+max-width: 100%;
+        background-image: url(img/forger.webp);
+    background-repeat: no-repeat;
+     
+    border-radius: 50px;    
+
+
+}
+
+.bgfeatureditemrest{
+ 
+
+ position: relative; 
+background-repeat: no-repeat;
+background-size:100% 100%; 
+height: 400px;
+
+
+max-width: 100%;
+        background-image: url(img/chef-bg.webp);
+    background-repeat: no-repeat;
+     
+    border-radius: 50px;    
+
+
+}
+
+ 
+
+.bgfeatureditemhunt{
+ 
+
+ position: relative; 
+background-repeat: no-repeat;
+background-size:100% 100%; 
+height: 400px;
+
+
+max-width: 100%;
+        background-image: url(img/hunters-bg.webp);
+    background-repeat: no-repeat;
+     
+    border-radius: 50px;    
+
+
+}
+
+
+
+
+
+.bgfeatureditem1{
+ 
+
+ position: relative; 
+background-repeat: no-repeat;
+background-size:100% 100%; 
+height: 400px;
+
+
+max-width: 100%;
+        background-image: url(img/bg-features.jpg);
+    background-repeat: no-repeat;
+     
+    border-radius: 50px;    
+
+
+}
+
+.padbot20px
+{
+  padding-bottom: 20px;
+}
+
+.featttsep
+{
+  padding-top: 40px;
+}
+
+.featseptop
+{
+  margin-top: 20px;
+}
+
+
+/*MEDIA QUERIES*/
+  @media screen and (max-width: 375px) {
+
+
+/*MARKETPLACE*/
+
+.margtopheaderstore
+{
+  margin-top: 0px;
+}
+
+.fontside
+{
+font-size: 1.5em;
+}
+
+
+.sidebarpadintop
+{
+  padding-top: 50px;
+}
+
+.btnbuy {
+   
+
+   
+ 
+ 
+
+      background-image: url('img/button-buy-sm.png'); 
+     width: 150px;
+     height: 64px;
+ background-repeat: no-repeat;
+  background-position: center; 
+
+  color: #0A0702;
+  font-weight: 700;
+  font-size: 1em;
+
+}
+
+.btnbuy:hover
+
+{
+ background-image: url('img/button-buy-sm-hover.png'); 
+    width: 150px;
+     height: 64px;
+ background-repeat: no-repeat;
+  background-position: center; 
+
+  color: #fff;
+  font-weight: 700;
+  font-size: 1em;
+
+}
+
+
+
+
+.cardseparatorsright
+{
+  margin-right: 20px;
+   margin-bottom: 20px;
+}
+
+.cardseparatortop
+{
+  margin-top: 20px;
+}
+
+.producth
+{
+      color: #b2dbee;
+     
+    font-weight: normal;
+    text-shadow: 1px 1px 2px rgba(50,50,50,1);
+    border-bottom: solid 1px #000;
+    padding-bottom: 10px;
+    margin-top: 3px;
+    min-height: 20px;
+    line-height: 120%;
+}
+
+
+
+.producth:hover
+{
+      color: #ffcb05;
+     
+    font-weight: normal;
+    text-shadow: 1px 1px 2px rgba(50,50,50,1);
+    border-bottom: solid 1px #000;
+    padding-bottom: 10px;
+    margin-top: 3px;
+    min-height: 20px;
+    line-height: 120%;
+}
+
+
+.producdescr
+{
+      color: #b2dbee;
+     
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgba(50,50,50,1);
+   
+    
+    
+    line-height: 120%;
+}
+
+
+
+.stylecarbon
+{
+  background-image: radial-gradient(circle at center center, transparent,rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 2px,transparent 2px, transparent 10px,rgb(33,33,33) 10px, rgb(33,33,33) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, rgb(47,47,47) 0px, rgb(47,47,47) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33));
+}
+
+.divheader
+
+{
+  height: 200px;
+    overflow-y: hidden;
+}
+
+  /*main content*/
+
+    .contentaling
+    {
+      margin-top: 20px;
+      padding-left:  0px;
+      padding-right:  0px;
+    }
+
+
+
+    .boxbordeimg
+     {
+  
+    display: inline-block;
+    box-shadow: 0 0px 5px 3px #000;
+    -webkit-box-shadow: 0 0px 5px 3px #000;
+    -moz-box-shadow: 0 0px 5px 3px #000;
+    border-image: url(img/backdrop-border-1.png) 4 repeat;
+    -webkit-border-image: url(img/backdrop-border-1.png) 4 repeat;
+    -o-border-image: url(img/backdrop-border-1.png) 4 repeat;
+    -moz-border-image: url(img/backdrop-border-1.png) 4 repeat;
+    border-style: solid;
+    border-width: 4px;
+    }
+
+.boxbordiv
+     {
+      border: 5px outset #6b6b6b;
+
+    }
+
+    .bgtophead
+    {
+       background-image:url("img/content-header.webp")o-repeat center center fixed;
+        width: 100%;
+        overflow-x: hidden;
+
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    }
+
+    .internalhead
+     {
+      padding-top: 50px;
+      padding-bottom: 50px;
+     }
+
+  /*end maincontent*/
+
+  /* SIDEBAR */
+    .sidebarex {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 200px;
+      background-color: #f8f9fa;
+    }
+
+
+  .mgtopbody
+  {
+    margin-top: 90px;
+  }
+  /* SIDEBAR */
+
+  .txth2store
+{
+font-size: 3em;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+   
+}
+
+  .txth2nft
+{
+font-size: 3em;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+   
+}
+
+
+
+
+.paddingboths
+{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+
+.tittlepads
+{
+  padding-bottom: 40px;
+}
+.markethero {
+    display: flex;
+    flex-direction: column;
+    /*background-image: url("img/hero-bg.jpg");*/
+     background-image: url("img/exodus-plaza.webp");
+
+    
+    height: 80vh;
+    align-self: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.btnmarket
+{
+      background: #E8AB1E;
+    color: #fff;
+    font-size: 1em;
+    font-weight:700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 100%;
+    padding: 10px 26px;
+    position: relative;
+    left: 40%;
+    bottom:0px;
+    transition: all 0.3s ease 0s;
+}
+ 
+
+
+.store {
+    background-color: #000;
+    background-image: url(https://images.ctfassets.net/7lhcm73ukv5p/1mv6Tg8PUsMWyGauWckSOo/5be5f00…/star-bg.jpg?w=1500&q=75);
+   
+}
+
+ 
+/*END MARKETPLACE*/
+
+
+
+.textoverlay2  { 
+   position: absolute; 
+   top: 500px; 
+   left: 0; 
+   width: 100%; 
+
+}
+
+
+
+
+    .bgtexturegame
+{
+   background-image: url("img/bgtexturexodus.png");
+   background-repeat: no-repeat;
+   background-size:100%  100% ; 
+   width: 100%;
+   height:900px;
+    
+}
+ 
+  .logobrand {
+    width: 240px;
+}
+  
+  .bgimagespot{
+ position: relative;  
+
+ background-image: url("img/decentraland-fashion-street.jpg");
+
+background-repeat: no-repeat;
+background-size:100% 100%; 
+height:100px;
+
+max-width: 100%;
+
+
+
+}
+
+  div#navbarNav {
+              position: absolute;
+              width: 100%;
+              z-index: 1;
+              top: 56px;
+              left: 0;
+              
+              padding-top: 30px; 
+           background-color: rgb(43, 43, 43,0.5   );
+
+ 
+              overflow: hidden;
+              overflow-y: auto;
+              max-height: calc(100vh - 56px);
+              padding-bottom: 20px;
+          }
+
+
+          .txh1sl2
+{
+font-size: 2em;
+  font-weight: 700;
+  color: #fff;
+   
+}
+
+  .txth1 {
+  font-size: 3em;
+  margin-top: 20vh; 
+}
+
+}
+
+@media screen and (max-width: 400px) {
+
+  /*MARKETPLACE*/
+
+.margtopheaderstore
+{
+  margin-top:  0px;
+}
+
+.fontside
+{
+font-size: 1.5em;
+}
+
+
+.sidebarpadintop
+{
+  padding-top: 50px;
+}
+
+.btnbuy {
+   
+
+   
+ 
+ 
+
+      background-image: url('img/button-buy-sm.png'); 
+     width: 150px;
+     height: 64px;
+ background-repeat: no-repeat;
+  background-position: center; 
+
+  color: #0A0702;
+  font-weight: 700;
+  font-size: 1em;
+
+}
+
+.btnbuy:hover
+
+{
+ background-image: url('img/button-buy-sm-hover.png'); 
+    width: 150px;
+     height: 64px;
+ background-repeat: no-repeat;
+  background-position: center; 
+
+  color: #fff;
+  font-weight: 700;
+  font-size: 1em;
+
+}
+
+
+
+
+.cardseparatorsright
+{
+  margin-right:  0px;
+  margin-bottom: 20px;
+}
+
+.midsep
+{
+  margin-left:  0px;
+  margin-right:  0px;
+}
+
+.cardseparatortop
+{
+  margin-top: 20px;
+}
+
+.producth
+{
+      color: #b2dbee;
+     
+    font-weight: normal;
+    text-shadow: 1px 1px 2px rgba(50,50,50,1);
+    border-bottom: solid 1px #000;
+    padding-bottom: 10px;
+    margin-top: 3px;
+    min-height: 20px;
+    line-height: 120%;
+}
+
+
+
+.producth:hover
+{
+      color: #ffcb05;
+     
+    font-weight: normal;
+    text-shadow: 1px 1px 2px rgba(50,50,50,1);
+    border-bottom: solid 1px #000;
+    padding-bottom: 10px;
+    margin-top: 3px;
+    min-height: 20px;
+    line-height: 120%;
+}
+
+
+.producdescr
+{
+      color: #b2dbee;
+     
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgba(50,50,50,1);
+   
+    
+    
+    line-height: 120%;
+}
+
+
+
+.stylecarbon
+{
+  background-image: radial-gradient(circle at center center, transparent,rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 2px,transparent 2px, transparent 10px,rgb(33,33,33) 10px, rgb(33,33,33) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, rgb(47,47,47) 0px, rgb(47,47,47) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33));
+}
+
+.divheader
+
+{
+  height: 200px;
+    overflow-y: hidden;
+}
+
+  /*main content*/
+
+    .contentaling
+    {
+      margin-top: 20px;
+      padding-left:  0px;
+      padding-right:  0px;
+    }
+
+
+
+    .boxbordeimg
+     {
+  
+    display: inline-block;
+    box-shadow: 0 0px 5px 3px #000;
+    -webkit-box-shadow: 0 0px 5px 3px #000;
+    -moz-box-shadow: 0 0px 5px 3px #000;
+    border-image: url(img/backdrop-border-1.png) 4 repeat;
+    -webkit-border-image: url(img/backdrop-border-1.png) 4 repeat;
+    -o-border-image: url(img/backdrop-border-1.png) 4 repeat;
+    -moz-border-image: url(img/backdrop-border-1.png) 4 repeat;
+    border-style: solid;
+    border-width: 4px;
+    }
+
+.boxbordiv
+     {
+      border: 0px outset #6b6b6b;
+
+    }
+
+    .bgtophead
+    {
+       background-image:url("img/content-header.webp")o-repeat center center fixed;
+        width: 100%;
+        overflow-x: hidden;
+
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    }
+
+    .internalhead
+     {
+      padding-top: 50px;
+      padding-bottom: 50px;
+     }
+
+  /*end maincontent*/
+
+  /* SIDEBAR */
+    .sidebarex {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 200px;
+      background-color: #f8f9fa;
+    }
+
+
+  .mgtopbody
+  {
+    margin-top: 90px;
+  }
+  /* SIDEBAR */
+
+  .txth2store
+{
+font-size: 3em;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+   
+}
+
+  .txth2nft
+{
+font-size: 3em;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+   
+}
+
+
+
+
+.paddingboths
+{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+
+.tittlepads
+{
+  padding-bottom: 40px;
+}
+.markethero {
+    display: flex;
+    flex-direction: column;
+    /*background-image: url("img/hero-bg.jpg");*/
+     background-image: url("img/exodus-plaza.webp");
+
+    
+    height: 80vh;
+    align-self: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.btnmarket
+{
+      background: #E8AB1E;
+    color: #fff;
+    font-size: 1em;
+    font-weight:700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 100%;
+    padding: 10px 26px;
+    position: relative;
+    left: 40%;
+    bottom:0px;
+    transition: all 0.3s ease 0s;
+}
+ 
+
+
+.store {
+    background-color: #000;
+    background-image: url(https://images.ctfassets.net/7lhcm73ukv5p/1mv6Tg8PUsMWyGauWckSOo/5be5f00…/star-bg.jpg?w=1500&q=75);
+   
+}
+
+ 
+/*END MARKETPLACE*/
+
+  .featem
+{
+font-size: 1.2em;
+  text-align: center;
+  color: #fff;
+   
+}
+
+  .txtfeat2em
+{
+font-size: 2em;
+  font-weight: 700;
+  color: #fff;
+  text-align: left;
+   
+}
+
+
+  /* FEAT SECTION*/
+ 
+
+.txtalingfeat
+{
+  text-align: center;
+  padding-right: 0px;
+  padding-left:  0px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+
+
+.stylfeathead
+{
+  padding-top: 20px; padding-left: 20px; padding-right:0px;
+}
+
+.stylfeatbody
+{
+padding-left:  0px; padding-right: 0px;
+}
+
+
+
+.featwrapper
+{
+  margin-left: 15px;
+  padding-left: 0px;
+  padding-right: 0px;
+
+}
+
+
+.bgfeatureditemchop{
+ 
+
+ position: relative; 
+background-repeat: no-repeat;
+background-size:100% 100%; 
+height: 900px;
+
+
+max-width: 100%;
+        background-image: url(img/woodchopping-sm.webp);
+    background-repeat: no-repeat;
+     
+    border-radius: 15px;    
+
+
+}
+
+.bgfeatureditemfish{
+ 
+
+ position: relative; 
+background-repeat: no-repeat;
+background-size:100% 100%; 
+height: 850px;
+
+
+max-width: 100%;
+        background-image: url(img/lake-sm.webp);
+    background-repeat: no-repeat;
+     
+    border-radius: 50px;    
+
+
+}
+
+.bgfeatureditemcraft{
+ 
+
+ position: relative; 
+background-repeat: no-repeat;
+background-size:100% 100%; 
+height: 800px;
+
+
+max-width: 100%;
+        background-image: url(img/axel-sm.webp);
+    background-repeat: no-repeat;
+     
+    border-radius: 50px;    
+
+
+}
+
+.bgfeatureditemmining{
+ 
+
+ position: relative; 
+background-repeat: no-repeat;
+background-size:100% 100%; 
+height: 800px;
+
+
+max-width: 100%;
+        background-image: url(img/bg-mining-sm.png);
+    background-repeat: no-repeat;
+     
+    border-radius: 50px;    
+
+
+}
+
+.bgfeatureditemforge{
+ 
+
+ position: relative; 
+background-repeat: no-repeat;
+background-size:100% 100%; 
+height: 800px;
+
+
+max-width: 100%;
+        background-image: url(img/forger-sm.webp);
+    background-repeat: no-repeat;
+     
+    border-radius: 50px;    
+
+
+}
+
+.bgfeatureditemrest{
+ 
+
+ position: relative; 
+background-repeat: no-repeat;
+background-size:100% 100%; 
+height: 800px;
+
+
+max-width: 100%;
+        background-image: url(img/chef-bg-sm.webp);
+    background-repeat: no-repeat;
+     
+    border-radius: 50px;    
+
+
+}
+
+ 
+
+.bgfeatureditemhunt{
+ 
+
+ position: relative; 
+background-repeat: no-repeat;
+background-size:100% 100%; 
+height: 800px;
+
+
+max-width: 100%;
+        background-image: url(img/hunters-bg-sm.webp);
+    background-repeat: no-repeat;
+     
+    border-radius: 50px;    
+
+
+}
+
+ .featwrapper
+{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+
+
+ /*END   FEAT*/
+
+
+ .txtalingpwu
+{
+  text-align: center   !important;
+}
+  .marginrpce
+{
+  margin-left:  0px;
+
+}
+
+
+  .txpcett
+{
+font-size: 2.5em;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+   
+}
+
+
+  .padlrpce
+  {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .bgpce{
+  
+ background-image: url("img/exodus-dome-sm.png  ");
+ position: relative; 
+background-repeat: no-repeat;
+background-size:100% 100%; 
+height:  950px;
+max-width: 100%;
+
+ 
+ 
+background-position:center;
+}
+
+
+  
+  .bgtexturegame
+{
+   background-image: url("img/bgtexturexodus.png");
+   background-repeat: no-repeat;
+   background-size:100%  100% ; 
+   width: 100%;
+   height:1180px;
+    
+}
+
+   .padfotterscr
+  {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom:10px;
+  }
+
+  .bgfootergame
+{
+   background-image: url("img/papermed-vert.png");
+   background-repeat: no-repeat;
+   background-size:100%  100% ; 
+   width: 100%;
+   height:900px;
+}
+
+
+    .bgfeaturebody{
+ position: relative;  
+
+
+background-repeat: no-repeat;
+background-size:100% 100%; 
+   width: 100%;
+   height:6200px;
+
+
+}
+
+.padleft150
+{
+  padding-left: 0px;
+}
+
+.showcase {
+  width: 100%;
+  height:  1300px;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+.imagi
+{
+
+}
+.showcase .imagi {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index:99
+}
+
+.showcase .overlay {
+  width: 100%;
+  height: 700px;
+  background: rgb(20,5,242,0.2);
+   position: absolute;
+  top: 0;
+  left: 0;
+  z-index:999
+}
+
+.showcase h2 {
+  margin-top: 100px;
+  font-size: 2em;
+}
+
+.showcase p {
+  margin-top: 8px;
+  font-size: 15em;
+  text-align: justify;
+}
+
+
+
+
+
+  .txh1sl2
+{
+font-size: 2em;
+  font-weight: 700;
+  color: #fff;
+   
+}
+
+ .txth1 {
+  font-size: 3em;
+  margin-top: 20vh; 
+}
+
+.textoverlay2  { 
+   position: absolute; 
+   top: 400px; 
+   left: 0; 
+   width: 100%; 
+}
+
+.btnoverlay{ 
+   position: absolute; 
+   top: 580px; 
+   left: 0; 
+   width: 100%; 
+}
+
+
+.textoverlay { 
+   position: absolute; 
+   top:  0; 
+   left: 0; 
+   width: 100%; 
+}
+
+
+
+  .logobrand {
+    width: 240px;
+}
+  
+  .bgimagespot{
+ position: relative;  
+
+ background-image: url("img/decentraland-fashion-street.jpg");
+
+background-repeat: no-repeat;
+background-size:100% 100%; 
+height:100px;
+
+max-width: 100%;
+
+
+}
+ div#navbarNav {
+              position: absolute;
+              width: 100%;
+              z-index: 1;
+              top: 56px;
+              left: 0;
+              
+              padding-top: 30px; 
+           background-color: rgb(43, 43, 43,0.5   );
+
+ 
+              overflow: hidden;
+              overflow-y: auto;
+              max-height: calc(100vh - 56px);
+              padding-bottom: 20px;
+          }
+
+
+}
+
+@media screen and (max-width: 480px) {
+
+  /*MARKETPLACE*/
+
+.margtopheaderstore
+{
+  margin-top: 0px;
+}
+
+.fontside
+{
+font-size: 1.5em;
+}
+
+
+.sidebarpadintop
+{
+  padding-top: 50px;
+}
+
+.btnbuy {
+   
+
+   
+ 
+ 
+
+      background-image: url('img/button-buy-sm.png'); 
+     width: 150px;
+     height: 64px;
+ background-repeat: no-repeat;
+  background-position: center; 
+
+  color: #0A0702;
+  font-weight: 700;
+  font-size: 1em;
+
+}
+
+.btnbuy:hover
+
+{
+ background-image: url('img/button-buy-sm-hover.png'); 
+    width: 150px;
+     height: 64px;
+ background-repeat: no-repeat;
+  background-position: center; 
+
+  color: #fff;
+  font-weight: 700;
+  font-size: 1em;
+
+}
+
+
+
+
+.cardseparatorsright
+{
+  margin-right:  0px;
+  margin-bottom: 20px;
+}
+
+.midsep
+{
+  margin-left:  0px;
+  margin-right:  0px;
+}
+
+.cardseparatortop
+{
+  margin-top: 20px;
+}
+
+.producth
+{
+      color: #b2dbee;
+     
+    font-weight: normal;
+    text-shadow: 1px 1px 2px rgba(50,50,50,1);
+    border-bottom: solid 1px #000;
+    padding-bottom: 10px;
+    margin-top: 3px;
+    min-height: 20px;
+    line-height: 120%;
+}
+
+
+
+.producth:hover
+{
+      color: #ffcb05;
+     
+    font-weight: normal;
+    text-shadow: 1px 1px 2px rgba(50,50,50,1);
+    border-bottom: solid 1px #000;
+    padding-bottom: 10px;
+    margin-top: 3px;
+    min-height: 20px;
+    line-height: 120%;
+}
+
+
+.producdescr
+{
+      color: #b2dbee;
+     
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgba(50,50,50,1);
+   
+    
+    
+    line-height: 120%;
+}
+
+
+
+.stylecarbon
+{
+  background-image: radial-gradient(circle at center center, transparent,rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 2px,transparent 2px, transparent 10px,rgb(33,33,33) 10px, rgb(33,33,33) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, rgb(47,47,47) 0px, rgb(47,47,47) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33));
+}
+
+.divheader
+
+{
+  height: 200px;
+    overflow-y: hidden;
+}
+
+  /*main content*/
+
+    .contentaling
+    {
+      margin-top: 20px;
+      padding-left:  0px;
+      padding-right:  0px;
+    }
+
+
+
+    .boxbordeimg
+     {
+  
+    display: inline-block;
+    box-shadow: 0 0px 5px 3px #000;
+    -webkit-box-shadow: 0 0px 5px 3px #000;
+    -moz-box-shadow: 0 0px 5px 3px #000;
+    border-image: url(img/backdrop-border-1.png) 4 repeat;
+    -webkit-border-image: url(img/backdrop-border-1.png) 4 repeat;
+    -o-border-image: url(img/backdrop-border-1.png) 4 repeat;
+    -moz-border-image: url(img/backdrop-border-1.png) 4 repeat;
+    border-style: solid;
+    border-width: 4px;
+    }
+
+.boxbordiv
+     {
+      border: 0px outset #6b6b6b;
+
+    }
+
+    .bgtophead
+    {
+       background-image:url("img/content-header.webp")o-repeat center center fixed;
+        width: 100%;
+        overflow-x: hidden;
+
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    }
+
+    .internalhead
+     {
+      padding-top: 50px;
+      padding-bottom: 50px;
+     }
+
+  /*end maincontent*/
+
+  /* SIDEBAR */
+    .sidebarex {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 200px;
+      background-color: #f8f9fa;
+    }
+
+
+  .mgtopbody
+  {
+    margin-top: 90px;
+  }
+  /* SIDEBAR */
+
+  .txth2store
+{
+font-size: 3em;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+   
+}
+
+  .txth2nft
+{
+font-size: 3em;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+   
+}
+
+
+
+
+.paddingboths
+{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+
+.tittlepads
+{
+  padding-bottom: 40px;
+}
+.markethero {
+    display: flex;
+    flex-direction: column;
+    /*background-image: url("img/hero-bg.jpg");*/
+     background-image: url("img/exodus-plaza.webp");
+
+    
+    height: 80vh;
+    align-self: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.btnmarket
+{
+      background: #E8AB1E;
+    color: #fff;
+    font-size: 1em;
+    font-weight:700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 100%;
+    padding: 10px 26px;
+    position: relative;
+    left: 40%;
+    bottom:0px;
+    transition: all 0.3s ease 0s;
+}
+ 
+
+
+.store {
+    background-color: #000;
+    background-image: url(https://images.ctfassets.net/7lhcm73ukv5p/1mv6Tg8PUsMWyGauWckSOo/5be5f00…/star-bg.jpg?w=1500&q=75);
+   
+}
+
+ 
+/*END MARKETPLACE*/
+
+
+ .bgpce{
+  
+ background-image: url("img/exodus-dome-sm.png  ");
+ position: relative; 
+background-repeat: no-repeat;
+background-size:100% 100%; 
+height:  950px;
+max-width: 100%;
+
+ 
+ 
+background-position:center;
+}
+  .textoverlay2  { 
+   position: absolute; 
+   top:400px; 
+   left: 0; 
+   width: 100%; 
+}
+
+
+
+
+   .shrink img {
+        position: absolute;
+        width: 60%;
+
+        bottom:  10px;
+         
+        padding-top: 20px  ;
+        padding-bottom: 0  ;     
+    }
+
+     .shrink {
+        padding-top: 20 !important;
+        padding-bottom: 20 !important;
+        min-height: 80px !important;
+        transition:width 0.4s ease-in-out;
+    } 
+
+  .padleft150
+{
+  padding-left: 0px;
+}
+
+  .txh1sl2
+{
+font-size: 2em;
+  font-weight: 700;
+  color: #fff;
+   
+}
+ .txth1 {
+  font-size: 3em;
+  margin-top: 20vh; 
+}
+
+
+ 
+   .logobrand {
+     width: 240px;
+}
+  
+  .bgimagespot{
+ position: relative;  
+
+ background-image: url("img/decentraland-fashion-street.jpg");
+
+background-repeat: no-repeat;
+background-size:100% 100%; 
+height:100px;
+
+max-width: 100%;
+
+
+}             
+div#navbarNav {
+              position: absolute;
+              width: 100%;
+              z-index: 1;
+              top: 56px;
+              left: 0;
+              
+              padding-top: 30px; 
+           background-color: rgb(43, 43, 43,0.5   );
+
+ 
+              overflow: hidden;
+              overflow-y: auto;
+              max-height: calc(100vh - 56px);
+              padding-bottom: 20px;
+          }
+ 
+
+}
+
+@media screen and (max-width: 481px) {
+
+  /*MARKETPLACE*/
+
+.margtopheaderstore
+{
+  margin-top: 0px;
+}
+
+.fontside
+{
+font-size: 1.5em;
+}
+
+
+.sidebarpadintop
+{
+  padding-top: 50px;
+}
+
+.btnbuy {
+   
+
+   
+ 
+ 
+
+      background-image: url('img/button-buy-sm.png'); 
+     width: 150px;
+     height: 64px;
+ background-repeat: no-repeat;
+  background-position: center; 
+
+  color: #0A0702;
+  font-weight: 700;
+  font-size: 1em;
+
+}
+
+.btnbuy:hover
+
+{
+ background-image: url('img/button-buy-sm-hover.png'); 
+    width: 150px;
+     height: 64px;
+ background-repeat: no-repeat;
+  background-position: center; 
+
+  color: #fff;
+  font-weight: 700;
+  font-size: 1em;
+
+}
+
+
+
+
+.cardseparatorsright
+{
+  margin-right:  0px;
+  margin-bottom: 20px;
+}
+
+.midsep
+{
+  margin-left:  0px;
+  margin-right:  0px;
+}
+
+.cardseparatortop
+{
+  margin-top: 20px;
+}
+
+.producth
+{
+      color: #b2dbee;
+     
+    font-weight: normal;
+    text-shadow: 1px 1px 2px rgba(50,50,50,1);
+    border-bottom: solid 1px #000;
+    padding-bottom: 10px;
+    margin-top: 3px;
+    min-height: 20px;
+    line-height: 120%;
+}
+
+
+
+.producth:hover
+{
+      color: #ffcb05;
+     
+    font-weight: normal;
+    text-shadow: 1px 1px 2px rgba(50,50,50,1);
+    border-bottom: solid 1px #000;
+    padding-bottom: 10px;
+    margin-top: 3px;
+    min-height: 20px;
+    line-height: 120%;
+}
+
+
+.producdescr
+{
+      color: #b2dbee;
+     
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgba(50,50,50,1);
+   
+    
+    
+    line-height: 120%;
+}
+
+
+
+.stylecarbon
+{
+  background-image: radial-gradient(circle at center center, transparent,rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 2px,transparent 2px, transparent 10px,rgb(33,33,33) 10px, rgb(33,33,33) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, rgb(47,47,47) 0px, rgb(47,47,47) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33));
+}
+
+.divheader
+
+{
+  height: 200px;
+    overflow-y: hidden;
+}
+
+  /*main content*/
+
+    .contentaling
+    {
+      margin-top: 20px;
+      padding-left:  0px;
+      padding-right:  0px;
+    }
+
+
+
+    .boxbordeimg
+     {
+  
+    display: inline-block;
+    box-shadow: 0 0px 5px 3px #000;
+    -webkit-box-shadow: 0 0px 5px 3px #000;
+    -moz-box-shadow: 0 0px 5px 3px #000;
+    border-image: url(img/backdrop-border-1.png) 4 repeat;
+    -webkit-border-image: url(img/backdrop-border-1.png) 4 repeat;
+    -o-border-image: url(img/backdrop-border-1.png) 4 repeat;
+    -moz-border-image: url(img/backdrop-border-1.png) 4 repeat;
+    border-style: solid;
+    border-width: 4px;
+    }
+
+.boxbordiv
+     {
+      border: 0px outset #6b6b6b;
+
+    }
+
+    .bgtophead
+    {
+       background-image:url("img/content-header.webp")o-repeat center center fixed;
+        width: 100%;
+        overflow-x: hidden;
+
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    }
+
+    .internalhead
+     {
+      padding-top: 50px;
+      padding-bottom: 50px;
+     }
+
+  /*end maincontent*/
+
+  /* SIDEBAR */
+    .sidebarex {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 200px;
+      background-color: #f8f9fa;
+    }
+
+
+  .mgtopbody
+  {
+    margin-top: 90px;
+  }
+  /* SIDEBAR */
+
+  .txth2store
+{
+font-size: 3em;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+   
+}
+
+  .txth2nft
+{
+font-size: 3em;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+   
+}
+
+
+
+
+.paddingboths
+{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+
+.tittlepads
+{
+  padding-bottom: 40px;
+}
+.markethero {
+    display: flex;
+    flex-direction: column;
+    /*background-image: url("img/hero-bg.jpg");*/
+     background-image: url("img/exodus-plaza.webp");
+
+    
+    height: 80vh;
+    align-self: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.btnmarket
+{
+      background: #E8AB1E;
+    color: #fff;
+    font-size: 1em;
+    font-weight:700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 100%;
+    padding: 10px 26px;
+    position: relative;
+    left: 40%;
+    bottom:0px;
+    transition: all 0.3s ease 0s;
+}
+ 
+
+
+.store {
+    background-color: #000;
+    background-image: url(https://images.ctfassets.net/7lhcm73ukv5p/1mv6Tg8PUsMWyGauWckSOo/5be5f00…/star-bg.jpg?w=1500&q=75);
+   
+}
+
+ 
+/*END MARKETPLACE*/
+
+   .bgpce{
+  
+ background-image: url("img/exodus-dome-sm.png  ");
+ position: relative; 
+background-repeat: no-repeat;
+background-size:100% 100%; 
+height:  950px;
+max-width: 100%;
+
+ 
+ 
+background-position:center;
+}
+
+ div#navbarNav {
+              position: absolute;
+              width: 100%;
+              z-index: 1;
+              top: 56px;
+              left: 0;
+              
+              padding-top: 40px; 
+           background-color: rgb(43, 43, 43,0.5   );
+
+ 
+              overflow: hidden;
+              overflow-y: auto;
+              max-height: calc(100vh - 56px);
+              padding-bottom: 20px;
+          }
+
+
+    .textoverlay2  { 
+   position: absolute; 
+   top:480px; 
+   left: 0; 
+   width: 100%; 
+} 
+
+
+  .shrink img {
+        position: absolute;
+        width: 60%;
+
+        bottom:  10px;
+         
+        padding-top: 20px  ;
+        padding-bottom: 0  ;     
+    }
+
+
+
+/*play trailer*/
+
+.play-btn {
+  width: 80px;
+  height: 80px;
+  background: radial-gradient( rgba(252, 4, 12, 0.8) 60%, rgba(255, 255, 255, 1) 62%);
+  border-radius: 50%;    
+  position: relative;
+  display: block;
+  margin: 80px auto;
+  box-shadow: 0px 0px 20px 3px rgba(125, 38, 113, 0.6);
+}
+ 
+/* triangle */
+.play-btn::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  -webkit-transform: translateX(-40%) translateY(-50%);
+  transform: translateX(-40%) translateY(-50%);
+  transform-origin: center center;
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 25px solid #fff;
+  z-index: 100;
+  -webkit-transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+
+
+   .logobrand {
+   width: 240px;
+}
+  
+  .bgimagespot{
+ position: relative;  
+
+ background-image: url("img/decentraland-fashion-street.jpg");
+
+background-repeat: no-repeat;
+background-size:100% 100%; 
+height:100px;
+
+max-width: 100%;
+
+
+}             
+  div#navbarNav {
+              position: absolute;
+              width: 100%;
+              z-index: 1;
+              top: 56px;
+              left: 0;
+              
+              padding-top: 30px; 
+           background-color: rgb(43, 43, 43,0.5   );
+
+ 
+              overflow: hidden;
+              overflow-y: auto;
+              max-height: calc(100vh - 56px);
+              padding-bottom: 20px;
+          }
+
+
+
+}
+
+@media screen and (max-width: 600px) {
+
+/*MARKETPLACE*/
+
+.margtopheaderstore
+{
+  margin-top: 0px;
+}
+
+.fontside
+{
+font-size: 1.5em;
+}
+
+
+.sidebarpadintop
+{
+  padding-top: 50px;
+}
+
+.btnbuy {
+   
+
+   
+ 
+ 
+
+      background-image: url('img/button-buy-sm.png'); 
+     width: 150px;
+     height: 64px;
+ background-repeat: no-repeat;
+  background-position: center; 
+
+  color: #0A0702;
+  font-weight: 700;
+  font-size: 1em;
+
+}
+
+.btnbuy:hover
+
+{
+ background-image: url('img/button-buy-sm-hover.png'); 
+    width: 150px;
+     height: 64px;
+ background-repeat: no-repeat;
+  background-position: center; 
+
+  color: #fff;
+  font-weight: 700;
+  font-size: 1em;
+
+}
+
+
+
+
+.cardseparatorsright
+{
+  margin-right:  0px;
+  margin-bottom: 20px;
+}
+
+.midsep
+{
+  margin-left:  0px;
+  margin-right:  0px;
+}
+
+.cardseparatortop
+{
+  margin-top: 20px;
+}
+
+.producth
+{
+      color: #b2dbee;
+     
+    font-weight: normal;
+    text-shadow: 1px 1px 2px rgba(50,50,50,1);
+    border-bottom: solid 1px #000;
+    padding-bottom: 10px;
+    margin-top: 3px;
+    min-height: 20px;
+    line-height: 120%;
+}
+
+
+
+.producth:hover
+{
+      color: #ffcb05;
+     
+    font-weight: normal;
+    text-shadow: 1px 1px 2px rgba(50,50,50,1);
+    border-bottom: solid 1px #000;
+    padding-bottom: 10px;
+    margin-top: 3px;
+    min-height: 20px;
+    line-height: 120%;
+}
+
+
+.producdescr
+{
+      color: #b2dbee;
+     
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgba(50,50,50,1);
+   
+    
+    
+    line-height: 120%;
+}
+
+
+
+.stylecarbon
+{
+  background-image: radial-gradient(circle at center center, transparent,rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 2px,transparent 2px, transparent 10px,rgb(33,33,33) 10px, rgb(33,33,33) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, rgb(47,47,47) 0px, rgb(47,47,47) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33));
+}
+
+.divheader
+
+{
+  height: 200px;
+    overflow-y: hidden;
+}
+
+  /*main content*/
+
+    .contentaling
+    {
+      margin-top: 20px;
+      padding-left:  0px;
+      padding-right:  0px;
+    }
+
+
+
+    .boxbordeimg
+     {
+  
+    display: inline-block;
+    box-shadow: 0 0px 5px 3px #000;
+    -webkit-box-shadow: 0 0px 5px 3px #000;
+    -moz-box-shadow: 0 0px 5px 3px #000;
+    border-image: url(img/backdrop-border-1.png) 4 repeat;
+    -webkit-border-image: url(img/backdrop-border-1.png) 4 repeat;
+    -o-border-image: url(img/backdrop-border-1.png) 4 repeat;
+    -moz-border-image: url(img/backdrop-border-1.png) 4 repeat;
+    border-style: solid;
+    border-width: 4px;
+    }
+
+.boxbordiv
+     {
+      border: 0px outset #6b6b6b;
+
+    }
+
+    .bgtophead
+    {
+       background-image:url("img/content-header.webp")o-repeat center center fixed;
+        width: 100%;
+        overflow-x: hidden;
+
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    }
+
+    .internalhead
+     {
+      padding-top: 50px;
+      padding-bottom: 50px;
+     }
+
+  /*end maincontent*/
+
+  /* SIDEBAR */
+    .sidebarex {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 200px;
+      background-color: #f8f9fa;
+    }
+
+
+  .mgtopbody
+  {
+    margin-top: 90px;
+  }
+  /* SIDEBAR */
+
+  .txth2store
+{
+font-size: 3em;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+   
+}
+
+  .txth2nft
+{
+font-size: 3em;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+   
+}
+
+
+
+
+.paddingboths
+{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+
+.tittlepads
+{
+  padding-bottom: 40px;
+}
+.markethero {
+    display: flex;
+    flex-direction: column;
+    /*background-image: url("img/hero-bg.jpg");*/
+     background-image: url("img/exodus-plaza.webp");
+
+    
+    height: 80vh;
+    align-self: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.btnmarket
+{
+      background: #E8AB1E;
+    color: #fff;
+    font-size: 1em;
+    font-weight:700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 100%;
+    padding: 10px 26px;
+    position: relative;
+    left: 40%;
+    bottom:0px;
+    transition: all 0.3s ease 0s;
+}
+ 
+
+
+.store {
+    background-color: #000;
+    background-image: url(https://images.ctfassets.net/7lhcm73ukv5p/1mv6Tg8PUsMWyGauWckSOo/5be5f00…/star-bg.jpg?w=1500&q=75);
+   
+}
+
+ 
+/*END MARKETPLACE*/
+}
+
+@media screen and (max-width: 690px) {}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 915px) {}
+
+@media screen and (max-width: 1024px) {}
+
+@media screen and (max-width: 1100px) {}
+
+@media screen and (max-width: 1120px) {}
+
+@media screen and (max-width: 767px) {}
+
+@media screen and (max-width: 479px) {}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx) {}
+
+@media only screen and (max-width: 914px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 914px) and (min--moz-device-pixel-ratio: 1.5), only screen and (max-width: 914px) and (min-resolution: 1.5dppx) {}
+
+@media only screen and (max-width: 600px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 600px) and (min--moz-device-pixel-ratio: 1.5), only screen and (max-width: 600px) and (min-resolution: 1.5dppx) {}
+
+
+/*MEDIA QUERY MOTOG5G*/
+
+
+
+
+
+@media only screen and (max-width: 2340px) and  (max-width: 1080px)
+
+{
+
+ 
+
+
+}
+</style>
+ <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+  <script>
+ 
+   $(document).on("scroll", function(){
+
+            if ($(document).scrollTop() > 80){
+                $(".primary-nav").addClass("shrink");
+            } else {
+                $(".primary-nav").removeClass("shrink");
+            }
+
+      });
+</script>
+  </head>
+  <body class="store">
+
+<!--stroke for underline style-->
+    <nav  id="primary-nav" class="navbar navbar-expand-lg navbar-light fixed-top  primary-nav    padnavs navtxcolor navbar2   navbgcolornew">
+     
+          <a class="navbar-brand" href="#"> <img class="img-fluid logobrand" src="img/white-logo.png" alt="logo" width="360" height="89"> </a>                       
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>       
+          </button>
+
+
+           <div class="collapse navbar-collapse" id="navbarNav">
+              
+              <ul class="navbar-nav ms-auto flex-nowrap  menu2  ">
+                     
+                      <!--<a href="index.html" class="nav-link txtnav m-2 nav-active navtxt hvr-grow ">Home</a>
+                      <a href="https://play.decentraland.org/?position=128%2C44&realm=dg" class="siteButton">Play Now</a>-->
+                       <li class="nav-item">
+                      <a href="https://exodusgbw.io/" class="nav-link txtnav m-2 navtxt  hvr-grow" target="blank">HOME</a>
+                  </li>
+
+                      
+                        <li class="nav-item">
+                      <a href="https://play.decentraland.org/?position=128%2C44&realm=dg" class="nav-link txtnav m-2 navtxt  hvr-grow" target="blank">PLAY NOW</a>
+                  </li>
+
+
+                      <li class="nav-item">
+                     <!-- <a href="about-us.html" <center></center>lass="nav-link txtnav m-2 navtxt hvr-grow ">About us</a>
+                    
+                      <a href="#" class="nav-link txtnav m-2 navtxt  hvr-grow">Get Updates</a>-->
+                  </li>
+
+                  <!--<li class="nav-item">
+                      <a href="#" class="nav-link  m-2 navtxt  hvr-grow disabled textdisabled">Store</a>
+                  </li>-->
+ 
+                   <li class="nav-item">
+                      <a href="https://forum.exodusgbw.io/" class="nav-link txtnav m-2 navtxt  hvr-grow" target="blank">Forum</a>
+                  </li>
+                 
+                 <!-- <li class="nav-item">
+                      <a href="membership.html" class="nav-link txtnav m-2 navtxt disabled textdisabled hvr-grow">Membership</a>
+                  </li>-->
+                   
+
+                  <!--<li class="nav-item">
+                      <a href="roadmap.html" class="nav-link txtnav m-2 navtxt hvr-grow ">Roadmap</a>
+                  </li>
+-->
+
+                 <!-- <li class="nav-item">
+                      <a href="#" class="nav-link txtnav m-2 navtxt hvr-grow ">Contact</a>
+                  </li>-->
+
+
+                  
+              
+   <li class="nav-item">
+                      <a href="#" class="nav-link txtnav m-2 navtxt  hvr-grow" target="blank">Connect Wallet</a>
+                  </li>
+
+
+                     <li class="nav-item">
+                      <a href=" " class="nav-link txtnav m-2 navtxt  hvr-grow" data-toggle="modal" data-target="#cartModal" ><i class="fas fa-cart-plus"></i> Cart</a>
+                  </li>
+                  
+              </ul>
+            </div>
+       </nav>
+ 
+     
+
+
+
+
+
+                          <!-- <video id="background-video" autoplay loop muted poster="">
+                              <source src="video/hero-video.mp4" type="video/mp4">
+                            </video>-->
+    <!--<div class="container-fluid  markethero">
+
+
+        <div class="row">
+    <div class="col">
+     
+      <h1 class="      text-center txth1   text-focus-in "> EXODUS, Goodbye World</h1>
+      <p class="      text-center txh1sl2 text-focus-in">Llega a lo más alto con 60 días de Omega, 500 PLEX, 500 000 puntos de habilidad, nueve SKIN llamativos, indumentaria de piloto y un acelerador cerebral «potenciador» de especialista. ¡Descubre tu potencial!</p>
+
+     <p class="      text-center txh1sl2 text-focus-in"> $49.99  </p>
+
+     <div>
+       <a href="" class="btnmarket">Buy Now</a>
+     </div>
+
+     <p class="      text-center txh1sl2 text-focus-in"> View Details  </p>
+       
+
+
+    </div>
+    <div class="col">
+      2 of 2
+    </div>
+  </div>
+
+
+     
+  </div>
+
+ 
+ 
+-->
+
+
+
+<div  class="mgtopbody" >
+ 
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper" >
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar" >
+
+
+
+            <!-- Sidebar - Brand -->
+            <a class="  d-flex align-items-center justify-content-center sidebarpadintop" href="index.html">
+                <!--<div class="sidebar-brand-icon rotate-n-15">
+           
+                </div>
+                <div class="sidebar-brand-text mx-3">EXODUS STORE<sup>         <i class="fas fa-crown"></i></sup></div>-->
+
+                <!--<img class="img-fluid" src="img/store-logotest.jpg" alt="">-->
+            </a>
+
+            <!-- Divider -->
+           
+
+              <!-- Heading -->
+            <div class="sidebar-heading ">
+               Memberships
+            </div>
+
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsemain"
+                    aria-expanded="true" aria-controls="collapsemain">
+                    <i class="fas fa-fw fa-scroll"></i>
+                    <span >Featured</span>
+                </a>
+                <div id="collapsemain" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-transparent py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Featured Items</h6>
+                        <a class="collapse-item" href="buttons.html">Free Item for Members</a>
+                        <a class="collapse-item" href="cards.html">Newly Released</a>
+                    </div>
+                </div>
+            </li>
+
+               <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsemain2"
+                    aria-expanded="true" aria-controls="collapsemain2">
+                    <i class="fas fa-fw fa-scroll"></i>
+                    <span >All tiers</span>
+                </a>
+                <div id="collapsemain2" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-transparent py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Featured Items</h6>
+                        <a class="collapse-item" href="buttons.html">Free Item for Members</a>
+                        <a class="collapse-item" href="cards.html">Newly Released</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            
+             <!-- Heading -->
+            <div class="sidebar-heading ">
+                New Items
+            </div>
+
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-scroll"></i>
+                    <span >Featured</span>
+                </a>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-transparent py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">List of Items</h6>
+                        <a class="collapse-item" href=" ">Free Item for Members</a>
+                        <a class="collapse-item" href=" ">Newly Released</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Nav Item - Utilities Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+                    aria-expanded="true" aria-controls="collapseUtilities">
+                    <i class="fas fa-fw fa-tags"></i>
+                    <span>Packs</span>
+                </a>
+                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-transparent py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Custom Packs:</h6>
+                        <a class="collapse-item" href=" ">Packs</a>
+                        <a class="collapse-item" href=" ">Packs</a>
+                        <a class="collapse-item" href=" ">Packs</a>
+                        <a class="collapse-item" href=" ">Packs</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Weareables
+            </div>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
+                    aria-expanded="true" aria-controls="collapsePages">
+                    <i class="fas fa-fw fa-smile"></i>
+                    <span>Emotes</span>
+                </a>
+                <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                    <div class="bg-transparent py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Emotes:</h6>
+                        <a class="collapse-item" href=" ">Emotes</a>
+                        <a class="collapse-item" href=" ">Emotes</a>
+                        <a class="collapse-item" href=" ">Emotes</a>
+                      
+                         
+                    </div>
+                </div>
+            </li>
+
+            <!-- Nav Item - Equipment -->
+
+                 <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsequipment"
+                    aria-expanded="true" aria-controls="collapsequipment">
+                    <i class="fas fa-fw fa-hammer"></i>
+                    <span>Equipment</span>
+                </a>
+                <div id="collapsequipment" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                    <div class="bg-transparent py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Equipment</h6>
+                        <a class="collapse-item" href=" ">Equipment</a>
+                        <a class="collapse-item" href=" ">Equipment</a>
+                        <a class="collapse-item" href="">EquipmentForgot Password</a>
+                      
+                         
+                    </div>
+                </div>
+            </li>
+
+
+                     <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePets"
+                    aria-expanded="true" aria-controls="collapsePets">
+                    <i class="fas fa-fw fa-dog"></i>
+                    <span>Pets</span>
+                </a>
+                <div id="collapsePets" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                    <div class="bg-transparent py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Pets</h6>
+                        <a class="collapse-item" href=" ">Pets</a>
+                        <a class="collapse-item" href=" ">Pets</a>
+                        <a class="collapse-item" href="">Pets</a>
+                      
+                         
+                    </div>
+                </div>
+            </li>
+
+        
+           
+         
+
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+            <!-- Sidebar Message
+            <div class="sidebar-card d-none d-lg-flex">
+                <img class="sidebar-card-illustration mb-2" src="img/RBP-White.png" alt="...">
+                <p class="text-center mb-2"><strong>Elevate your experience.</strong> Join our exclusive program!</p>
+                <a class="btn btn-primary btn-sm" href="#">Buy Membership now!</a>
+            </div> -->
+
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content ">
+
+                <!-- Topbar 
+                <nav class="navbar navbar-expand navbar-light bg-transparent topbar mb-4 static-top shadow">-->
+
+                    <!-- Sidebar Toggle (Topbar)
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button> -->
+
+                    <!-- Topbar Search 
+                    <form
+                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+                                aria-label="Search" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fas fa-search fa-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>-->
+
+                    <!-- Topbar Navbar 
+                    <ul class="navbar-nav ml-auto">-->
+
+                        <!-- Nav Item - Search Dropdown (Visible Only XS) 
+                        <li class="nav-item dropdown no-arrow d-sm-none">
+                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-search fa-fw"></i>
+                            </a>-->
+                            <!-- Dropdown - Messages 
+                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                                aria-labelledby="searchDropdown">
+                                <form class="form-inline mr-auto w-100 navbar-search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control bg-light border-0 small"
+                                            placeholder="Search for..." aria-label="Search"
+                                            aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="button">
+                                                <i class="fas fa-search fa-sm"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>-->
+
+                        <!-- Nav Item - Alerts 
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-bell fa-fw"></i>-->
+                                <!-- Counter - Alerts 
+                                <span class="badge badge-danger badge-counter">3+</span>
+                            </a>-->
+                            <!-- Dropdown - Alerts
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="alertsDropdown">
+                                <h6 class="dropdown-header">
+                                    Alerts Center
+                                </h6>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-primary">
+                                            <i class="fas fa-file-alt text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">December 12, 2019</div>
+                                        <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-success">
+                                            <i class="fas fa-donate text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">December 7, 2019</div>
+                                        $290.29 has been deposited into your account!
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-warning">
+                                            <i class="fas fa-exclamation-triangle text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">December 2, 2019</div>
+                                        Spending Alert: We've noticed unusually high spending for your account.
+                                    </div>
+                                </a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                            </div>
+                        </li> -->
+
+                        <!-- Nav Item - Messages 
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-envelope fa-fw"></i>-->
+                                <!-- Counter - Messages 
+                                <span class="badge badge-danger badge-counter">7</span>
+                            </a>-->
+                            <!-- Dropdown - Messages 
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="messagesDropdown">
+                                <h6 class="dropdown-header">
+                                    Message Center
+                                </h6>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="img/undraw_profile_1.svg"
+                                            alt="...">
+                                        <div class="status-indicator bg-success"></div>
+                                    </div>
+                                    <div class="font-weight-bold">
+                                        <div class="text-truncate">Hi there! I am wondering if you can help me with a
+                                            problem I've been having.</div>
+                                        <div class="small text-gray-500">Emily Fowler · 58m</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="img/undraw_profile_2.svg"
+                                            alt="...">
+                                        <div class="status-indicator"></div>
+                                    </div>
+                                    <div>
+                                        <div class="text-truncate">I have the photos that you ordered last month, how
+                                            would you like them sent to you?</div>
+                                        <div class="small text-gray-500">Jae Chun · 1d</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="img/undraw_profile_3.svg"
+                                            alt="...">
+                                        <div class="status-indicator bg-warning"></div>
+                                    </div>
+                                    <div>
+                                        <div class="text-truncate">Last month's report looks great, I am very happy with
+                                            the progress so far, keep up the good work!</div>
+                                        <div class="small text-gray-500">Morgan Alvarez · 2d</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60"
+                                            alt="...">
+                                        <div class="status-indicator bg-success"></div>
+                                    </div>
+                                    <div>
+                                        <div class="text-truncate">Am I a good boy? The reason I ask is because someone
+                                            told me that people say this to all dogs, even if they aren't good...</div>
+                                        <div class="small text-gray-500">Chicken the Dog · 2w</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
+                            </div>
+                        </li>
+
+                        <div class="topbar-divider d-none d-sm-block"></div>-->
+
+                        <!-- Nav Item - User Information 
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
+                                <img class="img-profile rounded-circle"
+                                    src="img/undraw_profile.svg">
+                            </a>-->
+                            <!-- Dropdown - User Information -->
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Profile
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Settings
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Activity Log
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Logout
+                                </a>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid contentaling">
+
+                    <!-- Page Heading 
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4 boxbordiv bgtophead internalhead"  >
+                    
+
+
+                          <div class="boxbordeimg  mx-auto d-block">
+                            <img class="img-fluid " src="img/bannertopstore.jpg" alt="test">
+                          </div>
+                         
+ 
+
+
+                    </div>-->
+
+                      <!-- Page Slider -->
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4   bgtophead margtopheaderstore "  >
+                    
+ <img class="img-fluid mx-auto d-block" src="img/concept2store.png">
+                             <!-- <div class="boxbordeimg  mx-auto d-block">
+
+
+  
+
+                                              <div class="row  divheader " >
+
+                                            
+                                            <div class="large-12 columns  ">
+                                               
+
+                                                     <div class="fadeOut owl-carousel owl-theme">
+                                                    
+                                                    <div class="item ">
+
+                                                      
+
+                                                     
+                                                       <img class="img-fluid" src="img/boxloot.jpg">
+                                                    </div>
+                                                    <div class="item ">
+                                                    <img class="img-fluid" src="img/elfears.jpg">
+                                                    </div>                                                                                                
+                                                
+                                                                                                  
+                                              </div> 
+                                         
+                                         </div>  
+                                        </div>
+ 
+                         
+                         </div>-->
+                    </div>
+
+
+                         <!-- Page product -->
+                    <div class="d-sm-flex align-items-center justify-content-between   boxbordiv bgtophead "  >
+                    
+
+
+                         <div class="card cardseparatorsright   stylecarbon"  style="max-width: 540px;">
+                            <div class="row g-0 ">
+                              <div class="col-md-4 ">
+                                <img src="img/icon-unicorn.jpg" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <h5 class="card-title producth">Item title</h5>
+                                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.  alias.  </p>
+                                    
+                                   <p class="card-text producdescr">$ 15.00 </p>
+                         
+
+
+                                    <!-- Default dropend button -->
+                                      <div class="btn-group dropend">
+                                       
+                                      <button  type="button" class="btn dropdown-toggle btnbuy"   id="dropdown" data-bs-toggle="dropdown" aria-expanded="false">Buy Now</button>
+                                       
+                                          
+                                          <ul class="dropdown-menu bg-dark">
+                                          <li> <a class="dropdown-item text-light" href="#"> Buy with Crypto &raquo; </a>
+          <ul class="submenu dropdown-menu">
+            <li><a class="dropdown-item" href="#">DAI</a></li>
+            <li><a class="dropdown-item" href="#">USDC</a></li>
+            <li><a class="dropdown-item" href="#">MATIC   </a>
+              
+            </li>
+            
+          </ul>
+        </li>
+
+                                          <li><a class="dropdown-item text-light" href="#">Buy with credit card</a></li>
+                                          <li><a class="dropdown-item text-light" href="#">Add to Cart</a></li>
+                                            
+                                        </ul>
+                                      </div>
+
+
+
+
+
+
+
+
+
+                   
+                            
+
+
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+
+                             <div class="card  cardseparatorsright midsep stylecarbon" style="max-width: 540px;">
+                              <div class="row g-0">
+                              <div class="col-md-4 ">
+                                <img src="img/icon-box.jpg" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <h5 class="card-title producth">Item title</h5>
+                                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.  alias.  </p>
+
+                                     <p class="card-text producdescr">$ 15.00 </p>
+
+                                          <div class="btn-group dropend">
+                                       
+                                      <button  type="button" class="btn dropdown-toggle btnbuy"   id="dropdown" data-bs-toggle="dropdown" aria-expanded="false">Buy Now</button>
+                                       
+                                          
+                                          <ul class="dropdown-menu bg-dark">
+                                          <li><a class="dropdown-item text-light" href="#">Buy with Crypto</a></li>
+                                          <li><a class="dropdown-item text-light" href="#">Buy with credit card</a></li>
+                                          <li><a class="dropdown-item text-light"  href=" ">Add to Cart</a></li>
+                                            
+                                        </ul>
+                                      </div>
+
+
+                      </div>
+                              </div>
+                            </div>
+                          </div>
+
+
+
+                             <div class="card cardseparatorsright  stylecarbon" style="max-width: 540px;">
+                            <div class="row g-0">
+                              <div class="col-md-4">
+                                <img src="img/icon-sir.png" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <h5 class="card-title producth">Item title</h5>
+                                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.  alias.  </p>
+
+                                     <p class="card-text producdescr">$ 15.00 </p>
+
+                                   
+
+                                      <div class="btn-group dropend">
+                                       
+                                      <button  type="button" class="btn dropdown-toggle btnbuy"   id="dropdown" data-bs-toggle="dropdown" aria-expanded="false">Buy Now</button>
+                                       
+                                          
+                                          <ul class="dropdown-menu bg-dark">
+                                          <li><a class="dropdown-item text-light" href="#">Buy with Crypto</a></li>
+                                          <li><a class="dropdown-item text-light" href="#">Buy with credit card</a></li>
+                                          <li><a class="dropdown-item text-light" href="#">Add to Cart</a></li>
+                                            
+                                        </ul>
+                                      </div>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+
+                                                   
+ 
+
+
+                    </div>
+
+
+
+
+                     <!-- Page product --> 
+                    <div class="d-sm-flex align-items-center justify-content-between   boxbordiv bgtophead  cardseparatortop"  >
+                    
+
+
+                         <div class="card cardseparatorsright   stylecarbon"  style="max-width: 540px;">
+                            <div class="row g-0 ">
+                              <div class="col-md-4 ">
+                                <img src="img/icon-unicorn.jpg" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <h5 class="card-title producth">Item title</h5>
+                                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.  alias.  </p>
+                                    
+                                   <p class="card-text producdescr">$ 15.00 </p>
+
+                                       <div class="btn-group dropend">
+                                       
+                                      <button  type="button" class="btn dropdown-toggle btnbuy"   id="dropdown" data-bs-toggle="dropdown" aria-expanded="false">Buy Now</button>
+                                       
+                                          
+                                          <ul class="dropdown-menu bg-dark">
+                                          <li><a class="dropdown-item text-light" href="#">Buy with Crypto</a></li>
+                                          <li><a class="dropdown-item text-light" href="#">Buy with credit card</a></li>
+                                          <li><a class="dropdown-item text-light" href="#">Add to Cart</a></li>
+                                            
+                                        </ul>
+                                      </div>
+
+                                     
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+
+                             <div class="card  cardseparatorsright midsep stylecarbon" style="max-width: 540px;">
+                              <div class="row g-0">
+                              <div class="col-md-4 ">
+                                <img src="img/icon-box.jpg" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <h5 class="card-title producth">Item title</h5>
+                                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.  alias.  </p>
+
+                                     <p class="card-text producdescr">$ 15.00 </p>
+
+                                        <div class="btn-group dropend">
+                                       
+                                      <button  type="button" class="btn dropdown-toggle btnbuy"   id="dropdown" data-bs-toggle="dropdown" aria-expanded="false">Buy Now</button>
+                                       
+                                          
+                                          <ul class="dropdown-menu bg-dark">
+                                          <li><a class="dropdown-item text-light" href="#">Buy with Crypto</a></li>
+                                          <li><a class="dropdown-item text-light" href="#">Buy with credit card</a></li>
+                                          <li><a class="dropdown-item text-light" href="#">Add to Cart</a></li>
+                                            
+                                        </ul>
+                                      </div>
+                          
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+
+
+                             <div class="card cardseparatorsright   stylecarbon" style="max-width: 540px;">
+                            <div class="row g-0">
+                              <div class="col-md-4">
+                                <img src="img/icon-sir.png" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <h5 class="card-title producth">Item title</h5>
+                                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.  alias.  </p>
+
+                                     <p class="card-text producdescr">$ 15.00 </p>
+
+                                        <div class="btn-group dropend">
+                                       
+                                      <button  type="button" class="btn dropdown-toggle btnbuy"   id="dropdown" data-bs-toggle="dropdown" aria-expanded="false">Buy Now</button>
+                                       
+                                          
+                                          <ul class="dropdown-menu bg-dark">
+                                          <li><a class="dropdown-item text-light" href="#">Buy with Crypto</a></li>
+                                          <li><a class="dropdown-item text-light" href="#">Buy with credit card</a></li>
+                                          <li><a class="dropdown-item text-light" href="#">Add to Cart</a></li>
+                                            
+                                        </ul>
+                                      </div>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+
+                                                   
+ 
+
+
+                    </div>
+
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+        
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="login.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+             
+
+
+
+
+
+
+
+
+
+ <!--
+
+
+<div class="container-fluid   bgtexturegame">
+
+   <div class="container paddingboths">
+
+    <h2 class="tittlepads txth2nft">NFTs & Collectibles</h2>
+     <div class="row">
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid">
+                <div class="product-image">
+                    <a href="#" class="image">
+                        <img src="img/ahmad-team.jpg">
+                    </a>
+                    <span class="product-discount-label"></span>
+                    <ul class="product-links">
+                        <li><a href="#"><i class="fa fa-search"></i></a></li>
+                      
+                    </ul>
+                    <a href="" class="add-to-cart">Buy Now</a>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Peasant Membership</a></h3>
+                    <p>Highlighs</p>
+                    <div class="price">$13.99 <span>$29.50</span></div>
+                </div>
+            </div>
+        </div>
+            <div class="col-md-3 col-sm-6">
+            <div class="product-grid">
+                <div class="product-image">
+                    <a href="#" class="image">
+                        <img src="img/jtv-team.jpg">
+                    </a>
+                    <span class="product-discount-label">-5%</span>
+                    <ul class="product-links">
+                        <li><a href="#"><i class="fa fa-search"></i></a></li>
+                       
+                    </ul>
+                    <a href="" class="add-to-cart">Buy Now</a>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Burgher Membership </a></h3>
+                    <p>Highlighs</p>
+                    <div class="price">$35.99 <span>$59.99</span></div>
+                </div>
+            </div>
+        </div>
+
+            <div class="col-md-3 col-sm-6">
+            <div class="product-grid">
+                <div class="product-image">
+                    <a href="#" class="image">
+                        <img src="img/ahmad-team.jpg">
+                    </a>
+                    <span class="product-discount-label">-15%</span>
+                    <ul class="product-links">
+                        <li><a href="#"><i class="fa fa-search"></i></a></li>
+                        >
+                    </ul>
+                    <a href="" class="add-to-cart">Buy Now</a>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Duke Membership </a></h3>
+                    <p>Highlighs</p>
+                    <div class="price">$50.00 <span>$75.00</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="product-grid">
+                <div class="product-image">
+                    <a href="#" class="image">
+                        <img src="img/ahmad-team.jpg">
+                    </a>
+                    <span class="product-discount-label">-30></-30>%</span>
+                    <ul class="product-links">
+                        <li><a href="#"><i class="fa fa-search"></i></a></li>
+                        
+                    </ul>
+                    <a href="" class="add-to-cart">Buy Now</a>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">King Membership</a></h3>
+                    <p>Highlighs</p>
+                    <div class="price">$75.55</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+  </div>
+
+
+
+ 
+  </div>
+  
+</div>-->
+
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+
+
+<div class="modal " id="cartModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered " role="document">
+    <div class="modal-content ">
+      <div class="modal-header border-bottom-0">
+        <h5 class="modal-title" id="exampleModalLabel">
+          Your Shopping Cart
+        </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table class="table table-image">
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">Product</th>
+              <th scope="col">Price</th>
+              <th scope="col">Qty</th>
+              <th scope="col">Total</th>
+              <th scope="col">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="w-25">
+                <img src="img/icon-unicorn.jpg" class="img-fluid img-thumbnail" alt="Sheep">
+              </td>
+              <td>BABY UNICORN</td>
+              <td>50$</td>
+              <td class="qty"><input type="text" class="form-control" id="input1" value="2"></td>
+              <td>15$</td>
+              <td>
+                <a href="#" class="btn btn-danger btn-sm">
+                  <i class="fa fa-times"></i>
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table> 
+        <div class="d-flex justify-content-end">
+          <h5>Total: <span class="price text-primary">30$</span></h5>
+        </div>
+      </div>
+      <div class="modal-footer border-top-0 d-flex justify-content-between">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-dark">Checkout</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+ 
+
+
+
+
+ 
+ 
+  
+
+<footer class="footer-02">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-10 col-lg-6">
+            <div class="subscribe mb-5">
+              <!--<form action="#" class="subscribe-form">
+                <div class="form-group d-flex">
+ 
+                  <input type="text" class="form-control rounded-left" placeholder="subscribe to our newsletters">
+ 
+                  <input type="submit" value="Subscribe" class="form-control submit px-3">
+                </div>
+              </form>-->
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-lg-5">
+            <div class="row">
+              <div class="col-md-12 col-lg-8 mb-md-0 mb-4">
+                <img src="img/white-logo-footer.png" class="img-fluid" alt="logo exodus footer">
+                <p class="paddinton">Exodus is a medieval era metaverse RPG built on decentraland that brings a new adventure to the metaverse.</p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8 col-lg-7">
+            <div class="row">
+              <!-- <div class="col-md-3 mb-md-0 mb-4 border-left">
+                <h2 class="footer-heading">Explore</h2>
+                <ul class="list-unstyled">
+                   
+                   
+                  <li><a href="#" class="py-1 d-block">Help &amp; Support</a></li>
+                </ul>
+              </div>-->
+              <!--<div class="col-md-3 mb-md-0 mb-4 border-left">
+                <h2 class="footer-heading">About</h2>
+                <ul class="list-unstyled">
+              
+                  <li><a href="#" class="py-1 d-block">Team</a></li>
+                  <li><a href="#" class="py-1 d-block">Careers</a></li>
+                  <li><a href="#" class="py-1 d-block">Blog</a></li>
+                </ul>
+              </div>-->
+              <div class="col-md-6 mb-md-0 mb-4 border-left">
+                <h2 class="footer-heading">Game</h2>
+                <ul class="list-unstyled">
+                   
+                  <li><a href="https://forum.exodusgbw.io/index.php?board=13.0" target="blank" class="py-1 d-block">How to Play EXODUS</a></li>
+                  
+                </ul>
+              </div>
+              <div class="col-md-6 mb-md-0 mb-4 border-left">
+                <h2 class="footer-heading">Communities
+</h2>
+                <ul class="list-unstyled">
+                   <li><a href="https://discord.gg/R5Gp5KxMb6" target="blank" class="py-1 d-block">  <i class="fab fa-discord  "></i> Discord</a></li>
+                   <li><a href="https://twitter.com/exodusgbw" target="blank" target="blank" class="py-1 d-block">  <i class="fab fa-twitter-square  "></i> Twitter</a></li>
+                  <li><a href="https://www.facebook.com/Exodusgbw" target="blank" class="py-1 d-block">  <i class="fab fa-facebook-square  "></i>  Facebook</a></li>
+                  </i> 
+                  <li><a href="https://www.instagram.com/exodusgbw/" target="blank" class="py-1 d-block">  <i class="fab fa-instagram   "></i>  Instagram</a></li>
+                  <!--<li><a href="#" target="blank" class="py-1 d-block">  <i class="fab fa-youtube-square  "></i> Youtube</a></li>-->
+                </ul>
+              </div>
+            </div> 
+
+
+          </div>
+        </div>
+        <div class="row partner-wrap mt-5">
+          <div class="col-md-12">
+            <div class="row align-items-center">
+              <div class="col">
+                <h3 class="mb-0">Our Partners:</h3>
+              </div>
+              <div class="col-md-9">
+                <p class="partner-name mb-0">
+                   <a href="#">  <img src="img/decentrland-logo.png" width="100" height="100" alt="waifumons"></a>
+                  <a href="#">  <img src="img/waifumon.png" alt="waifumons" width="300" height="147"></a>
+                  
+                </p>
+              </div>
+              <div class="col text-md-right">
+              
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-6 col-lg-8">
+
+            <p class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script>  All Rights Reserved by Exodus <i class="fa  fa-heart"></i> <a href="https://www.exodusgbw.io" target="_blank">| Goodbye World.</a>
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+          </div>
+
+
+          <div class="col-md-6 col-lg-4 text-md-right">
+            <p class="mb-0 list-unstyled">
+              <a class="mr-md-3" href="terms.html">Terms</a>
+              <a class="mr-md-3" href="#">Privacy</a>
+              <a class="mr-md-3" href="#">Compliances</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+ 
+</div>
+ 
+<!-- Modal -->
+
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+
+      
+      <div class="modal-body">
+
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>        
+        <!-- 16:9 aspect ratio -->
+<div class="embed-responsive embed-responsive-16by9">
+   <iframe width="1000" height="600" src="https://www.youtube.com/embed/zY0RS72DaVE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+        
+        
+      </div>
+
+    </div>
+  </div>
+   
+
+
+ 
+
+ <script>
+   $(document).ready(function() {
+
+// Gets the video src from the data-src on each button
+
+var $videoSrc;  
+$('.video-btn').click(function() {
+    $videoSrc = $(this).data( "src" );
+});
+console.log($videoSrc);
+
+  
+  
+// when the modal is opened autoplay it  
+$('#myModal').on('shown.bs.modal', function (e) {
+    
+// set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
+$("#video").attr('src',$videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
+
+})
+  
+
+
+// stop playing the youtube video when I close the modal
+$('#myModal').on('hide.bs.modal', function (e) {
+    // a poor man's stop video
+    $("#video").attr('src',$videoSrc); 
+}) 
+    
+    
+
+
+  
+  
+// document ready  
+});
+
+
+
+ </script>
+ <script src="js/exodusstorejs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript">
+  
+  document.addEventListener("DOMContentLoaded", function(event) {
+
+
+const cartButtons = document.querySelectorAll('.cart-button');
+
+cartButtons.forEach(button => {
+
+button.addEventListener('click',cartClick);
+
+});
+
+function cartClick(){
+let button =this;
+button.classList.add('clicked');
+}
+
+
+
+});
+</script>
+
+<script>
+            $(document).ready(function() {
+              var owl = $('.owl-carousel');
+              owl.owlCarousel({
+                items: 1,
+                dots: false,
+                loop: true,
+                margin: 10,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplayHoverPause: true
+              });
+              $('.play').on('click', function() {
+                owl.trigger('play.owl.autoplay', [1000])
+              })
+              $('.stop').on('click', function() {
+                owl.trigger('stop.owl.autoplay')
+              })
+            })
+          </script>
+
+ 
+ <script>
+document.addEventListener("DOMContentLoaded", function(){
+// make it as accordion for smaller screens
+if (window.innerWidth < 992) {
+
+  // close all inner dropdowns when parent is closed
+  document.querySelectorAll('.navbar .dropdown').forEach(function(everydropdown){
+    everydropdown.addEventListener('hidden.bs.dropdown', function () {
+      // after dropdown is hidden, then find all submenus
+        this.querySelectorAll('.submenu').forEach(function(everysubmenu){
+          // hide every submenu as well
+          everysubmenu.style.display = 'none';
+        });
+    })
+  });
+
+  document.querySelectorAll('.dropdown-menu a').forEach(function(element){
+    element.addEventListener('click', function (e) {
+        let nextEl = this.nextElementSibling;
+        if(nextEl && nextEl.classList.contains('submenu')) {  
+          // prevent opening link if link needs to open dropdown
+          e.preventDefault();
+          if(nextEl.style.display == 'block'){
+            nextEl.style.display = 'none';
+          } else {
+            nextEl.style.display = 'block';
+          }
+
+        }
+    });
+  })
+}
+// end if innerWidth
+}); 
+</script>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ <!-- Core plugin JavaScript
+    <script src="js/jquery.easing.min.js"></script>
+ -->
+
+  </body>
+</html>
