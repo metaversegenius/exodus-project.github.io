@@ -28,7 +28,7 @@
 
    <link rel="icon" href="img/favicon.ico">
    
-   
+    <link rel="stylesheet" href="css/style.css">
 
     <link rel="stylesheet" href="css/exodustore.css">
 
@@ -44,27 +44,7 @@
 
 
 /*MARKETPLACE*/
-@media all and (min-width: 992px) {
-  .dropdown-menu li{ position: relative;  }
-  .nav-item .submenu{ 
-    display: none;
-    position: absolute;
-    left:100%; top:-7px;
-  }
-  .nav-item .submenu-left{ 
-    right:100%; left:auto;
-  }
-  .dropdown-menu > li:hover{ background-color: #f1f1f1 }
-  .dropdown-menu > li:hover > .submenu{ display: block; }
-} 
-/* ============ desktop view .end// ============ */
 
-/* ============ small devices ============ */
-@media (max-width: 991px) {
-  .dropdown-menu .dropdown-menu{
-      margin-left:0.7rem; margin-right:0.7rem; margin-bottom: .5rem;
-  }
-} 
 
 
 
@@ -108,6 +88,7 @@
 .margtopheaderstore
 {
   margin-top: 50px;
+
 }
 
 .fontside
@@ -561,7 +542,8 @@ max-width: 100%;
       font-size: 1em;
     }
 
-
+  
+ 
 
    .shrink .btnpn
     {
@@ -1094,7 +1076,7 @@ font-size: 2em;
   {
   display: block;
   height: 100%;
-  font-size: 1.2em;
+  font-size: 1.1em;
   position: relative;
   display: flex;
   align-items: center;
@@ -3601,10 +3583,16 @@ font-size: 3em;
                       <a href="https://exodusgbw.io/" class="nav-link txtnav m-2 navtxt  hvr-grow" target="blank">HOME</a>
                   </li>
 
+                    <li class="nav-item">
+                           <a href="store.html" class="nav-link txtnav m-2 navtxt  hvr-grow" target="blank">STORE</a>
+                        </li>
+
                       
                         <li class="nav-item">
-                      <a href="https://play.decentraland.org/?position=128%2C44&realm=dg" class="nav-link txtnav m-2 navtxt  hvr-grow" target="blank">PLAY NOW</a>
-                  </li>
+                           <a href="https://play.decentraland.org/?position=128%2C44&realm=dg" class="nav-link txtnav m-2 navtxt  hvr-grow" target="blank">PLAY NOW</a>
+                        </li>
+
+                         
 
 
                       <li class="nav-item">
@@ -3618,23 +3606,14 @@ font-size: 3em;
                   </li>-->
  
                    <li class="nav-item">
-                      <a href="https://forum.exodusgbw.io/" class="nav-link txtnav m-2 navtxt  hvr-grow" target="blank">Forum</a>
+                      <a href="https://forum.exodusgbw.io/" class="nav-link txtnav m-2 navtxt  hvr-grow" target="blank">FORUM</a>
                   </li>
+
+                        <li class="nav-item">
+                           <a href="store.html" class="nav-link txtnav m-2 navtxt  hvr-grow" target="blank">HIGHSCORES</a>
+                        </li>
                  
-                 <!-- <li class="nav-item">
-                      <a href="membership.html" class="nav-link txtnav m-2 navtxt disabled textdisabled hvr-grow">Membership</a>
-                  </li>-->
-                   
-
-                  <!--<li class="nav-item">
-                      <a href="roadmap.html" class="nav-link txtnav m-2 navtxt hvr-grow ">Roadmap</a>
-                  </li>
--->
-
-                 <!-- <li class="nav-item">
-                      <a href="#" class="nav-link txtnav m-2 navtxt hvr-grow ">Contact</a>
-                  </li>-->
-
+              
 
                   
               
@@ -3648,6 +3627,19 @@ font-size: 3em;
                   </li>
                   
               </ul>
+
+              <ul class="nav navbar-nav navbar-right">
+   
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle " data-toggle="dropdown">
+          <img src="img/mrham-team.png" height="50" width="50" class="shrink-image  rounded-circle  "> Test <b class="caret"></b></a>
+          <ul class="dropdown-menu bg-dark-nav">
+            <li><a href="#"><i class="fa fa-cog"></i> Account</a></li>
+                        <li class="divider"></li>
+            <li><a href="#"><i class="fa fa-sign-out"></i> Sign-out</a></li>
+          </ul>
+        </li>
+      </ul>
             </div>
        </nav>
  
@@ -3657,47 +3649,13 @@ font-size: 3em;
 
 
 
-                          <!-- <video id="background-video" autoplay loop muted poster="">
-                              <source src="video/hero-video.mp4" type="video/mp4">
-                            </video>-->
-    <!--<div class="container-fluid  markethero">
+           
 
 
-        <div class="row">
-    <div class="col">
-     
-      <h1 class="      text-center txth1   text-focus-in "> EXODUS, Goodbye World</h1>
-      <p class="      text-center txh1sl2 text-focus-in">Llega a lo más alto con 60 días de Omega, 500 PLEX, 500 000 puntos de habilidad, nueve SKIN llamativos, indumentaria de piloto y un acelerador cerebral «potenciador» de especialista. ¡Descubre tu potencial!</p>
 
-     <p class="      text-center txh1sl2 text-focus-in"> $49.99  </p>
-
-     <div>
-       <a href="" class="btnmarket">Buy Now</a>
-     </div>
-
-     <p class="      text-center txh1sl2 text-focus-in"> View Details  </p>
-       
-
-
-    </div>
-    <div class="col">
-      2 of 2
-    </div>
-  </div>
-
-
-     
-  </div>
-
+<div  class="mgtopbody" id="page-top" >
  
  
--->
-
-
-
-<div  class="mgtopbody" >
- 
-<body id="page-top">
 
     <!-- Page Wrapper -->
     <div id="wrapper" >
@@ -3730,7 +3688,7 @@ font-size: 3em;
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsemain"
                     aria-expanded="true" aria-controls="collapsemain">
-                    <i class="fas fa-fw fa-scroll"></i>
+                     <img src="img/peticon.png" width="32" height="32"  alt="">
                     <span >Featured</span>
                 </a>
                 <div id="collapsemain" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
@@ -3745,7 +3703,7 @@ font-size: 3em;
                <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsemain2"
                     aria-expanded="true" aria-controls="collapsemain2">
-                    <i class="fas fa-fw fa-scroll"></i>
+                    <img src="img/peticon.png" width="32" height="32"  alt="">
                     <span >All tiers</span>
                 </a>
                 <div id="collapsemain2" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
@@ -3771,7 +3729,7 @@ font-size: 3em;
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-scroll"></i>
+                   <img src="img/peticon.png" width="32" height="32"  alt="">
                     <span >Featured</span>
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
@@ -3787,7 +3745,7 @@ font-size: 3em;
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
                     aria-expanded="true" aria-controls="collapseUtilities">
-                    <i class="fas fa-fw fa-tags"></i>
+                   <img src="img/peticon.png" width="32" height="32"  alt="">
                     <span>Packs</span>
                 </a>
                 <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
@@ -3814,7 +3772,7 @@ font-size: 3em;
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
                     aria-expanded="true" aria-controls="collapsePages">
-                    <i class="fas fa-fw fa-smile"></i>
+                     <img src="img/peticon.png" width="32" height="32"  alt="">
                     <span>Emotes</span>
                 </a>
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
@@ -3834,11 +3792,12 @@ font-size: 3em;
                  <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsequipment"
                     aria-expanded="true" aria-controls="collapsequipment">
-                    <i class="fas fa-fw fa-hammer"></i>
+                     <img src="img/peticon.png" width="32" height="32"  alt="">
                     <span>Equipment</span>
                 </a>
                 <div id="collapsequipment" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-transparent py-2 collapse-inner rounded">
+
                         <h6 class="collapse-header">Equipment</h6>
                         <a class="collapse-item" href=" ">Equipment</a>
                         <a class="collapse-item" href=" ">Equipment</a>
@@ -3853,7 +3812,7 @@ font-size: 3em;
                      <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePets"
                     aria-expanded="true" aria-controls="collapsePets">
-                    <i class="fas fa-fw fa-dog"></i>
+                    <img src="img/peticon.png" width="32" height="32"  alt="">
                     <span>Pets</span>
                 </a>
                 <div id="collapsePets" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
@@ -3880,198 +3839,26 @@ font-size: 3em;
                 <button class="rounded-circle border-0" id="sidebarToggle"></button>
             </div>
 
-            <!-- Sidebar Message
-            <div class="sidebar-card d-none d-lg-flex">
-                <img class="sidebar-card-illustration mb-2" src="img/RBP-White.png" alt="...">
-                <p class="text-center mb-2"><strong>Elevate your experience.</strong> Join our exclusive program!</p>
-                <a class="btn btn-primary btn-sm" href="#">Buy Membership now!</a>
-            </div> -->
+          
 
         </ul>
-        <!-- End of Sidebar -->
+        
 
-        <!-- Content Wrapper -->
+<!-- END SIDEBAR ---------------------------------------------------------------------------------------->
+
+
+
+
+
+
+
         <div id="content-wrapper" class="d-flex flex-column">
 
             <!-- Main Content -->
             <div id="content ">
 
-                <!-- Topbar 
-                <nav class="navbar navbar-expand navbar-light bg-transparent topbar mb-4 static-top shadow">-->
-
-                    <!-- Sidebar Toggle (Topbar)
-                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-                        <i class="fa fa-bars"></i>
-                    </button> -->
-
-                    <!-- Topbar Search 
-                    <form
-                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-                        <div class="input-group">
-                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
-                                aria-label="Search" aria-describedby="basic-addon2">
-                            <div class="input-group-append">
-                                <button class="btn btn-primary" type="button">
-                                    <i class="fas fa-search fa-sm"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </form>-->
-
-                    <!-- Topbar Navbar 
-                    <ul class="navbar-nav ml-auto">-->
-
-                        <!-- Nav Item - Search Dropdown (Visible Only XS) 
-                        <li class="nav-item dropdown no-arrow d-sm-none">
-                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fas fa-search fa-fw"></i>
-                            </a>-->
-                            <!-- Dropdown - Messages 
-                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
-                                aria-labelledby="searchDropdown">
-                                <form class="form-inline mr-auto w-100 navbar-search">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control bg-light border-0 small"
-                                            placeholder="Search for..." aria-label="Search"
-                                            aria-describedby="basic-addon2">
-                                        <div class="input-group-append">
-                                            <button class="btn btn-primary" type="button">
-                                                <i class="fas fa-search fa-sm"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </li>-->
-
-                        <!-- Nav Item - Alerts 
-                        <li class="nav-item dropdown no-arrow mx-1">
-                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fas fa-bell fa-fw"></i>-->
-                                <!-- Counter - Alerts 
-                                <span class="badge badge-danger badge-counter">3+</span>
-                            </a>-->
-                            <!-- Dropdown - Alerts
-                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                                aria-labelledby="alertsDropdown">
-                                <h6 class="dropdown-header">
-                                    Alerts Center
-                                </h6>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="mr-3">
-                                        <div class="icon-circle bg-primary">
-                                            <i class="fas fa-file-alt text-white"></i>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="small text-gray-500">December 12, 2019</div>
-                                        <span class="font-weight-bold">A new monthly report is ready to download!</span>
-                                    </div>
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="mr-3">
-                                        <div class="icon-circle bg-success">
-                                            <i class="fas fa-donate text-white"></i>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="small text-gray-500">December 7, 2019</div>
-                                        $290.29 has been deposited into your account!
-                                    </div>
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="mr-3">
-                                        <div class="icon-circle bg-warning">
-                                            <i class="fas fa-exclamation-triangle text-white"></i>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="small text-gray-500">December 2, 2019</div>
-                                        Spending Alert: We've noticed unusually high spending for your account.
-                                    </div>
-                                </a>
-                                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
-                            </div>
-                        </li> -->
-
-                        <!-- Nav Item - Messages 
-                        <li class="nav-item dropdown no-arrow mx-1">
-                            <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fas fa-envelope fa-fw"></i>-->
-                                <!-- Counter - Messages 
-                                <span class="badge badge-danger badge-counter">7</span>
-                            </a>-->
-                            <!-- Dropdown - Messages 
-                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                                aria-labelledby="messagesDropdown">
-                                <h6 class="dropdown-header">
-                                    Message Center
-                                </h6>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_1.svg"
-                                            alt="...">
-                                        <div class="status-indicator bg-success"></div>
-                                    </div>
-                                    <div class="font-weight-bold">
-                                        <div class="text-truncate">Hi there! I am wondering if you can help me with a
-                                            problem I've been having.</div>
-                                        <div class="small text-gray-500">Emily Fowler · 58m</div>
-                                    </div>
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_2.svg"
-                                            alt="...">
-                                        <div class="status-indicator"></div>
-                                    </div>
-                                    <div>
-                                        <div class="text-truncate">I have the photos that you ordered last month, how
-                                            would you like them sent to you?</div>
-                                        <div class="small text-gray-500">Jae Chun · 1d</div>
-                                    </div>
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_3.svg"
-                                            alt="...">
-                                        <div class="status-indicator bg-warning"></div>
-                                    </div>
-                                    <div>
-                                        <div class="text-truncate">Last month's report looks great, I am very happy with
-                                            the progress so far, keep up the good work!</div>
-                                        <div class="small text-gray-500">Morgan Alvarez · 2d</div>
-                                    </div>
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60"
-                                            alt="...">
-                                        <div class="status-indicator bg-success"></div>
-                                    </div>
-                                    <div>
-                                        <div class="text-truncate">Am I a good boy? The reason I ask is because someone
-                                            told me that people say this to all dogs, even if they aren't good...</div>
-                                        <div class="small text-gray-500">Chicken the Dog · 2w</div>
-                                    </div>
-                                </a>
-                                <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
-                            </div>
-                        </li>
-
-                        <div class="topbar-divider d-none d-sm-block"></div>-->
-
-                        <!-- Nav Item - User Information 
-                        <li class="nav-item dropdown no-arrow">
-                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
-                                <img class="img-profile rounded-circle"
-                                    src="img/undraw_profile.svg">
-                            </a>-->
+             
+                           
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="userDropdown">
@@ -4102,301 +3889,334 @@ font-size: 3em;
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid contentaling">
-
-                    <!-- Page Heading 
-                    <div class="d-sm-flex align-items-center justify-content-between mb-4 boxbordiv bgtophead internalhead"  >
-                    
-
-
-                          <div class="boxbordeimg  mx-auto d-block">
-                            <img class="img-fluid " src="img/bannertopstore.jpg" alt="test">
-                          </div>
-                         
  
-
-
-                    </div>-->
 
                       <!-- Page Slider -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4   bgtophead margtopheaderstore "  >
                     
- <img class="img-fluid mx-auto d-block" src="img/concept2store.png">
-                             <!-- <div class="boxbordeimg  mx-auto d-block">
-
-
-  
-
-                                              <div class="row  divheader " >
-
-                                            
-                                            <div class="large-12 columns  ">
-                                               
-
-                                                     <div class="fadeOut owl-carousel owl-theme">
-                                                    
-                                                    <div class="item ">
-
-                                                      
-
-                                                     
-                                                       <img class="img-fluid" src="img/boxloot.jpg">
-                                                    </div>
-                                                    <div class="item ">
-                                                    <img class="img-fluid" src="img/elfears.jpg">
-                                                    </div>                                                                                                
-                                                
-                                                                                                  
-                                              </div> 
-                                         
-                                         </div>  
-                                        </div>
- 
-                         
-                         </div>-->
+                    <img class="img-fluid mx-auto d-block" src="img/concept2store.png">
+                            
                     </div>
 
 
                          <!-- Page product -->
-                    <div class="d-sm-flex align-items-center justify-content-between   boxbordiv bgtophead "  >
+                    <div class="d-sm-flex align-items-center justify-content-between     bgtophead "  >
                     
 
+                       <div class="row row-cols-1 row-cols-md-3 g-4   bgtophead  cardseparatortop">
+                            <div class="col">
+                            <div class="card h-100 bg-card-init item-card">
 
-                         <div class="card cardseparatorsright   stylecarbon"  style="max-width: 540px;">
-                            <div class="row g-0 ">
-                              <div class="col-md-4 ">
-                                <img src="img/icon-unicorn.jpg" class="img-fluid rounded-start" alt="...">
+                                <img src="img/headerpic-store1.png" class="card-img-top" alt="...">   <span class="custom-badge bg-secondary">New</span> 
+                              <div class="card-body  ">
+                                <h5 class="card-title tittle-shop">The Hallow end Pack</h5>
+                                <p class="card-text txtbody-shop">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum suscipit eum quam omnis quasi facilis vitae amet cumque totam, harum iusto, minus similique reiciendis sapiente commodi vel asperiores, eos laudantium.</p>
                               </div>
-                              <div class="col-md-8">
-                                <div class="card-body">
-                                  <h5 class="card-title producth">Item title</h5>
-                                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.  alias.  </p>
-                                    
-                                   <p class="card-text producdescr">$ 15.00 </p>
-                         
 
+                             
+                              <div class="container mt-4">
+                                <div class="row padrightbtn">
+                                  <div class="col-4">
+                                    <p class="  text-start">Bundles</p>
+                                  </div>
+                                  <div class="col-4 text-end">
 
-                                    <!-- Default dropend button -->
-                                      <div class="btn-group dropend">
-                                       
-                                      <button  type="button" class="btn dropdown-toggle btnbuy"   id="dropdown" data-bs-toggle="dropdown" aria-expanded="false">Buy Now</button>
-                                       
-                                          
-                                          <ul class="dropdown-menu bg-dark">
-                                          <li> <a class="dropdown-item text-light" href="#"> Buy with Crypto &raquo; </a>
-          <ul class="submenu dropdown-menu">
-            <li><a class="dropdown-item" href="#">DAI</a></li>
-            <li><a class="dropdown-item" href="#">USDC</a></li>
-            <li><a class="dropdown-item" href="#">MATIC   </a>
-              
-            </li>
-            
-          </ul>
-        </li>
-
-                                          <li><a class="dropdown-item text-light" href="#">Buy with credit card</a></li>
-                                          <li><a class="dropdown-item text-light" href="#">Add to Cart</a></li>
-                                            
-                                        </ul>
-                                      </div>
-
-
-
-
-
-
-
-
-
-                   
-                            
-
-
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-
-                             <div class="card  cardseparatorsright midsep stylecarbon" style="max-width: 540px;">
-                              <div class="row g-0">
-                              <div class="col-md-4 ">
-                                <img src="img/icon-box.jpg" class="img-fluid rounded-start" alt="...">
-                              </div>
-                              <div class="col-md-8">
-                                <div class="card-body">
-                                  <h5 class="card-title producth">Item title</h5>
-                                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.  alias.  </p>
-
-                                     <p class="card-text producdescr">$ 15.00 </p>
-
-                                          <div class="btn-group dropend">
-                                       
-                                      <button  type="button" class="btn dropdown-toggle btnbuy"   id="dropdown" data-bs-toggle="dropdown" aria-expanded="false">Buy Now</button>
-                                       
-                                          
-                                          <ul class="dropdown-menu bg-dark">
-                                          <li><a class="dropdown-item text-light" href="#">Buy with Crypto</a></li>
-                                          <li><a class="dropdown-item text-light" href="#">Buy with credit card</a></li>
-                                          <li><a class="dropdown-item text-light"  href=" ">Add to Cart</a></li>
-                                            
-                                        </ul>
-                                      </div>
-
-
-                      </div>
-                              </div>
-                            </div>
-                          </div>
-
-
-
-                             <div class="card cardseparatorsright  stylecarbon" style="max-width: 540px;">
-                            <div class="row g-0">
-                              <div class="col-md-4">
-                                <img src="img/icon-sir.png" class="img-fluid rounded-start" alt="...">
-                              </div>
-                              <div class="col-md-8">
-                                <div class="card-body">
-                                  <h5 class="card-title producth">Item title</h5>
-                                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.  alias.  </p>
-
-                                     <p class="card-text producdescr">$ 15.00 </p>
-
-                                   
-
-                                      <div class="btn-group dropend">
-                                       
-                                      <button  type="button" class="btn dropdown-toggle btnbuy"   id="dropdown" data-bs-toggle="dropdown" aria-expanded="false">Buy Now</button>
-                                       
-                                          
-                                          <ul class="dropdown-menu bg-dark">
-                                          <li><a class="dropdown-item text-light" href="#">Buy with Crypto</a></li>
-                                          <li><a class="dropdown-item text-light" href="#">Buy with credit card</a></li>
-                                          <li><a class="dropdown-item text-light" href="#">Add to Cart</a></li>
-                                            
-                                        </ul>
-                                      </div>
-                                  
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-
-                                                   
- 
-
-
-                    </div>
-
-
-
-
-                     <!-- Page product --> 
-                    <div class="d-sm-flex align-items-center justify-content-between   boxbordiv bgtophead  cardseparatortop"  >
-                    
-
-
-                         <div class="card cardseparatorsright   stylecarbon"  style="max-width: 540px;">
-                            <div class="row g-0 ">
-                              <div class="col-md-4 ">
-                                <img src="img/icon-unicorn.jpg" class="img-fluid rounded-start" alt="...">
-                              </div>
-                              <div class="col-md-8">
-                                <div class="card-body">
-                                  <h5 class="card-title producth">Item title</h5>
-                                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.  alias.  </p>
-                                    
-                                   <p class="card-text producdescr">$ 15.00 </p>
-
-                                       <div class="btn-group dropend">
-                                       
-                                      <button  type="button" class="btn dropdown-toggle btnbuy"   id="dropdown" data-bs-toggle="dropdown" aria-expanded="false">Buy Now</button>
-                                       
-                                          
-                                          <ul class="dropdown-menu bg-dark">
-                                          <li><a class="dropdown-item text-light" href="#">Buy with Crypto</a></li>
-                                          <li><a class="dropdown-item text-light" href="#">Buy with credit card</a></li>
-                                          <li><a class="dropdown-item text-light" href="#">Add to Cart</a></li>
-                                            
-                                        </ul>
-                                      </div>
-
-                                     
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-
-                             <div class="card  cardseparatorsright midsep stylecarbon" style="max-width: 540px;">
-                              <div class="row g-0">
-                              <div class="col-md-4 ">
-                                <img src="img/icon-box.jpg" class="img-fluid rounded-start" alt="...">
-                              </div>
-                              <div class="col-md-8">
-                                <div class="card-body">
-                                  <h5 class="card-title producth">Item title</h5>
-                                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.  alias.  </p>
-
-                                     <p class="card-text producdescr">$ 15.00 </p>
-
-                                        <div class="btn-group dropend">
-                                       
-                                      <button  type="button" class="btn dropdown-toggle btnbuy"   id="dropdown" data-bs-toggle="dropdown" aria-expanded="false">Buy Now</button>
-                                       
-                                          
-                                          <ul class="dropdown-menu bg-dark">
-                                          <li><a class="dropdown-item text-light" href="#">Buy with Crypto</a></li>
-                                          <li><a class="dropdown-item text-light" href="#">Buy with credit card</a></li>
-                                          <li><a class="dropdown-item text-light" href="#">Add to Cart</a></li>
-                                            
-                                        </ul>
-                                      </div>
+                                    <button type="button" class="btn custom-btn-shop dropdown-toggle custom-btn-sm" id="dropdown" data-bs-toggle="dropdown" aria-expanded="false">BUY NOW</button>
                           
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-
-
-                             <div class="card cardseparatorsright   stylecarbon" style="max-width: 540px;">
-                            <div class="row g-0">
-                              <div class="col-md-4">
-                                <img src="img/icon-sir.png" class="img-fluid rounded-start" alt="...">
-                              </div>
-                              <div class="col-md-8">
-                                <div class="card-body">
-                                  <h5 class="card-title producth">Item title</h5>
-                                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.  alias.  </p>
-
-                                     <p class="card-text producdescr">$ 15.00 </p>
-
-                                        <div class="btn-group dropend">
-                                       
-                                      <button  type="button" class="btn dropdown-toggle btnbuy"   id="dropdown" data-bs-toggle="dropdown" aria-expanded="false">Buy Now</button>
-                                       
-                                          
-                                          <ul class="dropdown-menu bg-dark">
+                                      <ul class="dropdown-menu bg-dark">
                                           <li><a class="dropdown-item text-light" href="#">Buy with Crypto</a></li>
                                           <li><a class="dropdown-item text-light" href="#">Buy with credit card</a></li>
-                                          <li><a class="dropdown-item text-light" href="#">Add to Cart</a></li>
+                                           
                                             
                                         </ul>
-                                      </div>
+
+
+                                  </div>
+
+
+                                            
+                                          
                                   
+
+
+                                 <div class="col-4 padrightbtn  ">
+
+                                 
+                                    <button type="button" class="btn custom-btn-shop   custom-btn-sm">ADD TO CART</button>
+                                     
+
+
+                                  </div> 
+
                                 </div>
+                              </div>  
+
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="card h-100 bg-card-init item-card">
+
+                                <img src="img/headerpic-store1.png" class="card-img-top" alt="...">   <span class="custom-badge bg-secondary">New</span> 
+                              <div class="card-body  ">
+                                <h5 class="card-title tittle-shop">The Hallow end Pack</h5>
+                                <p class="card-text txtbody-shop">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum suscipit eum quam omnis quasi facilis vitae amet cumque totam, harum iusto, minus similique reiciendis sapiente commodi vel asperiores, eos laudantium.</p>
                               </div>
+
+                             
+                              <div class="container mt-4">
+                                <div class="row padrightbtn">
+                                  <div class="col-4">
+                                    <p class="  text-start">Bundles</p>
+                                  </div>
+                                  <div class="col-4 text-end">
+
+                                    <button type="button" class="btn custom-btn-shop dropdown-toggle custom-btn-sm" id="dropdown" data-bs-toggle="dropdown" aria-expanded="false">BUY NOW</button>
+                          
+                                      <ul class="dropdown-menu bg-dark">
+                                          <li><a class="dropdown-item text-light" href="#">Buy with Crypto</a></li>
+                                          <li><a class="dropdown-item text-light" href="#">Buy with credit card</a></li>
+                                           
+                                            
+                                        </ul>
+
+
+                                  </div>
+
+
+                                            
+                                          
+                                  
+
+
+                                 <div class="col-4 text-end">
+
+                                 
+                                    <button type="button" class="btn custom-btn-shop custom-btn-sm">ADD TO CART</button>
+                                     
+
+
+                                  </div> 
+
+                                </div>
+                              </div>  
+
+                            </div>
+                          </div>
+                            <div class="col">
+                            <div class="card h-100 bg-card-init item-card">
+
+                                <img src="img/headerpic-store1.png" class="card-img-top" alt="...">   <span class="custom-badge bg-secondary">New</span> 
+                              <div class="card-body  ">
+                                <h5 class="card-title tittle-shop">The Hallow end Pack</h5>
+                                <p class="card-text txtbody-shop">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum suscipit eum quam omnis quasi facilis vitae amet cumque totam, harum iusto, minus similique reiciendis sapiente commodi vel asperiores, eos laudantium.</p>
+                              </div>
+
+                             
+                              <div class="container mt-4">
+                                <div class="row padrightbtn">
+                                  <div class="col-4">
+                                    <p class="  text-start">Bundles</p>
+                                  </div>
+                                  <div class="col-4 text-end">
+
+                                    <button type="button" class="btn custom-btn-shop dropdown-toggle custom-btn-sm" id="dropdown" data-bs-toggle="dropdown" aria-expanded="false">BUY NOW</button>
+                          
+                                      <ul class="dropdown-menu bg-dark">
+                                          <li><a class="dropdown-item text-light" href="#">Buy with Crypto</a></li>
+                                          <li><a class="dropdown-item text-light" href="#">Buy with credit card</a></li>
+                                           
+                                            
+                                        </ul>
+
+
+                                  </div>
+
+
+                                            
+                                          
+                                  
+
+
+                                 <div class="col-4 text-end">
+
+                                 
+                                    <button type="button" class="btn custom-btn-shop custom-btn-sm">ADD TO CART</button>
+                                     
+
+
+                                  </div> 
+
+                                </div>
+                              </div>  
+
                             </div>
                           </div>
 
+
+                 
+
+                   </div>
 
                                                    
  
 
 
                     </div>
+
+
+                      <div class="row row-cols-1 row-cols-md-3 g-4   bgtophead  cardseparatortop marginbotstore">
+                            <div class="col">
+                            <div class="card h-100 bg-card-init item-card">
+
+                                <img src="img/headerpic-store1.png" class="card-img-top" alt="...">   <span class="custom-badge bg-secondary">New</span> 
+                              <div class="card-body  ">
+                                <h5 class="card-title tittle-shop">The Hallow end Pack</h5>
+                                <p class="card-text txtbody-shop">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum suscipit eum quam omnis quasi facilis vitae amet cumque totam, harum iusto, minus similique reiciendis sapiente commodi vel asperiores, eos laudantium.</p>
+                              </div>
+
+                             
+                              <div class="container mt-4">
+                                <div class="row padrightbtn">
+                                  <div class="col-4">
+                                    <p class="  text-start">Bundles</p>
+                                  </div>
+                                  <div class="col-4 text-end">
+
+                                    <button type="button" class="btn custom-btn-shop dropdown-toggle custom-btn-sm" id="dropdown" data-bs-toggle="dropdown" aria-expanded="false">BUY NOW</button>
+                          
+                                      <ul class="dropdown-menu bg-dark">
+                                          <li><a class="dropdown-item text-light" href="#">Buy with Crypto</a></li>
+                                          <li><a class="dropdown-item text-light" href="#">Buy with credit card</a></li>
+                                           
+                                            
+                                        </ul>
+
+
+                                  </div>
+
+
+                                            
+                                          
+                                  
+
+
+                                 <div class="col-4 padrightbtn  ">
+
+                                 
+                                    <button type="button" class="btn custom-btn-shop   custom-btn-sm">ADD TO CART</button>
+                                     
+
+
+                                  </div> 
+
+                                </div>
+                              </div>  
+
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="card h-100 bg-card-init item-card">
+
+                                <img src="img/headerpic-store1.png" class="card-img-top" alt="...">   <span class="custom-badge bg-secondary">New</span> 
+                              <div class="card-body  ">
+                                <h5 class="card-title tittle-shop">The Hallow end Pack</h5>
+                                <p class="card-text txtbody-shop">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum suscipit eum quam omnis quasi facilis vitae amet cumque totam, harum iusto, minus similique reiciendis sapiente commodi vel asperiores, eos laudantium.</p>
+                              </div>
+
+                             
+                              <div class="container mt-4">
+                                <div class="row padrightbtn">
+                                  <div class="col-4">
+                                    <p class="  text-start">Bundles</p>
+                                  </div>
+                                  <div class="col-4 text-end">
+
+                                    <button type="button" class="btn custom-btn-shop dropdown-toggle custom-btn-sm" id="dropdown" data-bs-toggle="dropdown" aria-expanded="false">BUY NOW</button>
+                          
+                                      <ul class="dropdown-menu bg-dark">
+                                          <li><a class="dropdown-item text-light" href="#">Buy with Crypto</a></li>
+                                          <li><a class="dropdown-item text-light" href="#">Buy with credit card</a></li>
+                                           
+                                            
+                                        </ul>
+
+
+                                  </div>
+
+
+                                            
+                                          
+                                  
+
+
+                                 <div class="col-4 text-end">
+
+                                 
+                                    <button type="button" class="btn custom-btn-shop custom-btn-sm">ADD TO CART</button>
+                                     
+
+
+                                  </div> 
+
+                                </div>
+                              </div>  
+
+                            </div>
+                          </div>
+                            <div class="col">
+                            <div class="card h-100 bg-card-init item-card">
+
+                                <img src="img/headerpic-store1.png" class="card-img-top" alt="...">   <span class="custom-badge bg-secondary">New</span> 
+                              <div class="card-body  ">
+                                <h5 class="card-title tittle-shop">The Hallow end Pack</h5>
+                                <p class="card-text txtbody-shop">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum suscipit eum quam omnis quasi facilis vitae amet cumque totam, harum iusto, minus similique reiciendis sapiente commodi vel asperiores, eos laudantium.</p>
+                              </div>
+
+                             
+                              <div class="container mt-4">
+                                <div class="row padrightbtn">
+                                  <div class="col-4">
+                                    <p class="  text-start">Bundles</p>
+                                  </div>
+                                  <div class="col-4 text-end">
+
+                                    <button type="button" class="btn custom-btn-shop dropdown-toggle custom-btn-sm" id="dropdown" data-bs-toggle="dropdown" aria-expanded="false">BUY NOW</button>
+                          
+                                      <ul class="dropdown-menu bg-dark">
+                                          <li><a class="dropdown-item text-light" href="#">Buy with Crypto</a></li>
+                                          <li><a class="dropdown-item text-light" href="#">Buy with credit card</a></li>
+                                           
+                                            
+                                        </ul>
+
+
+                                  </div>
+
+
+                                            
+                                          
+                                  
+
+
+                                 <div class="col-4 text-end">
+
+                                 
+                                    <button type="button" class="btn custom-btn-shop custom-btn-sm">ADD TO CART</button>
+                                     
+
+
+                                  </div> 
+
+                                </div>
+                              </div>  
+
+                            </div>
+                          </div>
+
+
+                 
+
+                   </div>
 
                 </div>
                 <!-- /.container-fluid -->
@@ -4437,130 +4257,7 @@ font-size: 3em;
         </div>
     </div>
 
-             
-
-
-
-
-
-
-
-
-
- <!--
-
-
-<div class="container-fluid   bgtexturegame">
-
-   <div class="container paddingboths">
-
-    <h2 class="tittlepads txth2nft">NFTs & Collectibles</h2>
-     <div class="row">
-        <div class="col-md-3 col-sm-6">
-            <div class="product-grid">
-                <div class="product-image">
-                    <a href="#" class="image">
-                        <img src="img/ahmad-team.jpg">
-                    </a>
-                    <span class="product-discount-label"></span>
-                    <ul class="product-links">
-                        <li><a href="#"><i class="fa fa-search"></i></a></li>
-                      
-                    </ul>
-                    <a href="" class="add-to-cart">Buy Now</a>
-                </div>
-                <div class="product-content">
-                    <h3 class="title"><a href="#">Peasant Membership</a></h3>
-                    <p>Highlighs</p>
-                    <div class="price">$13.99 <span>$29.50</span></div>
-                </div>
-            </div>
-        </div>
-            <div class="col-md-3 col-sm-6">
-            <div class="product-grid">
-                <div class="product-image">
-                    <a href="#" class="image">
-                        <img src="img/jtv-team.jpg">
-                    </a>
-                    <span class="product-discount-label">-5%</span>
-                    <ul class="product-links">
-                        <li><a href="#"><i class="fa fa-search"></i></a></li>
-                       
-                    </ul>
-                    <a href="" class="add-to-cart">Buy Now</a>
-                </div>
-                <div class="product-content">
-                    <h3 class="title"><a href="#">Burgher Membership </a></h3>
-                    <p>Highlighs</p>
-                    <div class="price">$35.99 <span>$59.99</span></div>
-                </div>
-            </div>
-        </div>
-
-            <div class="col-md-3 col-sm-6">
-            <div class="product-grid">
-                <div class="product-image">
-                    <a href="#" class="image">
-                        <img src="img/ahmad-team.jpg">
-                    </a>
-                    <span class="product-discount-label">-15%</span>
-                    <ul class="product-links">
-                        <li><a href="#"><i class="fa fa-search"></i></a></li>
-                        >
-                    </ul>
-                    <a href="" class="add-to-cart">Buy Now</a>
-                </div>
-                <div class="product-content">
-                    <h3 class="title"><a href="#">Duke Membership </a></h3>
-                    <p>Highlighs</p>
-                    <div class="price">$50.00 <span>$75.00</span></div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-            <div class="product-grid">
-                <div class="product-image">
-                    <a href="#" class="image">
-                        <img src="img/ahmad-team.jpg">
-                    </a>
-                    <span class="product-discount-label">-30></-30>%</span>
-                    <ul class="product-links">
-                        <li><a href="#"><i class="fa fa-search"></i></a></li>
-                        
-                    </ul>
-                    <a href="" class="add-to-cart">Buy Now</a>
-                </div>
-                <div class="product-content">
-                    <h3 class="title"><a href="#">King Membership</a></h3>
-                    <p>Highlighs</p>
-                    <div class="price">$75.55</div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-  </div>
-
-
-
  
-  </div>
-  
-</div>-->
-
-
- 
-
-
-
-
-
-
-
- 
-
-
-
 
 <div class="modal " id="cartModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered " role="document">
@@ -4634,14 +4331,7 @@ font-size: 3em;
         <div class="row justify-content-center">
           <div class="col-10 col-lg-6">
             <div class="subscribe mb-5">
-              <!--<form action="#" class="subscribe-form">
-                <div class="form-group d-flex">
- 
-                  <input type="text" class="form-control rounded-left" placeholder="subscribe to our newsletters">
- 
-                  <input type="submit" value="Subscribe" class="form-control submit px-3">
-                </div>
-              </form>-->
+             
             </div>
           </div>
         </div>
@@ -4657,23 +4347,7 @@ font-size: 3em;
           </div>
           <div class="col-md-8 col-lg-7">
             <div class="row">
-              <!-- <div class="col-md-3 mb-md-0 mb-4 border-left">
-                <h2 class="footer-heading">Explore</h2>
-                <ul class="list-unstyled">
-                   
-                   
-                  <li><a href="#" class="py-1 d-block">Help &amp; Support</a></li>
-                </ul>
-              </div>-->
-              <!--<div class="col-md-3 mb-md-0 mb-4 border-left">
-                <h2 class="footer-heading">About</h2>
-                <ul class="list-unstyled">
-              
-                  <li><a href="#" class="py-1 d-block">Team</a></li>
-                  <li><a href="#" class="py-1 d-block">Careers</a></li>
-                  <li><a href="#" class="py-1 d-block">Blog</a></li>
-                </ul>
-              </div>-->
+               
               <div class="col-md-6 mb-md-0 mb-4 border-left">
                 <h2 class="footer-heading">Game</h2>
                 <ul class="list-unstyled">
@@ -4691,7 +4365,7 @@ font-size: 3em;
                   <li><a href="https://www.facebook.com/Exodusgbw" target="blank" class="py-1 d-block">  <i class="fab fa-facebook-square  "></i>  Facebook</a></li>
                   </i> 
                   <li><a href="https://www.instagram.com/exodusgbw/" target="blank" class="py-1 d-block">  <i class="fab fa-instagram   "></i>  Instagram</a></li>
-                  <!--<li><a href="#" target="blank" class="py-1 d-block">  <i class="fab fa-youtube-square  "></i> Youtube</a></li>-->
+                  
                 </ul>
               </div>
             </div> 
@@ -4870,41 +4544,7 @@ button.classList.add('clicked');
           </script>
 
  
- <script>
-document.addEventListener("DOMContentLoaded", function(){
-// make it as accordion for smaller screens
-if (window.innerWidth < 992) {
-
-  // close all inner dropdowns when parent is closed
-  document.querySelectorAll('.navbar .dropdown').forEach(function(everydropdown){
-    everydropdown.addEventListener('hidden.bs.dropdown', function () {
-      // after dropdown is hidden, then find all submenus
-        this.querySelectorAll('.submenu').forEach(function(everysubmenu){
-          // hide every submenu as well
-          everysubmenu.style.display = 'none';
-        });
-    })
-  });
-
-  document.querySelectorAll('.dropdown-menu a').forEach(function(element){
-    element.addEventListener('click', function (e) {
-        let nextEl = this.nextElementSibling;
-        if(nextEl && nextEl.classList.contains('submenu')) {  
-          // prevent opening link if link needs to open dropdown
-          e.preventDefault();
-          if(nextEl.style.display == 'block'){
-            nextEl.style.display = 'none';
-          } else {
-            nextEl.style.display = 'block';
-          }
-
-        }
-    });
-  })
-}
-// end if innerWidth
-}); 
-</script>
+ 
 
      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
  <!-- Core plugin JavaScript
