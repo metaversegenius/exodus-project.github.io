@@ -6450,6 +6450,20 @@ button.bg-dark:focus {
   background-color: #42444e !important;
 }
 
+
+.bg-dark-nav {
+  background-color: #2b2b2b !important;
+}
+
+a.bg-dark-nav:hover, a.bg-dark:focus,
+button.bg-dark:hover,
+button.bg-dark:focus {
+  background-color: #42444e !important;
+}
+
+
+
+
 .bg-white {
   background-color: #fff !important;
 }
@@ -9757,7 +9771,8 @@ a:focus {
 }
 
 #wrapper #content-wrapper {
-  background-image:url("../img/semimetal.jpg");
+  /*background-image:url("../img/semimetal.jpg");*/
+  background-color: #000;
   width: 100%;
   overflow-x: hidden;
 }
@@ -11251,3 +11266,103 @@ footer.sticky-footer .copyright {
 body.sidebar-toggled footer.sticky-footer {
   width: 100%;
 }
+
+
+/*NEW UPDATE*/
+
+.shrink  .shrink-image {
+  max-width: 35px;  
+      max-height: 35px;  
+     top:3px;
+    }
+
+
+    .bg-card-init {
+    background-color: #23252b !important;
+    border: 1px solid #EADF00;
+  
+}
+
+.tittle-shop
+{
+  color: #fff;
+  font-size: 1.5em;
+}
+
+.txtbody-shop
+{
+  color: #f3a411;
+  font-size: 1em;
+  text-align: left;
+}
+
+
+  
+
+    .custom-btn-shop {
+      color: #d1d400;
+      background-color: transparent;
+      border: 2px solid #d1d400;
+
+      display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+ 
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+    }
+    .custom-btn-shop:hover {
+      color: #0056b3;
+      background-color: transparent;
+      border-color: #0056b3;
+    }
+
+.custom-btn-sm {
+      padding: 0.1rem 0.25rem;
+      font-size: 0.775rem;
+    }
+
+
+
+
+
+
+/*badge*/
+
+.item-card {
+    position:relative;
+   
+    display:inline-block;
+}
+.custom-badge{
+    position: absolute;
+    left:5px;
+    top:5px;
+    background-color: red !important;
+    text-align: center;
+    border-radius: 10px 10px 10px 10px;
+    color:white;
+    padding:5px 10px;
+    font-size:20px;
+}
+
+.padrightbtn
+
+{
+  padding-right: 10px !important;
+  
+}
+
+
+.marginbotstore
+{
+  margin-bottom: 50px;
+}
+/*END badge*/
